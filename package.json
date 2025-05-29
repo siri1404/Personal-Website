@@ -14,9 +14,7 @@
     "react-router-dom": "^6.22.1",
     "gsap": "^3.12.5",
     "framer-motion": "^11.0.5",
-    "@studio-freight/lenis": "^1.0.39",
-    "classnames": "^2.5.1",
-    "prop-types": "^15.8.1"
+    "@studio-freight/lenis": "^1.0.39"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",

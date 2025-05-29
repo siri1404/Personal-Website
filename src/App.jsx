@@ -1,16 +1,15 @@
 import { BrowserRouter as Router } from 'react-router-dom';
-import Layout from './components/Layout';
-import AnimatedRoutes from './components/AnimatedRoutes';
 import { MotionConfig } from 'framer-motion';
+import Navigation from './components/Navigation';
+import Home from './pages/Home';
 import './styles/globals.css';
 
 function App() {
   return (
     <MotionConfig reducedMotion="user">
       <Router>
-        <Layout>
-          <AnimatedRoutes />
-        </Layout>
+        <Navigation />
+        <Home />
       </Router>
     </MotionConfig>
   );
