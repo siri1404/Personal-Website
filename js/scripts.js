@@ -4,27 +4,27 @@ jQuery(function ($) {
 		
 		"use strict";
 		
-		PageLoad();		
-		ScrollEffects();		
-		Sliders();	 
-		FirstLoad(); 
-		PageLoadActions();
-		ShowcasePortfolio();
-		ShowcaseCarousel();
-		ShowcaseGallery();
-		ShowcaseLists();
-		FitThumbScreenWEBGL();
-		Shortcodes();		
-		Core();
-		MouseCursor();
-		JustifiedGrid();
-		Lightbox();
-		ContactForm();	
-		PlayVideo();
-		ContactMap();
-		CustomFunction();
-		ShuffleElementsFunction();
-		InitShuffleElements();
+		onPoojaKanalaPageLoad();		
+		onPoojaKanalaScrollEffects();		
+		onPoojaKanalaSliders();	 
+		onPoojaKanalaFirstLoad(); 
+		onPoojaKanalaPageLoadActions();
+		onPoojaKanalaShowcasePortfolio();
+		onPoojaKanalaShowcaseCarousel();
+		onPoojaKanalaShowcaseGallery();
+		onPoojaKanalaShowcaseLists();
+		onPoojaKanalaFitThumbScreenWEBGL();
+		onPoojaKanalaShortcodes();		
+		onPoojaKanalaCore();
+		onPoojaKanalaMouseCursor();
+		onPoojaKanalaJustifiedGrid();
+		onPoojaKanalaLightbox();
+		onPoojaKanalaContactForm();	
+		onPoojaKanalaPlayVideo();
+		onPoojaKanalaContactMap();
+		onPoojaKanalaCustomFunction();
+		onPoojaKanalaShuffleElementsFunction();
+		onPoojaKanalaInitShuffleElements();
 	});
 	
 	
@@ -32,7 +32,7 @@ jQuery(function ($) {
 Function CustomFunction
 ---------------------------------------------------*/
 
-	function CustomFunction() {
+	function onPoojaKanalaCustomFunction() {
 		
 		//Add here your custom js code
 		
@@ -43,11 +43,11 @@ Function CustomFunction
 Function Shuffle Elements Function
 ---------------------------------------------------*/			
 	
-	function ShuffleElementsFunction() {
+	function onPoojaKanalaShuffleElementsFunction() {
 		
-		function shuffle(o) {
-			for (var j, x, i = o.length; i; j = parseInt(Math.random() * i, 10), x = o[--i], o[i] = o[j], o[j] = x);
-			return o;
+		function shuffleArray(arr) {
+			for (var j, x, i = arr.length; i; j = parseInt(Math.random() * i, 10), x = arr[--i], arr[i] = arr[j], arr[j] = x);
+			return arr;
 		}
 	
 		function shuffleText(element, originalText, settings) {
@@ -61,7 +61,7 @@ Function Shuffle Elements Function
 				}
 	
 				var timeout = setTimeout(function() {
-					var randomTextArray = shuffle(elementTextArray.slice());
+					var randomTextArray = shuffleArray(elementTextArray.slice());
 					element.innerText = randomTextArray.join('');
 					index++;
 					repeatShuffle(times, index);
@@ -146,7 +146,7 @@ Function Shuffle Elements Function
 	}
 	
 	
-	function shuffleSubtitle(customDelay = 1) {
+	function poojaKanalaShuffleSubtitle(customDelay = 1) {
 		if (!document.body.classList.contains('load-next-page')) {			
 			var onloadShuffle = gsap.utils.toArray('.onload-shuffle');
 			onloadShuffle.forEach(function(shuffleTitleLoad, index) {
@@ -162,7 +162,7 @@ Function Shuffle Elements Function
 							spans.forEach(function(span, spanIndex) {
 								var spanDelay = spanIndex * 0.1;
 								setTimeout(function() {
-									shuffleFunctions.startShuffle(span, {
+									poojaKanalaShuffleFunctions.startShuffle(span, {
 										velocity: 60,
 										shuffleIterations: 8,
 										childSelector: 'span'
@@ -182,51 +182,51 @@ Function Shuffle Elements Function
 	}
 	
 
-	function InitShuffleElements() {
+	function onPoojaKanalaInitShuffleElements() {
 		
-		shuffleFunctions.applyShuffleEffect(".classic-menu .before-span", {
+		poojaKanalaShuffleFunctions.applyShuffleEffect(".classic-menu .before-span", {
 			velocity: 50,
 			shuffleIterations: 5,
 			childSelector: 'span'
 		});
 		
-		shuffleFunctions.applyShuffleEffect(".fullscreen-menu .menu-timeline", {
+		poojaKanalaShuffleFunctions.applyShuffleEffect(".fullscreen-menu .menu-timeline", {
 			velocity: 50,
 			shuffleIterations: 5,
 			childSelector: 'span'
 		});
 		
-		shuffleFunctions.applyShuffleEffect(".projects-list-captions li", {
+		poojaKanalaShuffleFunctions.applyShuffleEffect(".projects-list-captions li", {
 			velocity: 50,
 			shuffleIterations: 5,
 			childSelector: 'span'
 		});
 		
-		shuffleFunctions.applyShuffleEffect(".showcase-portfolio .clapat-item .slide-inner", {
+		poojaKanalaShuffleFunctions.applyShuffleEffect(".showcase-portfolio .PoojaKanala-item .slide-inner", {
 			velocity: 30,
 			shuffleIterations: 8,
 			childSelector: '.slide-title span, .slide-cat span'
 		});
 		
-		shuffleFunctions.applyShuffleEffect(".clapat-slide .slide-inner-height", {
+		poojaKanalaShuffleFunctions.applyShuffleEffect(".PoojaKanala-slide .slide-inner-height", {
 			velocity: 30,
 			shuffleIterations: 8,
 			childSelector: '.slide-title span, .slide-cat span'
 		});
 		
-		shuffleFunctions.applyShuffleEffect("#page-nav .next-hero-title", {
+		poojaKanalaShuffleFunctions.applyShuffleEffect("#page-nav .next-hero-title", {
 			velocity: 60,
 			shuffleIterations: 6,
 			childSelector: 'span' 
 		});
 		
-		shuffleFunctions.applyShuffleEffect(".filters-text", {
+		poojaKanalaShuffleFunctions.applyShuffleEffect(".filters-text", {
 			velocity: 60,
 			shuffleIterations: 6,
 			childSelector: 'span' 
 		});
 		
-		shuffleFunctions.applyShuffleEffect(".team-member-inner", {
+		poojaKanalaShuffleFunctions.applyShuffleEffect(".team-member-inner", {
 			velocity: 60,
 			shuffleIterations: 6,
 			childSelector: 'span' 
@@ -265,7 +265,7 @@ Function Shuffle Elements Function
 							spans.forEach(function(span, spanIndex) {
 								var spanDelay = spanIndex * 0.1; 
 								setTimeout(function() {
-									shuffleFunctions.startShuffle(span, {
+									poojaKanalaShuffleFunctions.startShuffle(span, {
 										velocity: 60,
 										shuffleIterations: 8,
 										childSelector: 'span'
@@ -306,7 +306,7 @@ Function Shuffle Elements Function
 						spans.forEach(function(span, spanIndex) {
 							var spanDelay = spanIndex * 0;
 							setTimeout(function() {
-								shuffleFunctions.startShuffle(span, {
+								poojaKanalaShuffleFunctions.startShuffle(span, {
 									velocity: 60,
 									shuffleIterations: 10,
 									childSelector: 'span'
@@ -362,7 +362,7 @@ Function Shuffle Elements Function
 							gsap.set(span, { opacity: opacity });							
 							
 							if (progress >= spanStart && progress <= spanEnd && !span.classList.contains('shuffled')) {
-								shuffleFunctions.startShuffle(span, {
+								poojaKanalaShuffleFunctions.startShuffle(span, {
 									velocity: 40,
 									shuffleIterations: 4,
 									duration: opacityDuration , 
@@ -381,22 +381,22 @@ Function Shuffle Elements Function
 	
 	}
 	
-	var shuffleFunctions = ShuffleElementsFunction();
-	
-	
+	var poojaKanalaShuffleFunctions = onPoojaKanalaShuffleElementsFunction();
+
+
 /*--------------------------------------------------
 	Function Cleanup Before Ajax
 ---------------------------------------------------*/	
-	
-	function CleanupBeforeAjax(){		
+
+	function onPoojaKanalaCleanupBeforeAjax(){		
 		// reset all scroll triggers
 		let triggers = ScrollTrigger.getAll();
-		triggers.forEach( trigger => {			
-		  	trigger.kill();
+		triggers.forEach(trigger => {			
+			trigger.kill();
 		});
 		
-		ClapatSlider.instances.forEach(slider => slider.off());
-		ClapatSlider.instances = [];
+		PoojaKanalaSlider.instances.forEach(slider => slider.off && slider.off());
+		PoojaKanalaSlider.instances = [];
 	}
 				
 
@@ -404,10 +404,10 @@ Function Shuffle Elements Function
 Function Page Load
 ---------------------------------------------------*/
 
-	function PageLoad() {		
+	function onPoojaKanalaPageLoad() {		
 		
 		gsap.set($(".menu-timeline .before-span"), {y:"100%", opacity:0});
-		gsap.set($(".clapat-header"), {yPercent:-50, opacity:0});
+		gsap.set($(".pooja-kanala-header"), {yPercent:-50, opacity:0});
 		
 		// Page Navigation Events
 		$(".preloader-wrap").on('mouseenter', function() {	
@@ -426,6 +426,7 @@ Function Page Load
 		});		
 		
 		$('body').removeClass('hidden').removeClass('hidden-ball');	
+		
 		
 		
 		function initOnFirstLoad() {
@@ -452,7 +453,7 @@ Function Page Load
 					gsap.set($(".page-nav-caption .caption-timeline span"), { yPercent:0, opacity:1});
 				}});
 				
-				shuffleSubtitle();
+				poojaKanalaShuffleSubtitle();
 				
 				if ($('body').hasClass('hero-below-caption')) {
 					var heroTranslate = gsap.getProperty("#hero.has-image", "height");
@@ -487,7 +488,7 @@ Function Page Load
 			});	
 				
 				
-				gsap.to($(".clapat-header"), { duration: 0.45, opacity:1, yPercent:0, delay:0.25, ease: Power2.easeOut, });
+				gsap.to($(".pooja-kanala-header"), { duration: 0.45, opacity:1, yPercent:0, delay:0.25, ease: Power2.easeOut, });
 				
 				gsap.to($(".hero-footer-left, .hero-footer-right"), {duration: 0.45, y:0, opacity:1, delay:0.25, ease:Power2.easeOut, onComplete: function() {
 					$("#hero-footer.has-border").addClass("visible");																			
@@ -544,7 +545,7 @@ Function Page Load
 							spans.forEach(function(span, spanIndex) {
 								var spanDelayTime = spanIndex * spanDelay;
 								setTimeout(function() {
-									shuffleFunctions.startShuffle(span, {
+									poojaKanalaShuffleFunctions.startShuffle(span, {
 										velocity: 50,
 										shuffleIterations: 8,
 										childSelector: 'span'
@@ -588,8 +589,8 @@ Function Page Load
 			
 			var width = 100,
 				perfData = window.performance.timing, 
-				EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
-				calculatedTime = (((EstimatedTime / 100) % 500) * 10);
+				estimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
+				calculatedTime = (((estimatedTime / 100) % 500) * 10);
 				let time = (totalAnimationTime) * 1000;
 				window.preloaderTimeout = time;
 				
@@ -599,31 +600,29 @@ Function Page Load
 			gsap.to(".preloader-wrap .spinning-plus", {rotation: 1800, duration: time / 1000, ease:Power2.easeOut });	
 			
 			// Percentage Increment Animation
-			var PercentageID = $("#precent"),
-					start = 000,
+			var percentageId = $("#precent"),
+					start = 0,
 					end = 100,
-					durataion = time + 0;
-					animateValue(PercentageID, start, end, durataion);
+					duration = time + 0;
+					animateValue(percentageId, start, end, duration);
 					
 			function animateValue(id, start, end, duration) {
-			  
 				var range = end - start,
-				  current = start,
-				  increment = end > start? 1 : -1,
-				  stepTime = Math.abs(Math.floor(duration / range)),
-				  obj = $(id);
+					current = start,
+					increment = end > start ? 1 : -1,
+					stepTime = Math.abs(Math.floor(duration / range)),
+					obj = $(id);
 				
 				var timer = setInterval(function() {
 					current += increment;
 					$(obj).text(current);
-				  //obj.innerHTML = current;
 					if (current == end) {
 						clearInterval(timer);
 					}
 				}, stepTime);
 			}
 			
-			// Fading Out Loadbar on Finised
+			// Fading Out Loadbar on Finished
 			setTimeout(function(){				
 				initOnFirstLoad();						  
 			}, time);
@@ -641,7 +640,7 @@ Function Page Load
 Page Load Actions
 ---------------------------------------------------*/	
 	
-	function PageLoadActions() {
+	function onPoojaKanalaPageLoadActions() {
 		
 		
 		// Default Page Navigation Load Events
@@ -649,7 +648,7 @@ Page Load Actions
 		if (!isMobile()) {
 			
 			$("#page-nav .next-ajax-link-page").on('mouseenter', function() {
-				var modifyMouseColor = $('#clapat-page-content').attr("data-modify-color");
+				var modifyMouseColor = $('#pooja-kanala-page-content').attr("data-modify-color");
 				if (modifyMouseColor) {
 					$("#ball").addClass("color-cursor");
 					gsap.set('#ball.color-cursor', {color:modifyMouseColor });
@@ -674,7 +673,7 @@ Page Load Actions
 			
 			$('#page-nav .next-ajax-link-page').on('click', function() {	
 				$("body").addClass("show-loader");
-				$('.clapat-header').removeClass('white-header');
+				$('.pooja-kanala-header').removeClass('white-header');
 				$("#app").remove();
 					
 				gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
@@ -683,14 +682,14 @@ Page Load Actions
 				$('#ball p').remove();
 				$('#ball i').remove();				
 				
-				gsap.to($("#main-page-content, #hero, .clapat-footer, .clapat-footer-nav"), {duration: 0.3, opacity:0, ease:Power4.easeOut});
+				gsap.to($("#main-page-content, #hero, .pooja-kanala-footer, .pooja-kanala-footer-nav"), {duration: 0.3, opacity:0, ease:Power4.easeOut});
 				
 				if ($("#page-nav").hasClass("move-nav-onload")) {
 					$("body").addClass("load-next-page");
 					if ($("body").hasClass("smooth-scroll")) {
-						var moveNav = $("#content-scroll").height() - ( $("#hero").height() / 2 )  - ( $("#page-nav").height()  ) / 2 - $(".clapat-footer").height() / 2	
+						var moveNav = $("#content-scroll").height() - ( $("#hero").height() / 2 )  - ( $("#page-nav").height()  ) / 2 - $(".pooja-kanala-footer").height() / 2	
 					} else {
-						var moveNav = window.innerHeight - ( $("#hero").height() / 2 )  - ( $("#page-nav").height()  ) / 2 - $(".clapat-footer").height() / 2	   
+						var moveNav = window.innerHeight - ( $("#hero").height() / 2 )  - ( $("#page-nav").height()  ) / 2 - $(".pooja-kanala-footer").height() / 2	   
 					}
 					gsap.to($("#page-nav"), {duration: 0.7, y: - moveNav, delay:0, ease:Power4.easeOut});
 				} else {
@@ -703,7 +702,7 @@ Page Load Actions
 			$('#page-nav .next-ajax-link-page').on('click', function() {					
 				$("body").addClass("load-next-page");
 				$("body").addClass("show-loader");
-				$('.clapat-header').removeClass('white-header');
+				$('.pooja-kanala-header').removeClass('white-header');
 				$("#app").remove();
 				
 					
@@ -714,7 +713,7 @@ Page Load Actions
 				$('#ball i').remove();
 				
 				gsap.to($("#main-page-content, #hero, #page-nav"), {duration: 0.3, opacity:0});
-				gsap.to($(".clapat-footer, .clapat-footer-nav"), {duration: 0.3, opacity:0, delay:0, ease:Power2.easeInOut});
+				gsap.to($(".pooja-kanala-footer, .pooja-kanala-footer-nav"), {duration: 0.3, opacity:0, delay:0, ease:Power2.easeInOut});
 			});
 			
 		}
@@ -835,9 +834,9 @@ Page Load Actions
 				
 				gsap.to($("#project-nav"), {
 					scrollTrigger: {
-						trigger: $("#project-nav"), // Elementul care declanșează efectul
+						trigger: $("#project-nav"),
 						start: () => startValue,
-						toggleClass: "active-link", // Clasa pe care o adaugă și o șterge
+						toggleClass: "active-link",
 					}
 				});
 				
@@ -853,7 +852,7 @@ Page Load Actions
 					$("body").addClass("show-loader");
 				}
 				
-				if ($(".clapat-header").hasClass("swapped-logo")) {
+				if ($(".pooja-kanala-header").hasClass("swapped-logo")) {
 					var imgLogoWhite = document.querySelector('.white-logo');
 					var originalSrcWhite = 'images/logo-white.png';
 					var updatedSrcWhite = 'images/logo-white-symbol.png';
@@ -861,15 +860,15 @@ Page Load Actions
 					var imgLogoBlack = document.querySelector('.black-logo');
 					var originalSrcBlack = 'images/logo.png';
 					var updatedSrcBlack = 'images/logo-symbol.png';
-					gsap.to($("#clapat-logo"), {duration: 0.2, opacity:0, onComplete: function() {
+					gsap.to($("#pooja-kanala-logo"), {duration: 0.2, opacity:0, onComplete: function() {
 						imgLogoWhite.src = originalSrcWhite;
 						imgLogoBlack.src = originalSrcBlack;
-						gsap.to($("#clapat-logo"), {duration: 0.2, opacity:1});
+						gsap.to($("#pooja-kanala-logo"), {duration: 0.2, opacity:1});
 					}});
 				
 				}
 				
-				$('.clapat-header').removeClass('white-header');
+				$('.pooja-kanala-header').removeClass('white-header');
 				$("#app").remove();
 				
 				gsap.to('#ball', {duration: 0.3, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent'});
@@ -890,7 +889,7 @@ Page Load Actions
 				
 				gsap.set($("#project-nav.change-header, next-hero-progress"), {backgroundColor:"transparent"});
 				gsap.to($(".next-hero-counter span"), {duration: 0.3, y:-20, opacity:0, ease:Power2.easeInOut});
-				gsap.to($(".clapat-footer, .all-works"), {duration: 0.3, opacity:0, ease:Power2.easeInOut});
+				gsap.to($(".pooja-kanala-footer, .all-works"), {duration: 0.3, opacity:0, ease:Power2.easeInOut});
 				gsap.to($("#main-page-content, #hero, #hero-image-wrapper"), {duration: 0.3, opacity:0});			
 				
 				gsap.to($(".next-project-image"), {duration: 0.6, scale:1.02, clipPath: 'inset(0 0%)', opacity:1, ease:Power2.easeInOut,onComplete: function() {
@@ -909,7 +908,7 @@ Page Load Actions
 			
 			$('.next-ajax-link-project').on('click', function() {					
 				$("body").addClass("load-project-thumb-with-title").addClass("show-loader");							
-				$('.clapat-header').removeClass('white-header');
+				$('.pooja-kanala-header').removeClass('white-header');
 				$("#app").remove();									
 				gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
 				gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
@@ -918,7 +917,7 @@ Page Load Actions
 				$('#ball i').remove();				
 				gsap.to($("#main-page-content, #hero, #hero-image-wrapper, #project-nav"), {duration: 0.3, opacity:0});			
 				gsap.to($(".next-project-image"), {duration: 0.6, scale:1, opacity: 0, ease:Power2.easeOut});
-				gsap.to($(".clapat-footer, .all-works"), {duration: 0.3, opacity:0, ease:Power2.easeInOut});							
+				gsap.to($(".pooja-kanala-footer, .all-works"), {duration: 0.3, opacity:0, ease:Power2.easeInOut});							
 			});
 			
 		}
@@ -926,10 +925,10 @@ Page Load Actions
 		
 		if( $('#project-nav').length > 0 ){		
 		
-			const pageContent = document.getElementById("clapat-page-content");
+			const pageContent = document.getElementById("pooja-kanala-page-content");
 			const projectNav = document.getElementById("project-nav");
 			
-			var startColorValue;
+			let startColorValue;
 
 			if ($('#project-nav').hasClass('pinned-nav-caption')) {
 				startColorValue = `top 0%`;
@@ -959,7 +958,7 @@ Page Load Actions
 				},
 				onLeaveBack: function() {
 					gsap.set($(".header-gradient"), {opacity:1});
-					gsap.set("#clapat-logo img, .classic-menu .flexnav li a, .button-wrap.menu, .button-icon-link", { clearProps: "all" });
+					gsap.set("#pooja-kanala-logo img, .classic-menu .flexnav li a, .button-wrap.menu, .button-icon-link", { clearProps: "all" });
 				},			
 				scrub: true,
 			});	
@@ -968,34 +967,31 @@ Page Load Actions
 			
 			if ($("#project-nav").hasClass("change-header")) {
 				
-				var changeMainColor = document.querySelector('#project-nav.change-header');
+				const changeMainColor = document.querySelector('#project-nav.change-header');
 	
 				if (changeMainColor) {
 			
 					imagesLoaded('body', function() {
 						
+						let startLinkColor, endLinkColor, startButtonColor, endButtonColor, startButtonShadow, endButtonShadow;
 						if (pageContent.classList.contains('light-content')) {
-													
 							startLinkColor = "#fff";
 							endLinkColor = "#000";						
 							startButtonColor = "#fff";
 							endButtonColor = "#000";
 							startButtonShadow = "inset 0 0 15px rgba(255,255,255,0.5)";
 							endButtonShadow = "inset 0 0 15px rgba(0,0,0,0.3)";
-							
 						} else if (pageContent.classList.contains('dark-content')) {
-							
 							startLinkColor = "#000";
 							endLinkColor = "#fff";
-							
 							startButtonColor = "#000";
 							endButtonColor = "#fff";						
 							startButtonShadow = "inset 0 0 15px rgba(0,0,0,0.3)";
 							endButtonShadow = "inset 0 0 15px rgba(255,255,255,0.5)";
 						}
 						
-						const blackLogoOpacity = gsap.getProperty('#clapat-logo img.black-logo', 'opacity');
-						const whiteLogoOpacity = gsap.getProperty('#clapat-logo img.white-logo', 'opacity');
+						const blackLogoOpacity = gsap.getProperty('#pooja-kanala-logo img.black-logo', 'opacity');
+						const whiteLogoOpacity = gsap.getProperty('#pooja-kanala-logo img.white-logo', 'opacity');
 					
 						const scrollTriggerEnter = {
 							trigger: changeMainColor,
@@ -1011,7 +1007,7 @@ Page Load Actions
 							end: '+=70%',
 							onEnter: function( st ) {
 								
-								gsap.fromTo('#clapat-logo img.black-logo', {
+								gsap.fromTo('#pooja-kanala-logo img.black-logo', {
 									opacity: blackLogoOpacity
 								}, {
 									duration: 1, 
@@ -1020,7 +1016,7 @@ Page Load Actions
 									scrollTrigger: scrollTriggerEnter
 								});
 								
-								gsap.fromTo('#clapat-logo img.white-logo', {
+								gsap.fromTo('#pooja-kanala-logo img.white-logo', {
 									opacity: whiteLogoOpacity
 								}, {
 									duration: 1, 
@@ -1030,7 +1026,6 @@ Page Load Actions
 								});
 								
 								if (!isMobile()) {
-								
 									gsap.fromTo('.classic-menu .flexnav li a', {
 										color: startLinkColor
 									}, {
@@ -1039,7 +1034,6 @@ Page Load Actions
 										ease: Linear.easeNone,
 										scrollTrigger: scrollTriggerEnter
 									});
-								
 								}
 								
 								gsap.fromTo('.button-wrap.menu', {
@@ -1084,11 +1078,11 @@ Page Load Actions
 			
 			// Add Temporary Styles
 			$(document).on('click', '.next-ajax-link-project', function() {				
-				var temporaryBgColorElements = "main";
-				var temporaryColorElements = ".next-hero-title";
-				var modifyBgColor = document.getElementById('project-nav').getAttribute('data-next-bgcolor');
-				var modifyColor = gsap.getProperty(".next-hero-title", "color");	
-				var styleElement = document.createElement('style');
+				const temporaryBgColorElements = "main";
+				const temporaryColorElements = ".next-hero-title";
+				const modifyBgColor = document.getElementById('project-nav').getAttribute('data-next-bgcolor');
+				const modifyColor = gsap.getProperty(".next-hero-title", "color");	
+				const styleElement = document.createElement('style');
 				
 				styleElement.setAttribute('data-js-added', 'true');			
 				styleElement.innerHTML = `
@@ -1109,7 +1103,7 @@ Page Load Actions
 			//Clean Temporary Color Styles	
 			setTimeout( function(){
 				imagesLoaded('body', function() {
-					var styleElements = document.querySelectorAll('style[data-js-added]');
+					const styleElements = document.querySelectorAll('style[data-js-added]');
 					styleElements.forEach(function(styleElement) {
 						styleElement.parentNode.removeChild(styleElement);
 					});
@@ -1127,7 +1121,7 @@ Page Load Actions
 Function Lazy Load
 ---------------------------------------------------*/
 
-	function LazyLoad() {
+	function onPoojaKanalaLazyLoad() {
 		
 		imagesLoaded('body', function() {
 			$('body').removeClass('loading hidden scale-up scale-none');
@@ -1154,7 +1148,7 @@ Function Lazy Load
 					gsap.set($(".next-caption .caption-timeline span"), { yPercent:0});
 				}});
 				
-				shuffleSubtitle();
+				poojaKanalaShuffleSubtitle();
 				
 			} else if( $('body').hasClass("load-project-thumb-from-slider")) {
 				
@@ -1170,7 +1164,7 @@ Function Lazy Load
 					gsap.set($(".next-caption .caption-timeline span"), { yPercent:0});
 				}});
 				
-				shuffleSubtitle(0.2);
+				poojaKanalaShuffleSubtitle(0.2);
 				
 				gsap.to($(".hero-footer-left, .hero-footer-right"), {duration: 0.7, y:0, opacity:1, stagger:0.2, delay:0.5, ease:Power2.easeOut});
 				
@@ -1188,12 +1182,12 @@ Function Lazy Load
 				gsap.to($(".error-button"), {duration: 0.3, y: 0, opacity:1, rotation:0, delay:0, ease:Power2.easeOut});
 			}});
 			
-			shuffleSubtitle(0.5);
+			poojaKanalaShuffleSubtitle(0.5);
 			
 			gsap.to($(".hero-footer-left, .hero-footer-right"), {duration: 1, y:0, opacity:1, delay:0.3, ease:Power3.easeOut, onComplete: function() {
 				$("#hero-footer.has-border").addClass("visible");																			
 			}});
-																							
+																						
 			gsap.to($("#main-page-content, #page-nav"), {duration: 1, y: 0, opacity:1, delay:0.4, ease:Power3.easeOut, onComplete: function() {
 				gsap.set($("#main-page-content"), { clearProps: "y" });
 				gsap.set($(".page-nav-caption .caption-timeline span"), { yPercent:0});
@@ -1295,7 +1289,7 @@ Function Lazy Load
 		}
 		
 		setTimeout( function(){	
-			$('.clapat-header').removeClass('white-header');
+			$('.pooja-kanala-header').removeClass('white-header');
 			$('body').removeClass("load-project-thumb load-project-thumb-with-title load-project-thumb-from-slider load-next-page grid-open")
 			setTimeout( function(){
 				imagesLoaded('body', function() {	
@@ -1313,10 +1307,10 @@ Function Lazy Load
 /*--------------------------------------------------
 Function Showcase Portfolio
 ---------------------------------------------------*/	
-		
-	function ShowcasePortfolio() {
+
+	function onPoojaKanalaShowcasePortfolio() {
 			
-		gsap.utils.toArray('.clapat-item .pixels-cover').forEach((pixelWrapper, index) => {
+		gsap.utils.toArray('.PoojaKanala-item .pixels-cover').forEach((pixelWrapper, index) => {
 			const pixelAnimation = pixelWrapper.querySelectorAll(".pixel");
 			
 			gsap.to(pixelAnimation, {				
@@ -1330,7 +1324,6 @@ Function Showcase Portfolio
 				duration: 0.2,
 				opacity: 0, 
 				delay: function() {
-					// Generăm un delay random între 0 și 0.5 secunde
 					return gsap.utils.random(0, 0.4);
 				},
 				ease: Power4.easeOut, 
@@ -1348,14 +1341,14 @@ Function Showcase Portfolio
 			
 			function filter() {				
 				
-				var state = Flip.getState('.clapat-item');
-				var projects = document.querySelectorAll('.clapat-item');
+				var state = Flip.getState('.PoojaKanala-item');
+				var projects = document.querySelectorAll('.PoojaKanala-item');
 				var startHeight = gsap.getProperty(".showcase-portfolio", "height");
 				
 				var filters = document.querySelectorAll('.filter-option.is_active');
-				var parallaxItems = document.querySelectorAll('.showcase-portfolio .clapat-item.vertical-parallax .slide-inner');
+				var parallaxItems = document.querySelectorAll('.showcase-portfolio .PoojaKanala-item.vertical-parallax .slide-inner');
 			
-			  	var hasFilteredItems = false; 
+				var hasFilteredItems = false; 
 			
 				if (filters.length) {
 					projects.forEach(function(project) {
@@ -1364,7 +1357,7 @@ Function Showcase Portfolio
 						  project.classList.remove('not-filtered');
 					});
 					filters.forEach(function(filter) {
-				  		var colorClass = filter.dataset.filter;
+						var colorClass = filter.dataset.filter;
 				
 						if (colorClass !== '') {
 							projects.forEach(function(project) {
@@ -1377,7 +1370,7 @@ Function Showcase Portfolio
 									
 									project.classList.add('filtered');
 									project.classList.remove('not-filtered');
-									hasFilteredItems = true; // Elemente filtrate găsite
+									hasFilteredItems = true;
 								}
 							});
 						} else {
@@ -1396,7 +1389,7 @@ Function Showcase Portfolio
 				}
 				
 			
-			  	var showcasePortfolio = document.querySelector('.showcase-portfolio');
+				var showcasePortfolio = document.querySelector('.showcase-portfolio');
 				
 				if (hasFilteredItems) {
 					showcasePortfolio.classList.add('items-filtered');
@@ -1405,10 +1398,8 @@ Function Showcase Portfolio
 				}
 				
 				showcasePortfolio.classList.add('ease-transform');				
-			
+				
 				var endHeight = gsap.getProperty(".showcase-portfolio", "height");
-				
-				
 				
 				var flip = Flip.from(state, {
 					duration: 0.6,
@@ -1418,7 +1409,7 @@ Function Showcase Portfolio
 					onEnter: elements => gsap.fromTo(elements, {opacity: 0, scale: 0}, {opacity: 1, scale: 1, duration: .5 }),
 					onLeave: elements => gsap.fromTo(elements, {opacity: 1, scale: 1}, {opacity: 0, scale: 0, duration: .5 }),					
 					onComplete: function() {												
-					  	ScrollTrigger.refresh();						
+						ScrollTrigger.refresh();						
 						showcasePortfolio.classList.remove('ease-transform');
 					}
 				})				
@@ -1547,7 +1538,7 @@ Function Showcase Portfolio
 			
 			
 			function resetItems() {
-				$('.expand-grid .clapat-item').removeClass('expanded not-expanded').addClass('default');
+				$('.expand-grid .PoojaKanala-item').removeClass('expanded not-expanded').addClass('default');
 			}
 		
 			function expandItem($item) {
@@ -1558,19 +1549,19 @@ Function Showcase Portfolio
 				resetItems();
 				$item.addClass('expanded').removeClass('default');
 				
-				$('.expand-grid .clapat-item').slice(start, end).not($item).addClass('not-expanded').removeClass('default');
+				$('.expand-grid .PoojaKanala-item').slice(start, end).not($item).addClass('not-expanded').removeClass('default');
 			}		
 		
-			expandItem($('.expand-grid .clapat-item').eq(1));
+			expandItem($('.expand-grid .PoojaKanala-item').eq(1));
 		
-			$('.expand-grid .clapat-item').on('mouseenter', function() {
+			$('.expand-grid .PoojaKanala-item').on('mouseenter', function() {
 				if (!$('.showcase-portfolio').hasClass('items-filtered')) {
-        			expandItem($(this));
-    			}
+					expandItem($(this));
+				}
 			}).on('mouseleave', function() {	
 				if (!$('.showcase-portfolio').hasClass('items-filtered')) {
-        			expandItem($(this));
-    			}
+					expandItem($(this));
+				}
 			});
 			
 			
@@ -1586,10 +1577,10 @@ Function Showcase Portfolio
 					flipThumbsWrapper.classList.add('flip-thumbs-wrapper');
 					
 					
-					const clapatItems = document.querySelectorAll('.showcase-portfolio .clapat-item');
+					const poojaKanalaItems = document.querySelectorAll('.showcase-portfolio .PoojaKanala-item');
 					
 					
-					clapatItems.forEach(item => {
+					poojaKanalaItems.forEach(item => {
 						const sectionImage = item.querySelector('.section-image.trigger-item-link');
 					
 						if (sectionImage) {
@@ -1616,8 +1607,8 @@ Function Showcase Portfolio
 					
 					if (showcasePortfolio.classList.contains('filp-grid')) {
 						
-						const clapatItems = showcasePortfolio.querySelectorAll('.clapat-item');						
-						clapatItems.forEach(item => {
+						const poojaKanalaItems = showcasePortfolio.querySelectorAll('.PoojaKanala-item');						
+						poojaKanalaItems.forEach(item => {
 							
 							const pixelsWrapper = item.querySelector('.pixels-wrapper');
 							if (pixelsWrapper) {
@@ -1633,7 +1624,7 @@ Function Showcase Portfolio
 					if (!$('body').hasClass("show-loader")) {
 						let preloaderTimeout = 3000;
 						if (typeof window.preloaderTimeout !== 'undefined') {
-							preloaderTimeout = window.preloaderTimeout + 300; // Ajustare preloader timeout
+							preloaderTimeout = window.preloaderTimeout + 300;
 						}
 					
 						setTimeout(animateFlipThumbEffects, preloaderTimeout);
@@ -1665,10 +1656,10 @@ Function Showcase Portfolio
 					const moveThumbsParent = document.querySelectorAll('.flip-thumbs-wrapper .flip-move-thumb');
 					const moveThumbs = document.querySelectorAll('.flip-thumbs-wrapper .flip-thumb-inner');
 					const endThumbsWrapper = document.querySelector('.showcase-portfolio');
-					const overlappingThumbs = document.querySelectorAll('.showcase-portfolio .clapat-item .img-mask');
+					const overlappingThumbs = document.querySelectorAll('.showcase-portfolio .PoojaKanala-item .img-mask');
 					
-					let completedAnimations = 0; // Variabilă pentru a număra animațiile completate
-					const moveAnimations = []; // Array pentru a stoca animațiile
+					let completedAnimations = 0;
+					const moveAnimations = [];
 					
 					function animateElements(moveThumbs, overlappingThumbs, moveThumbsParent) {
 						moveThumbs.forEach((moveThumb, index) => {
@@ -1680,12 +1671,11 @@ Function Showcase Portfolio
 								ease: 'power2.inOut',
 								absolute: true,
 								onComplete: function() {
-									completedAnimations++; // Incrementăm numărul de animații completate
+									completedAnimations++;
 					
-									// Opriți animația de flip doar dacă toate animațiile sunt complete
 									if (completedAnimations === moveThumbs.length) {
 										setTimeout(function() {
-											moveAnimations.forEach(anim => anim.kill()); // Opriți toate animațiile
+											moveAnimations.forEach(anim => anim.kill());
 										},200);
 										
 										$(".flip-move-thumb").addClass("disabled");
@@ -1695,7 +1685,7 @@ Function Showcase Portfolio
 								}
 							});
 					
-							moveAnimations.push(moveAnimation); // Salvează animația pentru a o putea opri mai târziu
+							moveAnimations.push(moveAnimation);
 					
 							const startOffset = `top ${90 - (index * 5)}%`;
 							
@@ -1730,7 +1720,7 @@ Function Showcase Portfolio
 			
 			if (!isMobile()) {	
 							
-				$(".showcase-portfolio .clapat-item .slide-inner").on('mouseenter', function() {
+				$(".showcase-portfolio .PoojaKanala-item .slide-inner").on('mouseenter', function() {
 					$('#ball p').remove();
 					var $this = $(this);			
 					gsap.to('#ball', {duration: 0.3, borderWidth: '2px', scale: 1.4, borderColor:"rgba(0,0,0,0)", backgroundColor:"rgba(0,0,0,0.3)"});
@@ -1783,1076 +1773,852 @@ Function Showcase Portfolio
 	}//End Showcase Portfolio	
 	
 	
-	
 /*--------------------------------------------------
 Function Showcase Carousel
 ---------------------------------------------------*/
-	
-	function ShowcaseCarousel() {
-		
-		if( $('.showcase-carousel').length > 0 ){
-			
-			$("footer").addClass("showcase-footer");	
- 			
-			gsap.set($(".showcase-carousel .clapat-slider .slide-inner-height"), { scale: 0.8 });
-			
-			if (!$('body').hasClass("show-loader")) {
-				
-				let preloaderTimeout = 3000;
-				if (window.preloaderTimeout !== 'undefined') {
-					preloaderTimeout = window.preloaderTimeout + 300;
-				}
-				
-				setTimeout(function() {	
-					
-					function animatePixels(selector, minDelay, maxDelay) {
-						gsap.utils.toArray(selector).forEach((pixelWrapper) => {
-							const pixelAnimation = pixelWrapper.querySelectorAll(".clapat-slider .pixel");
-							
-							gsap.to(pixelAnimation, {
-								duration: 0.2,
-								opacity: 0,
-								delay: function() {
-									return gsap.utils.random(minDelay, maxDelay);
-								},
-								ease: Power4.easeOut,
-								onComplete: function() {
-									pixelWrapper.querySelectorAll(".pixels-wrapper").forEach(pixels => {
-										pixels.remove();
-									});
-								}
-							});
-						});
-					}					
-					
-					animatePixels('.clapat-slide-active .pixels-cover', 0, 0.3);
-					animatePixels('.clapat-slide:not(.clapat-slide-active) .pixels-cover', 0.3, 0.6);
-					
-					gsap.to($(".showcase-carousel .clapat-slider .slide-inner-height"), { duration: 0.6, scale: 1, ease: Power2.easeOut });
-					
-					gsap.set($(".fade-slide-element"), {y: 10, opacity:0});
-					gsap.to($(".fade-slide-element"), {duration: 0.7, y: 0, opacity:1, delay:0.3, stagger:0.02, ease:Power4.easeOut});					
-					
-				}, preloaderTimeout);
-				
+
+function onPoojaKanalaShowcaseCarousel() {
+
+	if ($('.showcase-carousel').length > 0) {
+
+		$("footer").addClass("showcase-footer");
+
+		gsap.set($(".showcase-carousel .pooja-kanala-slider .slide-inner-height"), { scale: 0.8 });
+
+		if (!$('body').hasClass("show-loader")) {
+
+			let preloaderTimeout = 3000;
+			if (window.preloaderTimeout !== 'undefined') {
+				preloaderTimeout = window.preloaderTimeout + 300;
 			}
-			
-			
-			slider = new ClapatSlider('.showcase-carousel', { 
-				direction: 'horizontal',
-				ease: 0.065, 
-				snap:false,
-				outer: '.clapat-slider',
-				inner: '.clapat-slider-viewport',
-				navigation: {
-					nextEl: '.cp-button-next',
-					prevEl: '.cp-button-prev'
-				},
-				on: {	
-					init : function(slide) {
-						
-						if ($('body').hasClass("show-loader")) {
-							
-							imagesLoaded('body', function() {
-								
-								function animatePixels(selector, minDelay, maxDelay) {
-									gsap.utils.toArray(selector).forEach((pixelWrapper) => {
-										const pixelAnimation = pixelWrapper.querySelectorAll(".clapat-slider .pixel");
-										
-										gsap.to(pixelAnimation, {
-											duration: 0.2,
-											opacity: 0,
-											delay: function() {
-												return gsap.utils.random(minDelay, maxDelay);
-											},
-											ease: Power4.easeOut,
-											onComplete: function() {
-												pixelWrapper.querySelectorAll(".pixels-wrapper").forEach(pixels => {
-													pixels.remove();
-												});
-											}
-										});
-									});
-								}
-								
-								animatePixels('.clapat-slide-active .pixels-cover', 0, 0.3);
-								animatePixels('.clapat-slide:not(.clapat-slide-active) .pixels-cover', 0.3, 0.6);
-								
-								gsap.to($(".showcase-carousel .clapat-slider .slide-inner-height"), { duration: 0.6, scale: 1, ease: Power2.easeOut });
-								
-								gsap.set($(".fade-slide-element"), {y: 10, opacity:0});
-								gsap.to($(".fade-slide-element"), {duration: 0.7, y: 0, opacity:1, delay:0.3, stagger:0.02, ease:Power4.easeOut});
-							
-							});
-						
-						}
-						
-					},
-					slideLeaveViewport : function( slide ) {
-						gsap.set($('.clapat-slider div:not(.clapat-slide-visible) .slide-effects'), { y: "" });		
-					},
-				},
-			});
-			
-			 slider.tl					
-			 	.fromTo('.progress-info-fill', {backgroundSize:"0% 100%" }, {backgroundSize:"100% 100%" }, 0)
-				.fromTo('.progress-info-fill-2', {backgroundSize:"100% 100%" }, {backgroundSize:"0% 100%", duration: 0.3, ease: 'power3' }, 0);
-			
-			
-			
-			
-			
-			if (!isMobile()) {
-				
-			
-				$('.clapat-slider').on('mousedown', function (evt) {
-					$('.clapat-slider').on('mouseup mousemove', function handler(evt) {
-						if (evt.type === 'mouseup') {					  
-							// click
-							gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-							$("body").removeClass("scale-drag-x");
-							$("#ball").removeClass("with-icon");
-							$('#ball i').remove();
-							$("#ball").removeClass("with-blur");
-							$('#ball p').remove();
-							
-						} else {
-							// drag
-							if ($('#magic-cursor').hasClass("light-content")) {
-								gsap.to('#ball', {duration: 0.2, borderWidth: '2px', scale: 1.2, borderColor:'#fff', backgroundColor:'#fff'});
-							} else {
-								gsap.to('#ball', {duration: 0.2, borderWidth: '2px', scale: 1.2, borderColor:'#000', backgroundColor:'#000'});
+
+			setTimeout(function () {
+
+				function animatePixels(selector, minDelay, maxDelay) {
+					gsap.utils.toArray(selector).forEach((pixelWrapper) => {
+						const pixelAnimation = pixelWrapper.querySelectorAll(".pooja-kanala-slider .pixel");
+
+						gsap.to(pixelAnimation, {
+							duration: 0.2,
+							opacity: 0,
+							delay: function () {
+								return gsap.utils.random(minDelay, maxDelay);
+							},
+							ease: Power4.easeOut,
+							onComplete: function () {
+								pixelWrapper.querySelectorAll(".pixels-wrapper").forEach(pixels => {
+									pixels.remove();
+								});
 							}
-							$("body" ).addClass("scale-drag-x");
-							$("#ball").removeClass("with-icon");
-							$('#ball i').remove();
-							$("#ball").removeClass("with-blur");
-							$('#ball p').remove();
-						}
-						$('.clapat-slider').off('mouseup mousemove', handler);
+						});
 					});
-				});
-				
-					
-				$('.clapat-slider').on('mouseup touchend', function() {
-					gsap.to('#ball', {duration: 1, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent', ease:Elastic.easeOut});
-					$("body").removeClass("scale-drag-x");					
-				});
-				
-				$("body").on('mouseleave', function() {					
-					gsap.to('#ball', {duration: 1, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent', ease:Elastic.easeOut});
-					$("body").removeClass("scale-drag-x");								
-				});
-				
-				
-				$(".showcase-carousel .clapat-slide .slide-inner-height").on('mouseenter', function() {	
-					if (!$('body').hasClass('scale-drag-x')) {
-						$('#ball p').remove();
-						var $this = $(this);			
-						gsap.to('#ball', {duration: 0.3, borderWidth: '2px', scale: 1.4, borderColor:"rgba(0,0,0,0)", backgroundColor:"rgba(0,0,0,0.3)"});
-						gsap.to('#ball-loader', {duration: 0.2, borderWidth: '2px', top: 2, left: 2});
-						$("#ball").addClass("with-blur");
-						$( "#ball" ).append( '<p class="center-first">' + $this.data("centerline") + '</p>' );
-						$(this).find('video').each(function() {
-							$(this).get(0).play();
-						});
-						$('.clapat-slide').addClass('disable');						
-						$(this).closest(".clapat-slide").removeClass("disable");
-					}			
-				}).on('mouseleave', function() {					
-					if (!$('body').hasClass('scale-drag-x')) {
-						gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-						gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
-						$("#ball").removeClass("with-blur");
-						$('#ball p').remove();		
-						$(this).find('video').each(function() {
-							$(this).get(0).pause();
-						});
-						$(this).closest(".clapat-slide").addClass("disable");
-						$('.clapat-slide').removeClass('disable');	
-					}
-				});
-			
-			}
-			
-			
-			$('.trigger-item').on('click', function() {	
-				$("body").addClass("load-project-thumb");
-				$("body").addClass("show-loader");	
-				gsap.to(".showcase-carousel .slide-caption", { duration: 0.2, opacity:0, ease:Power2.easeIn});		
-				gsap.to('footer, .carousel-nav-wrapper', { duration: 0.5, opacity: 0, ease: Power4.easeInOut });			
-				gsap.to('#ball', { duration: 0.3, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent' });
-				gsap.to('#ball-loader', { duration: 0.3, borderWidth: '4px', top: 0, left: 0 });
-				$("#ball").removeClass("with-blur color-cursor");
-				$('#ball p').remove();
-			});
-			
-			
+				}
+
+				animatePixels('.pooja-kanala-slide-active .pixels-cover', 0, 0.3);
+				animatePixels('.pooja-kanala-slide:not(.pooja-kanala-slide-active) .pixels-cover', 0.3, 0.6);
+
+				gsap.to($(".showcase-carousel .pooja-kanala-slider .slide-inner-height"), { duration: 0.6, scale: 1, ease: Power2.easeOut });
+
+				gsap.set($(".fade-slide-element"), { y: 10, opacity: 0 });
+				gsap.to($(".fade-slide-element"), { duration: 0.7, y: 0, opacity: 1, delay: 0.3, stagger: 0.02, ease: Power4.easeOut });
+
+			}, preloaderTimeout);
+
 		}
-	
-	}//End Showcase Carousel	
-	
+
+		let poojaKanalaSlider = new PoojaKanalaSlider('.showcase-carousel', {
+			direction: 'horizontal',
+			ease: 0.065,
+			snap: false,
+			outer: '.pooja-kanala-slider',
+			inner: '.pooja-kanala-slider-viewport',
+			navigation: {
+				nextEl: '.cp-button-next',
+				prevEl: '.cp-button-prev'
+			},
+			on: {
+				init: function (slide) {
+
+					if ($('body').hasClass("show-loader")) {
+
+						imagesLoaded('body', function () {
+
+							function animatePixels(selector, minDelay, maxDelay) {
+								gsap.utils.toArray(selector).forEach((pixelWrapper) => {
+									const pixelAnimation = pixelWrapper.querySelectorAll(".pooja-kanala-slider .pixel");
+
+									gsap.to(pixelAnimation, {
+										duration: 0.2,
+										opacity: 0,
+										delay: function () {
+											return gsap.utils.random(minDelay, maxDelay);
+										},
+										ease: Power4.easeOut,
+										onComplete: function () {
+											pixelWrapper.querySelectorAll(".pixels-wrapper").forEach(pixels => {
+												pixels.remove();
+											});
+										}
+									});
+								});
+							}
+
+							animatePixels('.pooja-kanala-slide-active .pixels-cover', 0, 0.3);
+							animatePixels('.pooja-kanala-slide:not(.pooja-kanala-slide-active) .pixels-cover', 0.3, 0.6);
+
+							gsap.to($(".showcase-carousel .pooja-kanala-slider .slide-inner-height"), { duration: 0.6, scale: 1, ease: Power2.easeOut });
+
+							gsap.set($(".fade-slide-element"), { y: 10, opacity: 0 });
+							gsap.to($(".fade-slide-element"), { duration: 0.7, y: 0, opacity: 1, delay: 0.3, stagger: 0.02, ease: Power4.easeOut });
+
+						});
+
+					}
+
+				},
+				slideLeaveViewport: function (slide) {
+					gsap.set($('.pooja-kanala-slider div:not(.pooja-kanala-slide-visible) .slide-effects'), { y: "" });
+				},
+			},
+		});
+
+		poojaKanalaSlider.tl
+			.fromTo('.progress-info-fill', { backgroundSize: "0% 100%" }, { backgroundSize: "100% 100%" }, 0)
+			.fromTo('.progress-info-fill-2', { backgroundSize: "100% 100%" }, { backgroundSize: "0% 100%", duration: 0.3, ease: 'power3' }, 0);
+
+		if (!isMobile()) {
+
+			$('.pooja-kanala-slider').on('mousedown', function (evt) {
+				$('.pooja-kanala-slider').on('mouseup mousemove', function handler(evt) {
+					if (evt.type === 'mouseup') {
+						// click
+						gsap.to('#ball', { duration: 0.2, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent' });
+						$("body").removeClass("scale-drag-x");
+						$("#ball").removeClass("with-icon");
+						$('#ball i').remove();
+						$("#ball").removeClass("with-blur");
+						$('#ball p').remove();
+
+					} else {
+						// drag
+						if ($('#magic-cursor').hasClass("light-content")) {
+							gsap.to('#ball', { duration: 0.2, borderWidth: '2px', scale: 1.2, borderColor: '#fff', backgroundColor: '#fff' });
+						} else {
+							gsap.to('#ball', { duration: 0.2, borderWidth: '2px', scale: 1.2, borderColor: '#000', backgroundColor: '#000' });
+						}
+						$("body").addClass("scale-drag-x");
+						$("#ball").removeClass("with-icon");
+						$('#ball i').remove();
+						$("#ball").removeClass("with-blur");
+						$('#ball p').remove();
+					}
+					$('.pooja-kanala-slider').off('mouseup mousemove', handler);
+				});
+			});
+
+			$('.pooja-kanala-slider').on('mouseup touchend', function () {
+				gsap.to('#ball', { duration: 1, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent', ease: Elastic.easeOut });
+				$("body").removeClass("scale-drag-x");
+			});
+
+			$("body").on('mouseleave', function () {
+				gsap.to('#ball', { duration: 1, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent', ease: Elastic.easeOut });
+				$("body").removeClass("scale-drag-x");
+			});
+
+			$(".showcase-carousel .pooja-kanala-slide .slide-inner-height").on('mouseenter', function () {
+				if (!$('body').hasClass('scale-drag-x')) {
+					$('#ball p').remove();
+					var $this = $(this);
+					gsap.to('#ball', { duration: 0.3, borderWidth: '2px', scale: 1.4, borderColor: "rgba(0,0,0,0)", backgroundColor: "rgba(0,0,0,0.3)" });
+					gsap.to('#ball-loader', { duration: 0.2, borderWidth: '2px', top: 2, left: 2 });
+					$("#ball").addClass("with-blur");
+					$("#ball").append('<p class="center-first">' + $this.data("centerline") + '</p>');
+					$(this).find('video').each(function () {
+						$(this).get(0).play();
+					});
+					$('.pooja-kanala-slide').addClass('disable');
+					$(this).closest(".pooja-kanala-slide").removeClass("disable");
+				}
+			}).on('mouseleave', function () {
+				if (!$('body').hasClass('scale-drag-x')) {
+					gsap.to('#ball', { duration: 0.2, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent' });
+					gsap.to('#ball-loader', { duration: 0.2, borderWidth: '4px', top: 0, left: 0 });
+					$("#ball").removeClass("with-blur");
+					$('#ball p').remove();
+					$(this).find('video').each(function () {
+						$(this).get(0).pause();
+					});
+					$(this).closest(".pooja-kanala-slide").addClass("disable");
+					$('.pooja-kanala-slide').removeClass('disable');
+				}
+			});
+
+		}
+
+		$('.trigger-item').on('click', function () {
+			$("body").addClass("load-project-thumb");
+			$("body").addClass("show-loader");
+			gsap.to(".showcase-carousel .slide-caption", { duration: 0.2, opacity: 0, ease: Power2.easeIn });
+			gsap.to('footer, .carousel-nav-wrapper', { duration: 0.5, opacity: 0, ease: Power4.easeInOut });
+			gsap.to('#ball', { duration: 0.3, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent' });
+			gsap.to('#ball-loader', { duration: 0.3, borderWidth: '4px', top: 0, left: 0 });
+			$("#ball").removeClass("with-blur color-cursor");
+			$('#ball p').remove();
+		});
+
+	}
+
+}//End Showcase Carousel
 
 
 /*--------------------------------------------------
 Function Showcase Gallery
 ---------------------------------------------------*/
-	
-	function ShowcaseGallery() {
-		
-		if( $('.showcase-gallery').length > 0 ){
-			
-			$("footer").addClass("showcase-footer");			
- 			
-			if (isMobile()) {
-				$(".clapat-slider-wrapper").removeClass("preview-mode-enabled");
-			}
-			
-			var slideElements = $(".clapat-slide");
-			var externalCaptionElement = $(".external-caption");
-			
-			slideElements.each(function(i) {
-				$(this).attr("data-slide", i + 1);
-				var slideTitleElement = $(this).find(".slide-title").eq(0);
-				if (slideTitleElement.length) {
-					slideTitleElement.attr("data-caption", i + 1);
-					var cloneSlideTitle = slideTitleElement.clone(true);
-					externalCaptionElement.append(cloneSlideTitle);
-					var triggerItem = $(this).find('.trigger-item');
-					if (triggerItem.length && triggerItem.data('projectcolor')) {
-						var projectColor = triggerItem.data('projectcolor');
-						slideTitleElement.css({ color: projectColor });
-						var slideCat = $(this).find('.slide-cat').eq(0);
-						if (slideCat.length) {
-							slideCat.css({ color: projectColor });
-						}
-						var slideDate = $(this).find('.slide-date').eq(0);
-						if (slideDate.length) {                    
-							slideDate.css({ color: projectColor });
-						}
+
+function onPoojaKanalaShowcaseGallery() {
+
+	if ($('.showcase-gallery').length > 0) {
+
+		$("footer").addClass("showcase-footer");
+
+		if (isMobile()) {
+			$(".pooja-kanala-slider-wrapper").removeClass("preview-mode-enabled");
+		}
+
+		var slideElements = $(".pooja-kanala-slide");
+		var externalCaptionElement = $(".external-caption");
+
+		slideElements.each(function (i) {
+			$(this).attr("data-slide", i + 1);
+			var slideTitleElement = $(this).find(".slide-title").eq(0);
+			if (slideTitleElement.length) {
+				slideTitleElement.attr("data-caption", i + 1);
+				var cloneSlideTitle = slideTitleElement.clone(true);
+				externalCaptionElement.append(cloneSlideTitle);
+				var triggerItem = $(this).find('.trigger-item');
+				if (triggerItem.length && triggerItem.data('projectcolor')) {
+					var projectColor = triggerItem.data('projectcolor');
+					slideTitleElement.css({ color: projectColor });
+					var slideCat = $(this).find('.slide-cat').eq(0);
+					if (slideCat.length) {
+						slideCat.css({ color: projectColor });
+					}
+					var slideDate = $(this).find('.slide-date').eq(0);
+					if (slideDate.length) {
+						slideDate.css({ color: projectColor });
 					}
 				}
-			});
-			
-			
-			const bgPixels = $('<div id="bg-pixels"></div>');
-            
-            $('#clapat-page-content').append(bgPixels);
-			
-            function randomizePosition() {
-                let randomX = Math.floor(Math.random() * 50); 
-                let randomY = Math.floor(Math.random() * 50); 
-				
-                $('#bg-pixels').css('background-position', `${randomX}% ${randomY}%`);
-				
-                setTimeout(randomizePosition, Math.random() * 50 + 50);
-            }
-			
-            randomizePosition();
-			
+			}
+		});
 
-			gsap.set($(".showcase-gallery .clapat-slider .slide-inner-height"), { opacity: 0 });
-			
-			if (!$('body').hasClass("show-loader")) {
-				let preloaderTimeout = 3000;
-				if (window.preloaderTimeout !== 'undefined') {
-					preloaderTimeout = window.preloaderTimeout + 300;
-				}
-				setTimeout(function() {
-					gsap.to($(".showcase-gallery .clapat-slider .clapat-slide .slide-inner-height"), { duration: 0.5, opacity: 1, delay: 0.2, ease: Power2.easeInOut });
-					var gallerySlideClasses = [".clapat-slide-prev-two", ".clapat-slide-prev", ".clapat-slide-active", ".clapat-slide-next", ".clapat-slide-next-two"];
-					gallerySlideClasses.forEach(function(gallerySlideClass, index) {
-						var gallerySlide = $(".showcase-gallery .clapat-slider " + gallerySlideClass + " .slide-inner-height");
-						var delay = 0 + index * 0.1;
-						gsap.set(gallerySlide, { yPercent: 250 });
-						gsap.to(gallerySlide, { duration: 1.5, yPercent: 0, delay: delay, ease: Power2.easeOut, onComplete: function() {
-								gsap.set(gallerySlide, { clearProps: "x,y" });
-								$(".showcase-gallery").addClass("active");	
-							}
-						});
+		const bgPixels = $('<div id="bg-pixels"></div>');
+		$('#pooja-kanala-page-content').append(bgPixels);
+
+		function randomizePosition() {
+			let randomX = Math.floor(Math.random() * 50);
+			let randomY = Math.floor(Math.random() * 50);
+			$('#bg-pixels').css('background-position', `${randomX}% ${randomY}%`);
+			setTimeout(randomizePosition, Math.random() * 50 + 50);
+		}
+		randomizePosition();
+
+		gsap.set($(".showcase-gallery .pooja-kanala-slider .slide-inner-height"), { opacity: 0 });
+
+		if (!$('body').hasClass("show-loader")) {
+			let preloaderTimeout = 3000;
+			if (window.preloaderTimeout !== 'undefined') {
+				preloaderTimeout = window.preloaderTimeout + 300;
+			}
+			setTimeout(function () {
+				gsap.to($(".showcase-gallery .pooja-kanala-slider .pooja-kanala-slide .slide-inner-height"), { duration: 0.5, opacity: 1, delay: 0.2, ease: Power2.easeInOut });
+				var gallerySlideClasses = [".pooja-kanala-slide-prev-two", ".pooja-kanala-slide-prev", ".pooja-kanala-slide-active", ".pooja-kanala-slide-next", ".pooja-kanala-slide-next-two"];
+				gallerySlideClasses.forEach(function (gallerySlideClass, index) {
+					var gallerySlide = $(".showcase-gallery .pooja-kanala-slider " + gallerySlideClass + " .slide-inner-height");
+					var delay = 0 + index * 0.1;
+					gsap.set(gallerySlide, { yPercent: 250 });
+					gsap.to(gallerySlide, {
+						duration: 1.5, yPercent: 0, delay: delay, ease: Power2.easeOut, onComplete: function () {
+							gsap.set(gallerySlide, { clearProps: "x,y" });
+							$(".showcase-gallery").addClass("active");
+						}
 					});
-					gsap.set($(".fade-slide-element, .header-middle span"), { y: 20, opacity: 0 });
-					gsap.to($(".fade-slide-element, .header-middle span"), { duration: 1, y: 0, opacity: 1, delay: 0.6, stagger: 0.05, ease: Power2.easeOut });
-					gsap.set($(".showcase-gallery .spinning-plus-wrapper"), { scale: 0, opacity: 0 });
-					gsap.to($("#bg-pixels"), { duration: 1, opacity: 0.75, delay: 0, ease: Power2.easeOut });
-				}, preloaderTimeout);
-			}
-			
-			
-			slider = new ClapatSlider('.clapat-slider-wrapper', { 
-				direction: 'vertical',
-				ease: 0.065, 
-				outer: '.clapat-slider',
-				inner: '.clapat-slider-viewport',
-				navigation: {
-					nextEl: '.cp-button-next',
-					prevEl: '.cp-button-prev'
-				},
-				parallax : [{
-					element: '.speed-50',
-					margin: -50
-				}],
-				on: {	
-					init : function(slide) {
-						
-						if ($('body').hasClass("show-loader")) {
-							
-							imagesLoaded('body', function() {
-								
-								gsap.to($(".showcase-gallery .clapat-slider .clapat-slide .slide-inner-height"), { duration: 0.5, opacity: 1, delay: 0.4, ease: Power2.easeInOut });
-								
-								var gallerySlideClasses = [".clapat-slide-prev-two", ".clapat-slide-prev", ".clapat-slide-active", ".clapat-slide-next", ".clapat-slide-next-two"];
-								
-								gallerySlideClasses.forEach(function(gallerySlideClass, index) {
-									var gallerySlide = $(".showcase-gallery .clapat-slider " + gallerySlideClass + " .slide-inner-height");
-									var delay = 0.2 + index * 0.1;						
-									gsap.set(gallerySlide, { yPercent: 250 });
-									gsap.to(gallerySlide, { duration: 1.5, yPercent: 0, delay: delay, ease: Power2.easeOut , onComplete: function() {
-											gsap.set(gallerySlide, { clearProps: "x,y" });
-											$(".showcase-gallery").addClass("active");	
-										}
-									});
+				});
+				gsap.set($(".fade-slide-element, .header-middle span"), { y: 20, opacity: 0 });
+				gsap.to($(".fade-slide-element, .header-middle span"), { duration: 1, y: 0, opacity: 1, delay: 0.6, stagger: 0.05, ease: Power2.easeOut });
+				gsap.set($(".showcase-gallery .spinning-plus-wrapper"), { scale: 0, opacity: 0 });
+				gsap.to($("#bg-pixels"), { duration: 1, opacity: 0.75, delay: 0, ease: Power2.easeOut });
+			}, preloaderTimeout);
+		}
+
+		let poojaKanalaGallerySlider = new PoojaKanalaSlider('.pooja-kanala-slider-wrapper', {
+			direction: 'vertical',
+			ease: 0.065,
+			outer: '.pooja-kanala-slider',
+			inner: '.pooja-kanala-slider-viewport',
+			navigation: {
+				nextEl: '.cp-button-next',
+				prevEl: '.cp-button-prev'
+			},
+			parallax: [{
+				element: '.speed-50',
+				margin: -50
+			}],
+			on: {
+				init: function (slide) {
+					if ($('body').hasClass("show-loader")) {
+						imagesLoaded('body', function () {
+							gsap.to($(".showcase-gallery .pooja-kanala-slider .pooja-kanala-slide .slide-inner-height"), { duration: 0.5, opacity: 1, delay: 0.4, ease: Power2.easeInOut });
+							var gallerySlideClasses = [".pooja-kanala-slide-prev-two", ".pooja-kanala-slide-prev", ".pooja-kanala-slide-active", ".pooja-kanala-slide-next", ".pooja-kanala-slide-next-two"];
+							gallerySlideClasses.forEach(function (gallerySlideClass, index) {
+								var gallerySlide = $(".showcase-gallery .pooja-kanala-slider " + gallerySlideClass + " .slide-inner-height");
+								var delay = 0.2 + index * 0.1;
+								gsap.set(gallerySlide, { yPercent: 250 });
+								gsap.to(gallerySlide, {
+									duration: 1.5, yPercent: 0, delay: delay, ease: Power2.easeOut, onComplete: function () {
+										gsap.set(gallerySlide, { clearProps: "x,y" });
+										$(".showcase-gallery").addClass("active");
+									}
 								});
-								
-								gsap.set($(".fade-slide-element, .header-middle span"), {y: 20, opacity:0});
-								gsap.to($(".fade-slide-element, .header-middle span"), {duration: 0.7, y: 0, opacity:1, delay:0.6, stagger:0.05, ease:Power4.easeOut});
-								
-								gsap.set($(".showcase-gallery .spinning-plus-wrapper"), {scale: 0, opacity:0});
-								gsap.to($("#bg-pixels"), { duration: 1, opacity: 0.75, delay: 0, ease: Power2.easeOut });
-							
 							});
-						
-						}
-						
-					},
-					slideLeaveViewport : function( slide ) {
-						gsap.set($('.clapat-slider div:not(.clapat-slide-visible) .slide-effects'), { y: "" });		
-					},
+							gsap.set($(".fade-slide-element, .header-middle span"), { y: 20, opacity: 0 });
+							gsap.to($(".fade-slide-element, .header-middle span"), { duration: 0.7, y: 0, opacity: 1, delay: 0.6, stagger: 0.05, ease: Power4.easeOut });
+							gsap.set($(".showcase-gallery .spinning-plus-wrapper"), { scale: 0, opacity: 0 });
+							gsap.to($("#bg-pixels"), { duration: 1, opacity: 0.75, delay: 0, ease: Power2.easeOut });
+						});
+					}
 				},
-			});			
-			
-			
-			slider.tl
-				.fromTo('.progress-info-fill', { backgroundSize: "0% 100%" }, { backgroundSize: "100% 100%" }, 0)
-				.fromTo('.progress-info-fill-2', { backgroundSize: "100% 100%" }, { backgroundSize: "0% 100%", duration: 0.3, ease: 'power3' }, 0)
-    
+				slideLeaveViewport: function (slide) {
+					gsap.set($('.pooja-kanala-slider div:not(.pooja-kanala-slide-visible) .slide-effects'), { y: "" });
+				},
+			},
+		});
 
-				
-			
-			
-				
-					
-			class Item {
-								
-				constructor(DOM_el) {
-					
-					// DOM elements
-					this.DOM = {
-						// main element (.item)
-						el: null,
-						// imageWrap (.item__image-wrap)
-						imageWrap: null,
-						// imageCaption
-						imageCaption: null,
-						// image (.item__image)
-						image: null,
-						// imageInner (.item__image > .item__image-inner)
-						imageInner: null,
-					}; 
-					
-					this.DOM.el = DOM_el;
-					this.DOM.imageWrap = this.DOM.el.querySelector('.slide-moving');
-					if( this.DOM.imageWrap != null ){						
-						this.DOM.imageCaption = this.DOM.imageWrap.querySelector('.slide-caption');
-					}
-					this.DOM.image = this.DOM.el.querySelector('.trigger-item');
-					if( this.DOM.image != null ){						
-						this.DOM.imageInner = this.DOM.image.querySelector('.section-image');
-					}
+		poojaKanalaGallerySlider.tl
+			.fromTo('.progress-info-fill', { backgroundSize: "0% 100%" }, { backgroundSize: "100% 100%" }, 0)
+			.fromTo('.progress-info-fill-2', { backgroundSize: "100% 100%" }, { backgroundSize: "0% 100%", duration: 0.3, ease: 'power3' }, 0);
+
+		class PoojaKanalaGalleryItem {
+			constructor(DOM_el) {
+				this.DOM = {
+					el: null,
+					imageWrap: null,
+					imageCaption: null,
+					image: null,
+					imageInner: null,
+				};
+				this.DOM.el = DOM_el;
+				this.DOM.imageWrap = this.DOM.el.querySelector('.slide-moving');
+				if (this.DOM.imageWrap != null) {
+					this.DOM.imageCaption = this.DOM.imageWrap.querySelector('.slide-caption');
+				}
+				this.DOM.image = this.DOM.el.querySelector('.trigger-item');
+				if (this.DOM.image != null) {
+					this.DOM.imageInner = this.DOM.image.querySelector('.section-image');
 				}
 			}
-			
-			
-			// Placeholder for the grid items (.item__image). We'll use the gsap FLIP plugin to move the "".item .item__image" inside the grid element
-			const grid = document.querySelector('.slider-thumbs-wrapper');
-			const triggeredImage = document.querySelector('.slider-zoom-wrapper');
-			
-			let animateTitle = gsap.timeline();		
-						
-			
-			const showGrid = () => {
-				
-				document.body.classList.add('grid-open', 'disable-scroll');				
-				document.getElementById("clapat-page-content").classList.add('no-css-animation');
-				
-				slider.enabled = false;
-				
-				gsap.set(".progress-info", {opacity:0});
-				gsap.to($(".fade-slide-element:not(.progress-info)"), {duration: 0.2, y: -10, opacity:0, ease:Power2.easeIn});				
-				
-				gsap.to($(".external-caption"), {duration: 0.3, y:"-30%", opacity:0, ease:Power3.easeIn});
-				
-				// get the DOM elements that we'll work with
-				const DOM = getDOMElements();
-				const allImages = DOM.grid.map(element => {
-					
-					element.item.DOM.image.setAttribute('data-slide-index', element.item_index);
-					return element.item.DOM.image;
-				});
-				const allImagesInner = DOM.grid.map(element => element.item.DOM.imageInner);
-				const currentImage = DOM.currentItem.DOM.image;
-				const currentImageInner = DOM.currentItem.DOM.imageInner;
-				const currentImageCaption = DOM.currentItem.DOM.imageCaption;
-				const projectColor = currentImage.dataset.projectcolor;
-				const projectBgColor = currentImage.dataset.projectbgcolor;
-							
-				// Use gsap flip for the animation
-				const flipstate = Flip.getState([allImages]);				
-				const flipstate1 = Flip.getState([currentImage]);
-								
-				gsap.set(currentImage.closest(".clapat-slide"), {zIndex: 0});
-								
-				gsap.to('.header-gradient', { duration: 0.5, delay:0.15, backgroundColor: projectBgColor, ease:Power2.easeInOut });
-				gsap.to("main", { duration: 0.5, delay:0.15, backgroundColor: projectBgColor, ease:Power2.easeInOut });
-				gsap.to("#bg-pixels", { duration: 0.5, delay:0.15, opacity:0, ease: Power2.easeInOut });
-				
-				if (document.getElementById('clapat-page-content').classList.contains('dark-content')) {
-					if (currentImage.classList.contains('change-header')) {
-						gsap.to('#clapat-logo img.black-logo', { duration: 0.5, delay:0.15, opacity: 0, ease:Power2.easeInOut });	
-						gsap.to('#clapat-logo img.white-logo', { duration: 0.5, delay:0.15, opacity: 1, ease:Power2.easeInOut });						
-						gsap.to('.classic-menu .flexnav li a', { duration: 0.5, delay:0.15, color: "#fff", ease:Power2.easeInOut });
-						gsap.to('.button-wrap.menu', { duration: 0.5, delay:0.15, color: "#fff", ease:Power2.easeInOut });
-						gsap.to('.button-icon-link', { duration: 0.5, delay:0.15, color: "#fff", boxShadow: "inset 0 0 15px rgba(255,255,255,0.3)", ease:Power2.easeInOut });					
-					}
-				} else if (document.getElementById('clapat-page-content').classList.contains('light-content')) {
-					if (currentImage.classList.contains('change-header')) {
-						gsap.to('#clapat-logo img.black-logo', { duration: 0.5, delay:0.15, opacity: 1, ease:Power2.easeInOut });	
-						gsap.to('#clapat-logo img.white-logo', { duration: 0.5, delay:0.15, opacity: 0, ease:Power2.easeInOut });						
-						gsap.to('.classic-menu .flexnav li a', { duration: 0.5, delay:0.15, color: "#000", ease:Power2.easeInOut });
-						gsap.to('.button-wrap.menu', { duration: 0.5, delay:0.15, color: "#000", ease:Power2.easeInOut });	
-						gsap.to('.button-icon-link', { duration: 0.5, delay:0.15, color: "#000", boxShadow: "inset 0 0 15px rgba(0,0,0,0.3)", ease:Power2.easeInOut });					
-					}
-				}
-				
-				// put them inside the .grid element
-				grid.append(...allImages);
-				
-				currentImage.setAttribute('data-slide-index', DOM.currentIndex);
-				triggeredImage.append(currentImage);
-				triggeredImage.append(currentImageCaption);
-				
-				gsap.to(".clapat-slider .clapat-slide .trigger-item", { duration: 1, opacity:0, scale:0.7, ease:Power2.easeOut });
-				
-				// Flip it
-				Flip.from(flipstate, {
-					duration: 0.7 ,
-					ease: Power2.easeInOut,
-					stagger:0.03,
-					absolute: true,					 
-				})
-				.to(currentImageInner, {
-					duration: 0.7 ,
-					ease: Power2.easeInOut,
-					scale:1,
-					onComplete: () => {
-						document.body.classList.add('enable-trigger');
-				  	}
-				}, 0)
-				.to(allImagesInner, {
-					duration: 0.7 ,
-					ease: Power2.easeInOut,
-					scale:1,
-				}, 0)
-				.to(".img-mask", {
-					duration: 0.7 ,
-					ease: Power2.easeOut,
-					opacity:1
-				}, 0)
-				
-				Flip.from(flipstate1, {
-					duration: 0.7 ,
-					ease: Power2.easeInOut,
-					absolute: true       
-				});	
-				
-				
-			};
-			
-			const hideGrid = () => {
-				
-				gsap.to(".clapat-slider .clapat-slide .trigger-item", { duration: 0.5, opacity:1, scale:1, delay:0.2, ease: 'power3.inOut' });
-				gsap.set(".fade-slide-element", { y: 10 });
-				gsap.to(".fade-slide-element:not(.progress-info)", { duration: 0.4, y: 0, delay:0.6, opacity:1, stagger:0.1, ease:Power2.easeOut });
-				gsap.to(".progress-info", {duration: 0.4, opacity:1, y: 0, delay:1, opacity:1, });
-				
-				gsap.set($(".external-caption"), {y: 60 });				
-				gsap.to($(".external-caption"), {
-					duration: 0.5,
-					y: 0,
-					opacity: 1,
-					delay: 0.3,
-					ease: Power3.easeOut,
-					onComplete: function() {
-						gsap.set($(".external-caption"), { clearProps: "all" });
-					}
-				});
-						
-				
-				$(".slider-zoom-wrapper").find('video').each(function() {
-					$(this).get(0).pause();
-				});
-				
-				document.body.classList.remove('grid-open');
-				
-				slider.enabled = true;
-				
-				// get the DOM elements that we'll work with
-				const DOM = getDOMElements();
-				const allImages = document.querySelectorAll('.slider-thumbs-wrapper .trigger-item');
-				const currentImage = document.querySelector('.slider-zoom-wrapper .trigger-item');
-				const currentImageCaption = document.querySelector('.slider-zoom-wrapper .slide-caption');
-				const currentImageInner = document.querySelector('.slider-zoom-wrapper .trigger-item .section-image');
-			
-				const flipstate = Flip.getState([allImages]);				
-				const flipstate1 = Flip.getState([currentImage]);
-				
-				gsap.set(currentImage, { y:""});
-							
-				allImages.forEach((image) => {					
-					let index = image.getAttribute('data-slide-index');
-					let element = DOM.items[index];
-					image.removeAttribute('data-slide-index');
-					element.DOM.imageWrap.appendChild( image );
-				});
-				
-				currentImage.removeAttribute('data-slide-index');
-				DOM.currentItem.DOM.imageWrap.appendChild(currentImage);
-								
-				// Remove all the elements from the grid and current triggered image divs
-				const liveGrid = document.querySelector('.slider-thumbs-wrapper');
-				const liveTriggeredImage = document.querySelector('.slider-zoom-wrapper');
-				
-				while (liveGrid.firstChild) {
-					liveGrid.removeChild(liveGrid.firstChild);
-				}
-				
-				
-				
-				Flip.from(flipstate, {
-					duration: 0.8,
-					ease: "power2.inOut",
-					stagger:0.04,
-				});				
-				
-				Flip.from(flipstate1, {
-					duration: 0.8,
-					ease: "power2.inOut",
-					stagger:0,			
-					onComplete: function() {
-						
-						DOM.currentItem.DOM.imageWrap.appendChild(currentImageCaption);	
-						
-						const triggeredItem = document.querySelector('.clapat-slide.triggered-item');
-						if( triggeredItem != null ){							
-							triggeredItem.classList.remove('triggered-item');
-						}
-						
-						const clapatSlides = document.querySelectorAll('.clapat-slide');
-						clapatSlides.forEach(slide => {
-						  	slide.style.zIndex = '';
-							slideInner = slide.querySelector('.slide-inner-height');
-							slideInner.classList.remove('disabled');
+		}
 
-						});			
-						
-						document.body.classList.remove('disable-scroll','enable-trigger');
-						document.getElementById("clapat-page-content").classList.remove('no-css-animation');
-						gsap.set($(".showcase-gallery .slide-caption"), {clearProps: "opacity"});
-						
-					}
-				})								
-				
-				gsap.to('.header-gradient', { duration: 0.4, backgroundColor: $("#clapat-page-content").data("bgcolor"), ease:Power2.easeInOut });
-				gsap.to("main", { duration: 0.4, backgroundColor: $("#clapat-page-content").data("bgcolor"), ease: Power2.easeInOut });
-				gsap.to("#bg-pixels", { duration: 0.4, delay:0.15, opacity:0.75, ease: Power2.easeInOut });			
-				
-				
-				if (document.getElementById('clapat-page-content').classList.contains('dark-content')) {
-					if (currentImage.classList.contains('change-header')) {
-						gsap.to('#clapat-logo img.black-logo', { duration: 0.4, opacity: 1, ease:Power2.easeInOut });	
-						gsap.to('#clapat-logo img.white-logo', { duration: 0.4, opacity: 0, ease:Power2.easeInOut });						
-						gsap.to('.classic-menu .flexnav li a', { duration: 0.4, color: "#000", ease:Power2.easeInOut });
-						gsap.to('.button-wrap.menu', { duration: 0.4, color: "#000", ease:Power2.easeInOut });							
-						gsap.to('.button-icon-link', { duration: 0.3, color: "#000", boxShadow: "inset 0 0 15px rgba(0,0,0,0.3)", ease:Power2.easeInOut });					
-					}
-				} else if (document.getElementById('clapat-page-content').classList.contains('light-content')) {
-					if (currentImage.classList.contains('change-header')) {						
-						gsap.to('#clapat-logo img.black-logo', { duration: 0.4, opacity: 0, ease:Power2.easeInOut });	
-						gsap.to('#clapat-logo img.white-logo', { duration: 0.4, opacity: 1, ease:Power2.easeInOut });						
-						gsap.to('.classic-menu .flexnav li a', { duration: 0.5, color: "#fff", ease:Power2.easeInOut });	
-						gsap.to('.button-wrap.menu', { duration: 0.4, color: "#fff", ease:Power2.easeInOut });							
-						gsap.to('.button-icon-link', { duration: 0.3, color: "#fff", boxShadow: "inset 0 0 15px rgba(255,255,255,0.3)", ease:Power2.easeInOut });					
-					}
+		const grid = document.querySelector('.slider-thumbs-wrapper');
+		const triggeredImage = document.querySelector('.slider-zoom-wrapper');
+
+		const getDOMElements = () => {
+			const items = [];
+			[...document.querySelectorAll('.pooja-kanala-slide')].forEach(item => {
+				items.push(new PoojaKanalaGalleryItem(item));
+			});
+			const itemsCloned = [];
+			[...document.querySelectorAll('.pooja-kanala-slide-clone')].forEach(item => {
+				itemsCloned.push(new PoojaKanalaGalleryItem(item));
+			});
+			let firstVisibleIndex = -1;
+			let direction = poojaKanalaGallerySlider.opts.direction;
+			for (let i = 0; i < items.length; i++) {
+				let item = items[i];
+				let bounding = item.DOM.el.getBoundingClientRect();
+				let start, end;
+				if (direction == "vertical") {
+					start = bounding.top;
+					end = bounding.bottom;
+				} else {
+					start = bounding.left;
+					end = bounding.right;
 				}
-				
-				gsap.to($("footer .link-text, .clapat-pagination, #filters-wrapper"), {duration: 0.3, opacity:1, y:0, stagger:0.05, delay:0.4, ease:Power2.easeInOut});
-				gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-				gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
-				$("#ball").removeClass("with-blur color-cursor");
-				$('#ball p').remove();
-				
-			
+				if ((start <= 0) && (end > 0)) {
+					firstVisibleIndex = i;
+					break;
+				}
 			}
-			
-			// Returns some DOM elements that are needed for showing/hiding the grid
-			const getDOMElements = () => {
-			
-				// Item instances (slides)
-				const items = [];
-				[...document.querySelectorAll('.clapat-slide')].forEach(item => {
-					items.push(new Item(item));
-				});
-						
-				// Cloned items
-				const itemsCloned = [];
-				[...document.querySelectorAll('.clapat-slide-clone')].forEach(item => {
-					itemsCloned.push(new Item(item));
-				});
-			
-				let firstVisibleIndex = -1;
-				let direction = slider.opts.direction;
-								
-				for( let i = 0; i < items.length; i++ ){
-					
-					let item = items[i];
-					let bounding = item.DOM.el.getBoundingClientRect();
-					if( direction == "vertical" ){
-					
-						start = bounding.top;
-						end = bounding.bottom;
-					}
-					else {
-						
-						start = bounding.left;
-						end = bounding.right;
-					}
-					if( (start <= 0) && (end > 0) ){
-							
-						firstVisibleIndex = i;						
-						break;
-					}
-										
-				}
-				
-				const gridItems = [];
-				let currentIndex = -1;
-				if( direction == "vertical" ){
-					
-					let selectedItems = 0;
-					// in case of the vertical direction cloned items are reverted, last one becomes first
-					if( firstVisibleIndex >= itemsCloned.length ){
-							
-						// the first visible index is a clone, therefore iterate back to the first clone
-						for( index = firstVisibleIndex; (index >= itemsCloned.length); index-- ){
-								
-							let item = items[index];
-							if( !item.DOM.el.classList.contains('triggered-item') ){
-									
-								gridItems.push( {item_index: index, item: item} );
-							}
-							else{
-									
-								currentIndex = index;
-							}
-							
-							selectedItems++;
-						}
-						// and then from the beginning the rest of the clones
-						for( index = 0; (selectedItems < itemsCloned.length); index++ ){
-								
-							let item = items[index];
-							if( !item.DOM.el.classList.contains('triggered-item') ){
-									
-								gridItems.push( {item_index: index, item: item} );
-							}
-							else{
-									
-								currentIndex = index;
-							}
-							
-							selectedItems++;
-						}
-							
-					}
-					else{
-						
-						// the first visible index is not a clone, therefore iterate from the beginning of the items
-						for( index = firstVisibleIndex; (index < itemsCloned.length); index++ ){
-								
-							let item = items[index];
-							if( !item.DOM.el.classList.contains('triggered-item') ){
-									
-								gridItems.push( {item_index: index, item: item} );
-							}
-							else{
-									
-								currentIndex = index;
-							}
-							
-							selectedItems++;
-						}
-						// and then from the end of the clones
-						for( index = items.length-1; (selectedItems < itemsCloned.length); index-- ){
-								
-							let item = items[index];
-							if( !item.DOM.el.classList.contains('triggered-item') ){
-									
-								gridItems.push( {item_index: index, item: item} );
-							}
-							else{
-									
-								currentIndex = index;
-							}
-							
-							selectedItems++;
-						}
-					}
-					
-				}
-				else {
-					
-					let iterator = 0;
-					while ( iterator < itemsCloned.length ){
-						
-						let index = gsap.utils.wrap( 0, items.length, firstVisibleIndex + iterator);
+			const gridItems = [];
+			let currentIndex = -1;
+			if (direction == "vertical") {
+				let selectedItems = 0;
+				if (firstVisibleIndex >= itemsCloned.length) {
+					for (let index = firstVisibleIndex; (index >= itemsCloned.length); index--) {
 						let item = items[index];
-						if( !item.DOM.el.classList.contains('triggered-item') ){
-							
-							gridItems.push( {item_index: index, item: item  } );
-						}
-						else{
-							
+						if (!item.DOM.el.classList.contains('triggered-item')) {
+							gridItems.push({ item_index: index, item: item });
+						} else {
 							currentIndex = index;
 						}
-						iterator++;
+						selectedItems++;
 					}
-				}
-
-				
-				return {					
-					items: items,					
-					grid: gridItems,					
-					currentItem: new Item( document.querySelector('.clapat-slide.triggered-item') ),
-					currentIndex: currentIndex
-				};
-				
-			}
-			
-			let bGridSwiped = false;
-			// Initialize the events
-			const initEvents = () => {
-				
-				const items = document.querySelectorAll('.slide-inner-height');
-				items.forEach((triggerItem) => {
-					
-					triggerItem.addEventListener('click', (event) => {
-						
-						if( $('.showcase-gallery').length > 0 ){
-							
-							event.currentTarget.closest('.clapat-slide').classList.add('triggered-item');
-							showGrid();
-						}
-					});
-					
-				});
-				
-				window.addEventListener("wheel", event => {
-					
-					if(document.body.classList.contains("grid-open") && ( $('.showcase-gallery').length > 0 ) ) {
-						hideGrid();
-					}
-				});
-				
-				window.addEventListener("touchmove", event => {
-					
-					if(document.body.classList.contains("grid-open") && ( $('.showcase-gallery').length > 0 ) ) {
-						bGridSwiped = true;
-					}
-				});
-				
-				window.addEventListener("touchcancel", event => {
-					
-					if(document.body.classList.contains("grid-open") && ( $('.showcase-gallery').length > 0 ) ) {
-						bGridSwiped = false;
-					}
-				});
-				
-				window.addEventListener("touchend", event => {
-					
-					if(document.body.classList.contains("grid-open") && bGridSwiped && ( $('.showcase-gallery').length > 0 ) ) {
-						bGridSwiped = false;
-						hideGrid();
-					}
-				});
-				
-				const closeGrid = document.querySelector('.slider-close-preview');
-				
-				if( closeGrid != null ){
-					
-					closeGrid.addEventListener("click", event => {
-						
-						if(document.body.classList.contains("grid-open") && ( $('.showcase-gallery').length > 0 ) ) {
-							hideGrid();
-						}
-					});
-				}
-				
-			};
-			
-			
-			const previewModeEnabled = document.querySelector('.preview-mode-enabled');
-			
-			if (previewModeEnabled) {			
-				initEvents();		
-			}
-			
-			
-			if (!isMobile()) {
-				
-			
-				$('.clapat-slider').on('mousedown', function (evt) {
-					$('.clapat-slider').on('mouseup mousemove', function handler(evt) {
-						if (evt.type === 'mouseup') {					  
-							// click
-							gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-							$("body").removeClass("scale-drag-y");
-							$("#ball").removeClass("with-icon");
-							$('#ball i').remove();
-							$("#ball").removeClass("with-blur");
-							$('#ball p').remove();
-							
+					for (let index = 0; (selectedItems < itemsCloned.length); index++) {
+						let item = items[index];
+						if (!item.DOM.el.classList.contains('triggered-item')) {
+							gridItems.push({ item_index: index, item: item });
 						} else {
-							// drag
-							if ($('#magic-cursor').hasClass("light-content")) {
-								gsap.to('#ball', {duration: 0.2, borderWidth: '2px', scale: 1, borderColor:'#fff', backgroundColor:'#fff'});
-							} else {
-								gsap.to('#ball', {duration: 0.2, borderWidth: '2px', scale: 1, borderColor:'#000', backgroundColor:'#000'});
-							}
-							$("body" ).addClass("scale-drag-y");
-							$("#ball").removeClass("with-icon");
-							$('#ball i').remove();
-							$("#ball").removeClass("with-blur");
-							$('#ball p').remove();
+							currentIndex = index;
 						}
-						$('.clapat-slider').off('mouseup mousemove', handler);
+						selectedItems++;
+					}
+				} else {
+					for (let index = firstVisibleIndex; (index < itemsCloned.length); index++) {
+						let item = items[index];
+						if (!item.DOM.el.classList.contains('triggered-item')) {
+							gridItems.push({ item_index: index, item: item });
+						} else {
+							currentIndex = index;
+						}
+						selectedItems++;
+					}
+					for (let index = items.length - 1; (selectedItems < itemsCloned.length); index--) {
+						let item = items[index];
+						if (!item.DOM.el.classList.contains('triggered-item')) {
+							gridItems.push({ item_index: index, item: item });
+						} else {
+							currentIndex = index;
+						}
+						selectedItems++;
+					}
+				}
+			} else {
+				let iterator = 0;
+				while (iterator < itemsCloned.length) {
+					let index = gsap.utils.wrap(0, items.length, firstVisibleIndex + iterator);
+					let item = items[index];
+					if (!item.DOM.el.classList.contains('triggered-item')) {
+						gridItems.push({ item_index: index, item: item });
+					} else {
+						currentIndex = index;
+					}
+					iterator++;
+				}
+			}
+			return {
+				items: items,
+				grid: gridItems,
+				currentItem: new PoojaKanalaGalleryItem(document.querySelector('.pooja-kanala-slide.triggered-item')),
+				currentIndex: currentIndex
+			};
+		};
+
+		const showGrid = () => {
+			document.body.classList.add('grid-open', 'disable-scroll');
+			document.getElementById("pooja-kanala-page-content").classList.add('no-css-animation');
+			poojaKanalaGallerySlider.enabled = false;
+			gsap.set(".progress-info", { opacity: 0 });
+			gsap.to($(".fade-slide-element:not(.progress-info)"), { duration: 0.2, y: -10, opacity: 0, ease: Power2.easeIn });
+			gsap.to($(".external-caption"), { duration: 0.3, y: "-30%", opacity: 0, ease: Power3.easeIn });
+			const DOM = getDOMElements();
+			const allImages = DOM.grid.map(element => {
+				element.item.DOM.image.setAttribute('data-slide-index', element.item_index);
+				return element.item.DOM.image;
+			});
+			const allImagesInner = DOM.grid.map(element => element.item.DOM.imageInner);
+			const currentImage = DOM.currentItem.DOM.image;
+			const currentImageInner = DOM.currentItem.DOM.imageInner;
+			const currentImageCaption = DOM.currentItem.DOM.imageCaption;
+			const projectColor = currentImage.dataset.projectcolor;
+			const projectBgColor = currentImage.dataset.projectbgcolor;
+			const flipstate = Flip.getState([allImages]);
+			const flipstate1 = Flip.getState([currentImage]);
+			gsap.set(currentImage.closest(".pooja-kanala-slide"), { zIndex: 0 });
+			gsap.to('.header-gradient', { duration: 0.5, delay: 0.15, backgroundColor: projectBgColor, ease: Power2.easeInOut });
+			gsap.to("main", { duration: 0.5, delay: 0.15, backgroundColor: projectBgColor, ease: Power2.easeInOut });
+			gsap.to("#bg-pixels", { duration: 0.5, delay: 0.15, opacity: 0, ease: Power2.easeInOut });
+			if (document.getElementById('pooja-kanala-page-content').classList.contains('dark-content')) {
+				if (currentImage.classList.contains('change-header')) {
+					gsap.to('#pooja-kanala-logo img.black-logo', { duration: 0.5, delay: 0.15, opacity: 0, ease: Power2.easeInOut });
+					gsap.to('#pooja-kanala-logo img.white-logo', { duration: 0.5, delay: 0.15, opacity: 1, ease: Power2.easeInOut });
+					gsap.to('.classic-menu .flexnav li a', { duration: 0.5, delay: 0.15, color: "#fff", ease: Power2.easeInOut });
+					gsap.to('.button-wrap.menu', { duration: 0.5, delay: 0.15, color: "#fff", ease: Power2.easeInOut });
+					gsap.to('.button-icon-link', { duration: 0.5, delay: 0.15, color: "#fff", boxShadow: "inset 0 0 15px rgba(255,255,255,0.3)", ease: Power2.easeInOut });
+				}
+			} else if (document.getElementById('pooja-kanala-page-content').classList.contains('light-content')) {
+				if (currentImage.classList.contains('change-header')) {
+					gsap.to('#pooja-kanala-logo img.black-logo', { duration: 0.5, delay: 0.15, opacity: 1, ease: Power2.easeInOut });
+					gsap.to('#pooja-kanala-logo img.white-logo', { duration: 0.5, delay: 0.15, opacity: 0, ease: Power2.easeInOut });
+					gsap.to('.classic-menu .flexnav li a', { duration: 0.5, delay: 0.15, color: "#000", ease: Power2.easeInOut });
+					gsap.to('.button-wrap.menu', { duration: 0.5, delay: 0.15, color: "#000", ease: Power2.easeInOut });
+					gsap.to('.button-icon-link', { duration: 0.5, delay: 0.15, color: "#000", boxShadow: "inset 0 0 15px rgba(0,0,0,0.3)", ease: Power2.easeInOut });
+				}
+			}
+			grid.append(...allImages);
+			currentImage.setAttribute('data-slide-index', DOM.currentIndex);
+			triggeredImage.append(currentImage);
+			triggeredImage.append(currentImageCaption);
+			gsap.to(".pooja-kanala-slider .pooja-kanala-slide .trigger-item", { duration: 1, opacity: 0, scale: 0.7, ease: Power2.easeOut });
+			Flip.from(flipstate, {
+				duration: 0.7,
+				ease: Power2.easeInOut,
+				stagger: 0.03,
+				absolute: true,
+			})
+				.to(currentImageInner, {
+					duration: 0.7,
+					ease: Power2.easeInOut,
+					scale: 1,
+					onComplete: () => {
+						document.body.classList.add('enable-trigger');
+					}
+				}, 0)
+				.to(allImagesInner, {
+					duration: 0.7,
+					ease: Power2.easeInOut,
+					scale: 1,
+				}, 0)
+				.to(".img-mask", {
+					duration: 0.7,
+					ease: Power2.easeOut,
+					opacity: 1
+				}, 0);
+			Flip.from(flipstate1, {
+				duration: 0.7,
+				ease: Power2.easeInOut,
+				absolute: true
+			});
+		};
+
+		const hideGrid = () => {
+			gsap.to(".pooja-kanala-slider .pooja-kanala-slide .trigger-item", { duration: 0.5, opacity: 1, scale: 1, delay: 0.2, ease: 'power3.inOut' });
+			gsap.set(".fade-slide-element", { y: 10 });
+			gsap.to(".fade-slide-element:not(.progress-info)", { duration: 0.4, y: 0, delay: 0.6, opacity: 1, stagger: 0.1, ease: Power2.easeOut });
+			gsap.to(".progress-info", { duration: 0.4, opacity: 1, y: 0, delay: 1 });
+			gsap.set($(".external-caption"), { y: 60 });
+			gsap.to($(".external-caption"), {
+				duration: 0.5,
+				y: 0,
+				opacity: 1,
+				delay: 0.3,
+				ease: Power3.easeOut,
+				onComplete: function () {
+					gsap.set($(".external-caption"), { clearProps: "all" });
+				}
+			});
+			$(".slider-zoom-wrapper").find('video').each(function () {
+				$(this).get(0).pause();
+			});
+			document.body.classList.remove('grid-open');
+			poojaKanalaGallerySlider.enabled = true;
+			const DOM = getDOMElements();
+			const allImages = document.querySelectorAll('.slider-thumbs-wrapper .trigger-item');
+			const currentImage = document.querySelector('.slider-zoom-wrapper .trigger-item');
+			const currentImageCaption = document.querySelector('.slider-zoom-wrapper .slide-caption');
+			const currentImageInner = document.querySelector('.slider-zoom-wrapper .trigger-item .section-image');
+			const flipstate = Flip.getState([allImages]);
+			const flipstate1 = Flip.getState([currentImage]);
+			gsap.set(currentImage, { y: "" });
+			allImages.forEach((image) => {
+				let index = image.getAttribute('data-slide-index');
+				let element = DOM.items[index];
+				image.removeAttribute('data-slide-index');
+				element.DOM.imageWrap.appendChild(image);
+			});
+			currentImage.removeAttribute('data-slide-index');
+			DOM.currentItem.DOM.imageWrap.appendChild(currentImage);
+			const liveGrid = document.querySelector('.slider-thumbs-wrapper');
+			const liveTriggeredImage = document.querySelector('.slider-zoom-wrapper');
+			while (liveGrid.firstChild) {
+				liveGrid.removeChild(liveGrid.firstChild);
+			}
+			Flip.from(flipstate, {
+				duration: 0.8,
+				ease: "power2.inOut",
+				stagger: 0.04,
+			});
+			Flip.from(flipstate1, {
+				duration: 0.8,
+				ease: "power2.inOut",
+				stagger: 0,
+				onComplete: function () {
+					DOM.currentItem.DOM.imageWrap.appendChild(currentImageCaption);
+					const triggeredItem = document.querySelector('.pooja-kanala-slide.triggered-item');
+					if (triggeredItem != null) {
+						triggeredItem.classList.remove('triggered-item');
+					}
+					const poojaKanalaSlides = document.querySelectorAll('.pooja-kanala-slide');
+					poojaKanalaSlides.forEach(slide => {
+						slide.style.zIndex = '';
+						let slideInner = slide.querySelector('.slide-inner-height');
+						slideInner.classList.remove('disabled');
+					});
+					document.body.classList.remove('disable-scroll', 'enable-trigger');
+					document.getElementById("pooja-kanala-page-content").classList.remove('no-css-animation');
+					gsap.set($(".showcase-gallery .slide-caption"), { clearProps: "opacity" });
+				}
+			});
+			gsap.to('.header-gradient', { duration: 0.4, backgroundColor: $("#pooja-kanala-page-content").data("bgcolor"), ease: Power2.easeInOut });
+			gsap.to("main", { duration: 0.4, backgroundColor: $("#pooja-kanala-page-content").data("bgcolor"), ease: Power2.easeInOut });
+			gsap.to("#bg-pixels", { duration: 0.4, delay: 0.15, opacity: 0.75, ease: Power2.easeInOut });
+			if (document.getElementById('pooja-kanala-page-content').classList.contains('dark-content')) {
+				if (currentImage.classList.contains('change-header')) {
+					gsap.to('#pooja-kanala-logo img.black-logo', { duration: 0.4, opacity: 1, ease: Power2.easeInOut });
+					gsap.to('#pooja-kanala-logo img.white-logo', { duration: 0.4, opacity: 0, ease: Power2.easeInOut });
+					gsap.to('.classic-menu .flexnav li a', { duration: 0.4, color: "#000", ease: Power2.easeInOut });
+					gsap.to('.button-wrap.menu', { duration: 0.4, color: "#000", ease: Power2.easeInOut });
+					gsap.to('.button-icon-link', { duration: 0.3, color: "#000", boxShadow: "inset 0 0 15px rgba(0,0,0,0.3)", ease: Power2.easeInOut });
+				}
+			} else if (document.getElementById('pooja-kanala-page-content').classList.contains('light-content')) {
+				if (currentImage.classList.contains('change-header')) {
+					gsap.to('#pooja-kanala-logo img.black-logo', { duration: 0.4, opacity: 0, ease: Power2.easeInOut });
+					gsap.to('#pooja-kanala-logo img.white-logo', { duration: 0.4, opacity: 1, ease: Power2.easeInOut });
+					gsap.to('.classic-menu .flexnav li a', { duration: 0.5, color: "#fff", ease: Power2.easeInOut });
+					gsap.to('.button-wrap.menu', { duration: 0.4, color: "#fff", ease: Power2.easeInOut });
+					gsap.to('.button-icon-link', { duration: 0.3, color: "#fff", boxShadow: "inset 0 0 15px rgba(255,255,255,0.3)", ease: Power2.easeInOut });
+				}
+			}
+			gsap.to($("footer .link-text, .pooja-kanala-pagination, #filters-wrapper"), { duration: 0.3, opacity: 1, y: 0, stagger: 0.05, delay: 0.4, ease: Power2.easeInOut });
+			gsap.to('#ball', { duration: 0.2, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent' });
+			gsap.to('#ball-loader', { duration: 0.2, borderWidth: '4px', top: 0, left: 0 });
+			$("#ball").removeClass("with-blur color-cursor");
+			$('#ball p').remove();
+		};
+
+		let bGridSwiped = false;
+		const initEvents = () => {
+			const items = document.querySelectorAll('.slide-inner-height');
+			items.forEach((triggerItem) => {
+				triggerItem.addEventListener('click', (event) => {
+					if ($('.showcase-gallery').length > 0) {
+						event.currentTarget.closest('.pooja-kanala-slide').classList.add('triggered-item');
+						showGrid();
+					}
+				});
+			});
+			window.addEventListener("wheel", event => {
+				if (document.body.classList.contains("grid-open") && ($('.showcase-gallery').length > 0)) {
+					hideGrid();
+				}
+			});
+			window.addEventListener("touchmove", event => {
+				if (document.body.classList.contains("grid-open") && ($('.showcase-gallery').length > 0)) {
+					bGridSwiped = true;
+				}
+			});
+			window.addEventListener("touchcancel", event => {
+				if (document.body.classList.contains("grid-open") && ($('.showcase-gallery').length > 0)) {
+					bGridSwiped = false;
+				}
+			});
+			window.addEventListener("touchend", event => {
+				if (document.body.classList.contains("grid-open") && bGridSwiped && ($('.showcase-gallery').length > 0)) {
+					bGridSwiped = false;
+					hideGrid();
+				}
+			});
+			const closeGrid = document.querySelector('.slider-close-preview');
+			if (closeGrid != null) {
+				closeGrid.addEventListener("click", event => {
+					if (document.body.classList.contains("grid-open") && ($('.showcase-gallery').length > 0)) {
+						hideGrid();
+					}
+				});
+			}
+		};
+
+		const previewModeEnabled = document.querySelector('.preview-mode-enabled');
+		if (previewModeEnabled) {
+			initEvents();
+		}
+
+		if (!isMobile()) {
+			$('.pooja-kanala-slider').on('mousedown', function (evt) {
+				$('.pooja-kanala-slider').on('mouseup mousemove', function handler(evt) {
+					if (evt.type === 'mouseup') {
+						gsap.to('#ball', { duration: 0.2, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent' });
+						$("body").removeClass("scale-drag-y");
+						$("#ball").removeClass("with-icon");
+						$('#ball i').remove();
+						$("#ball").removeClass("with-blur");
+						$('#ball p').remove();
+					} else {
+						if ($('#magic-cursor').hasClass("light-content")) {
+							gsap.to('#ball', { duration: 0.2, borderWidth: '2px', scale: 1, borderColor: '#fff', backgroundColor: '#fff' });
+						} else {
+							gsap.to('#ball', { duration: 0.2, borderWidth: '2px', scale: 1, borderColor: '#000', backgroundColor: '#000' });
+						}
+						$("body").addClass("scale-drag-y");
+						$("#ball").removeClass("with-icon");
+						$('#ball i').remove();
+						$("#ball").removeClass("with-blur");
+						$('#ball p').remove();
+					}
+					$('.pooja-kanala-slider').off('mouseup mousemove', handler);
+				});
+			});
+			$('.pooja-kanala-slider').on('mouseup touchend', function () {
+				gsap.to('#ball', { duration: 1, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent', ease: Elastic.easeOut });
+				$("body").removeClass("scale-drag-y");
+			});
+			$("body").on('mouseleave', function () {
+				gsap.to('#ball', { duration: 1, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent', ease: Elastic.easeOut });
+				$("body").removeClass("scale-drag-y");
+			});
+			$(".showcase-gallery.preview-mode-enabled .pooja-kanala-slide .slide-inner-height").on('mouseenter', function () {
+				if (!$('body').hasClass('scale-drag-y')) {
+					$('#ball p').remove();
+					var $this = $(this);
+					gsap.to('#ball', { duration: 0.3, borderWidth: '2px', scale: 1.4, borderColor: "rgba(170,170,170,0)", backgroundColor: "rgba(170,170,170,0.3)" });
+					gsap.to('#ball-loader', { duration: 0.2, borderWidth: '2px', top: 2, left: 2 });
+					$("#ball").addClass("with-blur");
+					$("#ball").append('<p class="center-first">' + $this.data("centerline") + '</p>');
+					$(this).find('video').each(function () {
+						$(this).get(0).play();
+					});
+				}
+			}).on('mouseleave', function () {
+				if (!$('body').hasClass('scale-drag-y')) {
+					gsap.to('#ball', { duration: 0.2, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent' });
+					gsap.to('#ball-loader', { duration: 0.2, borderWidth: '4px', top: 0, left: 0 });
+					$("#ball").removeClass("with-blur");
+					$('#ball p').remove();
+					$(this).find('video').each(function () {
+						$(this).get(0).pause();
+					});
+				}
+			});
+			$(".trigger-item").on('mouseenter', function () {
+				if (!$('body').hasClass('scale-drag-y')) {
+					var $this = $(this);
+					gsap.to('#ball', { duration: 0.3, borderWidth: '2px', scale: 1.4, borderColor: "rgba(170,170,170,0)", backgroundColor: "rgba(170,170,170,0.3)" });
+					gsap.to('#ball-loader', { duration: 0.2, borderWidth: '2px', top: 2, left: 2 });
+					$("#ball").addClass("with-blur");
+					$("#ball").append('<p class="center-first">' + $this.data("centerline") + '</p>');
+					$(this).find('video').each(function () {
+						$(this).get(0).play();
+					});
+				}
+			}).on('mouseleave', function () {
+				if (!$('body').hasClass('scale-drag-y')) {
+					gsap.to('#ball', { duration: 0.2, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent' });
+					gsap.to('#ball-loader', { duration: 0.2, borderWidth: '4px', top: 0, left: 0 });
+					$("#ball").removeClass("with-blur color-cursor");
+					$('#ball p').remove();
+					$(this).find('video').each(function () {
+						$(this).get(0).pause();
+					});
+				}
+			});
+		}
+
+		var currentSlide = null;
+		var firstEnter = true;
+
+		$('.pooja-kanala-slide .slide-inner-height').on('mouseenter', function () {
+			var slide = $(this).closest(".pooja-kanala-slide").data('slide');
+			if (currentSlide === slide) {
+				return;
+			}
+			currentSlide = slide;
+			$('.external-caption').find('.slide-title').removeClass('hover');
+			var caption = $('.external-caption .slide-title[data-caption="' + slide + '"]');
+			var onLeaveShuffle = gsap.utils.toArray('.fixed-hero .inner');
+			function onLeave(liElement, onCompleteCallback) {
+				var spans = liElement.querySelectorAll('span');
+				spans.forEach(function (span) {
+					poojaKanalaShuffleFunctions.startShuffle(span, {
+						velocity: 40,
+						shuffleIterations: 6,
+						childSelector: 'span'
+					});
+					gsap.to(span, {
+						opacity: 0,
+						duration: 0.4,
+						delay: 0,
+						onComplete: function () {
+							if (firstEnter) {
+								caption.addClass('hover');
+								if (onCompleteCallback) {
+									onCompleteCallback();
+								}
+								firstEnter = false;
+							}
+						}
 					});
 				});
-				
-					
-				$('.clapat-slider').on('mouseup touchend', function() {
-					gsap.to('#ball', {duration: 1, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent', ease:Elastic.easeOut});
-					$("body").removeClass("scale-drag-y");					
-				});
-				
-				$("body").on('mouseleave', function() {					
-					gsap.to('#ball', {duration: 1, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent', ease:Elastic.easeOut});
-					$("body").removeClass("scale-drag-y");								
-				});
-					
-				
-				$(".showcase-gallery.preview-mode-enabled .clapat-slide .slide-inner-height").on('mouseenter', function() {	
-					if (!$('body').hasClass('scale-drag-y')) {
-						$('#ball p').remove();
-						var $this = $(this);			
-						gsap.to('#ball', {duration: 0.3, borderWidth: '2px', scale: 1.4, borderColor:"rgba(170,170,170,0)", backgroundColor:"rgba(170,170,170,0.3)"});
-						gsap.to('#ball-loader', {duration: 0.2, borderWidth: '2px', top: 2, left: 2});
-						$("#ball").addClass("with-blur");
-						$( "#ball" ).append( '<p class="center-first">' + $this.data("centerline") + '</p>' );
-						$(this).find('video').each(function() {
-							$(this).get(0).play();
-						});
-					}			
-				}).on('mouseleave', function() {					
-					if (!$('body').hasClass('scale-drag-y')) {
-						gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-						gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
-						$("#ball").removeClass("with-blur");
-						$('#ball p').remove();		
-						$(this).find('video').each(function() {
-							$(this).get(0).pause();
-						});
-					}
-				});
-				
-				$(".trigger-item").on('mouseenter', function() {	
-					if (!$('body').hasClass('scale-drag-y')) {
-						var $this = $(this);
-						gsap.to('#ball', {duration: 0.3, borderWidth: '2px', scale: 1.4, borderColor:"rgba(170,170,170,0)", backgroundColor:"rgba(170,170,170,0.3)"});
-						gsap.to('#ball-loader', {duration: 0.2, borderWidth: '2px', top: 2, left: 2});
-						$("#ball").addClass("with-blur");
-						$( "#ball" ).append( '<p class="center-first">' + $this.data("centerline") + '</p>' );
-						$(this).find('video').each(function() {
-							$(this).get(0).play();
-						});
-					}			
-				}).on('mouseleave', function() {					
-					if (!$('body').hasClass('scale-drag-y')) {
-						gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-						gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
-						$("#ball").removeClass("with-blur color-cursor");
-						$('#ball p').remove();		
-						$(this).find('video').each(function() {
-							$(this).get(0).pause();
-						});
-					}
-				});
-			
 			}
-			
-			
-			var currentSlide = null;
-				var firstEnter = true; 
-				
-				$('.clapat-slide .slide-inner-height').on('mouseenter', function() {
-					
-					var slide = $(this).closest(".clapat-slide").data('slide');
-					
-					if (currentSlide === slide) {
-						return; 
-					}
-					currentSlide = slide;
-					
-					$('.external-caption').find('.slide-title').removeClass('hover');
-					var caption = $('.external-caption .slide-title[data-caption="' + slide + '"]');
-					
-					var onLeaveShuffle = gsap.utils.toArray('.fixed-hero .inner');
-					
-					function onLeave(liElement, onCompleteCallback) {
+			var liElementOnLeave = onLeaveShuffle[0];
+			if (liElementOnLeave && firstEnter) {
+				onLeave(liElementOnLeave, function () {
+					var onEnterShuffle = gsap.utils.toArray('.external-caption .slide-title[data-caption="' + slide + '"]');
+					function onEnter(liElement) {
 						var spans = liElement.querySelectorAll('span');
-					
-						spans.forEach(function(span) {
-							shuffleFunctions.startShuffle(span, {
+						spans.forEach(function (span) {
+							poojaKanalaShuffleFunctions.startShuffle(span, {
 								velocity: 40,
 								shuffleIterations: 6,
 								childSelector: 'span'
 							});
-							
 							gsap.to(span, {
-								opacity: 0,
+								opacity: 1,
 								duration: 0.4,
-								delay: 0,
-								onComplete: function() {
-									
-									if (firstEnter) {
-										caption.addClass('hover');
-										if (onCompleteCallback) {
-											onCompleteCallback(); 
-										}
-										firstEnter = false; 
-									}
-								}
+								delay: 0
 							});
 						});
+						caption.addClass('hover');
 					}
-					
-					var liElementOnLeave = onLeaveShuffle[0]; 
-					
-					if (liElementOnLeave && firstEnter) {
-						
-						onLeave(liElementOnLeave, function() {
-							
-							var onEnterShuffle = gsap.utils.toArray('.external-caption .slide-title[data-caption="' + slide + '"]');
-						
-							function onEnter(liElement) {
-								var spans = liElement.querySelectorAll('span');
-						
-								spans.forEach(function(span) {
-									shuffleFunctions.startShuffle(span, {
-										velocity: 40,
-										shuffleIterations: 6,
-										childSelector: 'span'
-									});
-									
-									gsap.to(span, {
-										opacity: 1,
-										duration: 0.4,
-										delay: 0 
-									});
-								});
-								
-								caption.addClass('hover');
-							}
-							
-							var liElementOnEnter = onEnterShuffle[0]; 
-						
-							if (liElementOnEnter) {
-								onEnter(liElementOnEnter); 
-							}
-						});
-						
-					} else {
-						
-						var onEnterShuffle = gsap.utils.toArray('.external-caption .slide-title[data-caption="' + slide + '"]');
-					
-						function onEnter(liElement) {
-							var spans = liElement.querySelectorAll('span');
-					
-							spans.forEach(function(span) {
-								shuffleFunctions.startShuffle(span, {
-									velocity: 40,
-									shuffleIterations: 6,
-									childSelector: 'span'
-								});
-								
-								gsap.to(span, {
-									opacity: 1,
-									duration: 0.4,
-									delay: 0 
-								});
-							});
-							
-							caption.addClass('hover');
-						}
-						
-						var liElementOnEnter = onEnterShuffle[0]; 
-					
-						if (liElementOnEnter) {
-							onEnter(liElementOnEnter); 
-						}
+					var liElementOnEnter = onEnterShuffle[0];
+					if (liElementOnEnter) {
+						onEnter(liElementOnEnter);
 					}
 				});
-			
-				
-			
-			
-			$('.trigger-item').on('click', function() {
-				
-				$("body").addClass("load-project-thumb");
-				$("body").removeClass("enable-trigger");				
-				$("body").append('<div class="temporary-hero"><div class="outer content-full-width text-align-center"><div class="inner"></div></div></div>');
-				
-				gsap.to(".slider-zoom-wrapper .slide-cat span, .slider-zoom-wrapper .slide-date span", { duration: 0.3, y:30, opacity:0, delay:0, stagger:0, ease:Power2.easeIn});
-				gsap.to(".showcase-gallery a.slide-link", { duration: 0.3, opacity:0, scale:0.8, delay:0, ease:Power2.easeIn });
-				gsap.to($(".slider-thumbs-wrapper .trigger-item"), {duration: 0.3, y: 160, x:0,  opacity:1, stagger:0.05,  delay:0, ease:Power2.easeIn});
-				
-				setTimeout( function(){
-					$("body").addClass("show-loader");
-										
-				} , 300 );
-				
-				gsap.to("#bg-pixels", { duration: 0.3, delay:0, opacity:0, ease: Power2.easeInOut });
-				gsap.to('footer, .carousel-nav-wrapper', { duration: 0.5, opacity: 0, ease: Power4.easeInOut });
-				gsap.to(".showcase-gallery .slide-caption", { duration: 0.2, opacity:0, ease:Power2.easeIn});		
-				gsap.to('#ball', { duration: 0.3, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent' });
-				gsap.to('#ball-loader', { duration: 0.3, borderWidth: '4px', top: 0, left: 0 });
-				$("#ball").removeClass("with-blur color-cursor");
-				$('#ball p').remove();
-			});
-			
-			
-		}
-	
-	}//End Showcase Gallery
+			} else {
+				var onEnterShuffle = gsap.utils.toArray('.external-caption .slide-title[data-caption="' + slide + '"]');
+				function onEnter(liElement) {
+					var spans = liElement.querySelectorAll('span');
+					spans.forEach(function (span) {
+						poojaKanalaShuffleFunctions.startShuffle(span, {
+							velocity: 40,
+							shuffleIterations: 6,
+							childSelector: 'span'
+						});
+						gsap.to(span, {
+							opacity: 1,
+							duration: 0.4,
+							delay: 0
+						});
+					});
+					caption.addClass('hover');
+				}
+				var liElementOnEnter = onEnterShuffle[0];
+				if (liElementOnEnter) {
+					onEnter(liElementOnEnter);
+				}
+			}
+		});
+
+		$('.trigger-item').on('click', function () {
+			$("body").addClass("load-project-thumb");
+			$("body").removeClass("enable-trigger");
+			$("body").append('<div class="temporary-hero"><div class="outer content-full-width text-align-center"><div class="inner"></div></div></div>');
+			gsap.to(".slider-zoom-wrapper .slide-cat span, .slider-zoom-wrapper .slide-date span", { duration: 0.3, y: 30, opacity: 0, delay: 0, stagger: 0, ease: Power2.easeIn });
+			gsap.to(".showcase-gallery a.slide-link", { duration: 0.3, opacity: 0, scale: 0.8, delay: 0, ease: Power2.easeIn });
+			gsap.to($(".slider-thumbs-wrapper .trigger-item"), { duration: 0.3, y: 160, x: 0, opacity: 1, stagger: 0.05, delay: 0, ease: Power2.easeIn });
+			setTimeout(function () {
+				$("body").addClass("show-loader");
+			}, 300);
+			gsap.to("#bg-pixels", { duration: 0.3, delay: 0, opacity: 0, ease: Power2.easeInOut });
+			gsap.to('footer, .carousel-nav-wrapper', { duration: 0.5, opacity: 0, ease: Power4.easeInOut });
+			gsap.to(".showcase-gallery .slide-caption", { duration: 0.2, opacity: 0, ease: Power2.easeIn });
+			gsap.to('#ball', { duration: 0.3, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent' });
+			gsap.to('#ball-loader', { duration: 0.3, borderWidth: '4px', top: 0, left: 0 });
+			$("#ball").removeClass("with-blur color-cursor");
+			$('#ball p').remove();
+		});
+	}
+
+}//End Showcase Gallery
 
 	
 	
@@ -2860,498 +2626,476 @@ Function Showcase Gallery
 /*--------------------------------------------------
 Function Showcase Lists
 ---------------------------------------------------*/
-	
-	function ShowcaseLists() {
-	
-		if( $('.projects-list-wrapper').length > 0 ){
-			
-			function setProjectLists() {								
-				gsap.set(".projects-list-images", { height: window.innerHeight});	
-				gsap.set(".projects-list-images > li", { height: window.innerHeight});	
-			}
-			
-			setProjectLists();
-			
-			window.addEventListener('resize', setProjectLists);
-			
-			$('#main-page-content').addClass('no-overflow');
-			$('.projects-list-captions li').first().addClass('active');
-   			$('.projects-list-images li').first().addClass('visible');
-			
-			$('.projects-list-captions li').each(function(index) {
-				$(this).on('mouseenter', function() {
-					if (!$(this).hasClass('active')) {
-						$('.projects-list-captions li').removeClass('active');
-						$(this).addClass('active');							
-						$('.projects-list-images li').removeClass('visible');
-						$('.projects-list-images li').eq(index).addClass('visible');
-					}
-				})
-			});
-			
-			ScrollTrigger.create({
-				trigger: '.projects-list-wrapper',
-				start: 'top 0%',
-				end: function() {
-					return "+=" + ($('.projects-list-wrapper').height());
-				},
-				pin: '.projects-list-images',
-				pinSpacing: false,
-			});
-			
-			ScrollTrigger.create({
-				trigger: '.projects-list-wrapper',
-				start: 'top 0%',
-				end: "bottom 80%",			
-				onEnter: function() {
-					$('.projects-list-wrapper').addClass('active');
-				},
-				onEnterBack: function() {
-					$('.projects-list-wrapper').addClass('active');
-				},
-				onLeave: function() {
-					$('.projects-list-wrapper').removeClass('active');
-				},
-				onLeaveBack: function() {
-					$('.projects-list-wrapper').removeClass('active');
+
+function onPoojaKanalaShowcaseLists() {
+
+	if ($('.projects-list-wrapper').length > 0) {
+
+		function setProjectLists() {
+			gsap.set(".projects-list-images", { height: window.innerHeight });
+			gsap.set(".projects-list-images > li", { height: window.innerHeight });
+		}
+
+		setProjectLists();
+
+		window.addEventListener('resize', setProjectLists);
+
+		$('#main-page-content').addClass('no-overflow');
+		$('.projects-list-captions li').first().addClass('active');
+		$('.projects-list-images li').first().addClass('visible');
+
+		$('.projects-list-captions li').each(function (index) {
+			$(this).on('mouseenter', function () {
+				if (!$(this).hasClass('active')) {
+					$('.projects-list-captions li').removeClass('active');
+					$(this).addClass('active');
+					$('.projects-list-images li').removeClass('visible');
+					$('.projects-list-images li').eq(index).addClass('visible');
 				}
-			});
-			
-			gsap.utils.toArray('.projects-list-wrapper').forEach((projectsListsWrapper, index) => {
-				const pixelAnimation = projectsListsWrapper.querySelectorAll(".pixel");
-				
-				gsap.to(pixelAnimation, {				
-					scrollTrigger: {
-						trigger: projectsListsWrapper,
-						start: "top 50%",
-						end: '+=50%',
-						scrub:true,
-					},
-					duration: 0.2,
-					opacity: 0, 
-					delay: function() {
-						return gsap.utils.random(0, 1);
-					},
-					ease: Linear.easeNone,									
-				});
-				
-				
-				gsap.to(pixelAnimation, {				
-					scrollTrigger: {
-						trigger: projectsListsWrapper,
-						start: "bottom 80%",
-						end: '+=50%',
-						scrub:true,
-					},
-					duration: 0.2,
-					opacity: 1,
-					delay: function() {
-						return gsap.utils.random(0, 1);
-					},
-					ease: Linear.easeNone,
-				});
-				
-			});
-			
-			if (!isMobile()) {
-				
-				$(".projects-list-captions li").mouseenter(function(e) {
-					$('#ball p').remove();
-					var $this = $(this);
-					var index = $this.index();	
-					var videoElement = $('.projects-list-images li').eq(index).find('video').get(0);
-					if (videoElement) {
-						videoElement.play(); 
-					}						
-					gsap.to('#ball', {duration: 0.3, borderWidth: '2px', scale: 1.4, borderColor:"rgba(0,0,0,0)", backgroundColor:"rgba(0,0,0,0.3)"});
-					gsap.to('#ball-loader', {duration: 0.2, borderWidth: '2px', top: 2, left: 2});
-					$("#ball").addClass("with-blur");
-					$( "#ball" ).append( '<p class="center-first">' + $this.data("centerline") + '</p>' );					
-				});
-								
-				$(".projects-list-captions li").mouseleave(function(e) {					
-					var $this = $(this);
-					var index = $this.index(); 
-					var videoElement = $('.projects-list-images li').eq(index).find('video').get(0);
-					if (videoElement) {
-						videoElement.pause(); 
-					}
-					
-					gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-					gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
-					$("#ball").removeClass("with-blur");
-					$('#ball p').remove();	
-				});
+			})
+		});
+
+		ScrollTrigger.create({
+			trigger: '.projects-list-wrapper',
+			start: 'top 0%',
+			end: function () {
+				return "+=" + ($('.projects-list-wrapper').height());
+			},
+			pin: '.projects-list-images',
+			pinSpacing: false,
+		});
+
+		ScrollTrigger.create({
+			trigger: '.projects-list-wrapper',
+			start: 'top 0%',
+			end: "bottom 80%",
+			onEnter: function () {
+				$('.projects-list-wrapper').addClass('active');
+			},
+			onEnterBack: function () {
+				$('.projects-list-wrapper').addClass('active');
+			},
+			onLeave: function () {
+				$('.projects-list-wrapper').removeClass('active');
+			},
+			onLeaveBack: function () {
+				$('.projects-list-wrapper').removeClass('active');
 			}
-			
-			
-			if (!$("body").hasClass("disable-ajaxload")) {
-				$('.projects-list-captions li span').on('click', function() {
-					
-					$("body").addClass("load-project-thumb").addClass("show-loader");
-    
-					var clickedIndex = $(this).closest('li').index(); 
-										
-					$('.projects-list-captions li').eq(clickedIndex).addClass('above');
-					
-					$('.projects-list-images li').eq(clickedIndex).find('.trigger-item-link').click();					
-					
-					gsap.to('.projects-list-images', {duration: 0.3, backgroundColor:"transparent", ease:Power2.easeInOut});	
-					
-					var onLeaveShuffle = gsap.utils.toArray('.projects-list-captions li');
-					
-					function animateShuffleForLi(liIndex) {
-						var shuffleTitleLeave = onLeaveShuffle[liIndex];
-						var spans = shuffleTitleLeave.querySelectorAll('span');
-						var liDelay = Math.abs(clickedIndex - liIndex) * 0.4; 
-						
-						spans.forEach(function(span) {
-							// Aplică shuffle
-							shuffleFunctions.startShuffle(span, {
-								velocity: 40,
-								shuffleIterations: 6,
-								childSelector: 'span'
-							});
-				
-							// Animația de opacitate
-							gsap.to(span, {
-								opacity: 0,
-								duration: 0.4,
-								delay: liDelay
-							});
+		});
+
+		gsap.utils.toArray('.projects-list-wrapper').forEach((projectsListsWrapper, index) => {
+			const pixelAnimation = projectsListsWrapper.querySelectorAll(".pixel");
+
+			gsap.to(pixelAnimation, {
+				scrollTrigger: {
+					trigger: projectsListsWrapper,
+					start: "top 50%",
+					end: '+=50%',
+					scrub: true,
+				},
+				duration: 0.2,
+				opacity: 0,
+				delay: function () {
+					return gsap.utils.random(0, 1);
+				},
+				ease: Linear.easeNone,
+			});
+
+			gsap.to(pixelAnimation, {
+				scrollTrigger: {
+					trigger: projectsListsWrapper,
+					start: "bottom 80%",
+					end: '+=50%',
+					scrub: true,
+				},
+				duration: 0.2,
+				opacity: 1,
+				delay: function () {
+					return gsap.utils.random(0, 1);
+				},
+				ease: Linear.easeNone,
+			});
+
+		});
+
+		if (!isMobile()) {
+
+			$(".projects-list-captions li").mouseenter(function (e) {
+				$('#ball p').remove();
+				var $this = $(this);
+				var index = $this.index();
+				var videoElement = $('.projects-list-images li').eq(index).find('video').get(0);
+				if (videoElement) {
+					videoElement.play();
+				}
+				gsap.to('#ball', { duration: 0.3, borderWidth: '2px', scale: 1.4, borderColor: "rgba(0,0,0,0)", backgroundColor: "rgba(0,0,0,0.3)" });
+				gsap.to('#ball-loader', { duration: 0.2, borderWidth: '2px', top: 2, left: 2 });
+				$("#ball").addClass("with-blur");
+				$("#ball").append('<p class="center-first">' + $this.data("centerline") + '</p>');
+			});
+
+			$(".projects-list-captions li").mouseleave(function (e) {
+				var $this = $(this);
+				var index = $this.index();
+				var videoElement = $('.projects-list-images li').eq(index).find('video').get(0);
+				if (videoElement) {
+					videoElement.pause();
+				}
+
+				gsap.to('#ball', { duration: 0.2, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent' });
+				gsap.to('#ball-loader', { duration: 0.2, borderWidth: '4px', top: 0, left: 0 });
+				$("#ball").removeClass("with-blur");
+				$('#ball p').remove();
+			});
+		}
+
+		if (!$("body").hasClass("disable-ajaxload")) {
+			$('.projects-list-captions li span').on('click', function () {
+
+				$("body").addClass("load-project-thumb").addClass("show-loader");
+
+				var clickedIndex = $(this).closest('li').index();
+
+				$('.projects-list-captions li').eq(clickedIndex).addClass('above');
+
+				$('.projects-list-images li').eq(clickedIndex).find('.trigger-item-link').click();
+
+				gsap.to('.projects-list-images', { duration: 0.3, backgroundColor: "transparent", ease: Power2.easeInOut });
+
+				var onLeaveShuffle = gsap.utils.toArray('.projects-list-captions li');
+
+				function animateShuffleForLi(liIndex) {
+					var shuffleTitleLeave = onLeaveShuffle[liIndex];
+					var spans = shuffleTitleLeave.querySelectorAll('span');
+					var liDelay = Math.abs(clickedIndex - liIndex) * 0.4;
+
+					spans.forEach(function (span) {
+						poojaKanalaShuffleFunctions.startShuffle(span, {
+							velocity: 40,
+							shuffleIterations: 6,
+							childSelector: 'span'
 						});
-					}
-					
-					// Animația pentru 'li'-ul click-uit
-					animateShuffleForLi(clickedIndex);
-					
-					// Animația pentru 'li'-urile din stânga și dreapta
-					for (var i = 1; i < onLeaveShuffle.length; i++) {
-						if (clickedIndex - i >= 0) {
-							animateShuffleForLi(clickedIndex - i); // Elemente spre stânga
-						}
-						if (clickedIndex + i < onLeaveShuffle.length) {
-							animateShuffleForLi(clickedIndex + i); // Elemente spre dreapta
-						}
-					}
-					
-					$('.projects-list-images li.trigger-item').each(function(){
-						if (!$(this).hasClass("above")) {
-							gsap.to($(this), {duration: 0.5, delay:0, opacity:0, ease:Power4.easeInOut});
-						} else  {
-							gsap.to($(this), {duration: 0.5, delay:0.4, opacity:0, ease:Power4.easeInOut});	
-						}
+
+						gsap.to(span, {
+							opacity: 0,
+							duration: 0.4,
+							delay: liDelay
+						});
 					});
-					gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-					gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
-					$("#ball").removeClass("with-icon");
-					$('#ball p').remove();
-					$('#ball i').remove();				
+				}
+
+				animateShuffleForLi(clickedIndex);
+
+				for (var i = 1; i < onLeaveShuffle.length; i++) {
+					if (clickedIndex - i >= 0) {
+						animateShuffleForLi(clickedIndex - i);
+					}
+					if (clickedIndex + i < onLeaveShuffle.length) {
+						animateShuffleForLi(clickedIndex + i);
+					}
+				}
+
+				$('.projects-list-images li.trigger-item').each(function () {
+					if (!$(this).hasClass("above")) {
+						gsap.to($(this), { duration: 0.5, delay: 0, opacity: 0, ease: Power4.easeInOut });
+					} else {
+						gsap.to($(this), { duration: 0.5, delay: 0.4, opacity: 0, ease: Power4.easeInOut });
+					}
 				});
-				
-			}  else {				
-				gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-				gsap.to('#ball-loader', {duration: 0.2, borderWidth: '4px', top: 0, left: 0});
+				gsap.to('#ball', { duration: 0.2, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent' });
+				gsap.to('#ball-loader', { duration: 0.2, borderWidth: '4px', top: 0, left: 0 });
 				$("#ball").removeClass("with-icon");
 				$('#ball p').remove();
 				$('#ball i').remove();
-			}
-			
+			});
+
+		} else {
+			gsap.to('#ball', { duration: 0.2, borderWidth: '4px', scale: 0.5, borderColor: '#999999', backgroundColor: 'transparent' });
+			gsap.to('#ball-loader', { duration: 0.2, borderWidth: '4px', top: 0, left: 0 });
+			$("#ball").removeClass("with-icon");
+			$('#ball p').remove();
+			$('#ball i').remove();
 		}
-		
-		
-		if ($(".projects-list-wrapper").hasClass("invert-header-color")) {
-			
-			var changeMainColor = gsap.utils.toArray('.invert-header-color');	
-			changeMainColor.forEach(function(changeHeaderColor) {
-			
-				imagesLoaded('body', function() {
-					
-					const bgPageContent = document.getElementById("clapat-page-content");
-					
-					let startBackgroundColor;
-					let endBackgroundColor;
-					let startHeaderGradient;
-					let endHeaderGradient;
-					let startLinkColor;
-					let endLinkColor;
-					let startButtonColor;
-					let endButtonColor;
-					
-					
-					if (bgPageContent.classList.contains('light-content')) {
-						
-						startBackgroundColor = "#000";
-						endBackgroundColor = "#ebebeb";
-						
-						startHeaderGradient = "rgba(0,0,0,1)";
-						endHeaderGradient = "rgba(235,235,235,1)";
-						
-						startLinkColor = "#fff";
-						endLinkColor = "#000";
-						
-						startButtonColor = "#fff";
-						endButtonColor = "#000";
-						startButtonShadow = "inset 0 0 15px rgba(255,255,255,0.5)";
-						endButtonShadow = "inset 0 0 15px rgba(0,0,0,0.3)";
-						
-					} else if (bgPageContent.classList.contains('dark-content')) {
-						
-						startBackgroundColor = "#ebebeb";
-						endBackgroundColor = "#000";
-						
-						startHeaderGradient = "rgba(235,235,235,1)";
-						endHeaderGradient = "rgba(0,0,0,1)";
-						
-						startLinkColor = "#000";
-						endLinkColor = "#fff";
-						
-						startButtonColor = "#000";
-						endButtonColor = "#fff";						
-						startButtonShadow = "inset 0 0 15px rgba(0,0,0,0.3)";
-						endButtonShadow = "inset 0 0 15px rgba(255,255,255,0.5)";
+
+	}
+
+	if ($(".projects-list-wrapper").hasClass("invert-header-color")) {
+
+		var changeMainColor = gsap.utils.toArray('.invert-header-color');
+		changeMainColor.forEach(function (changeHeaderColor) {
+
+			imagesLoaded('body', function () {
+
+				const bgPageContent = document.getElementById("pooja-kanala-page-content");
+
+				let startBackgroundColor;
+				let endBackgroundColor;
+				let startHeaderGradient;
+				let endHeaderGradient;
+				let startLinkColor;
+				let endLinkColor;
+				let startButtonColor;
+				let endButtonColor;
+				let startButtonShadow;
+				let endButtonShadow;
+
+				if (bgPageContent.classList.contains('light-content')) {
+
+					startBackgroundColor = "#000";
+					endBackgroundColor = "#ebebeb";
+
+					startHeaderGradient = "rgba(0,0,0,1)";
+					endHeaderGradient = "rgba(235,235,235,1)";
+
+					startLinkColor = "#fff";
+					endLinkColor = "#000";
+
+					startButtonColor = "#fff";
+					endButtonColor = "#000";
+					startButtonShadow = "inset 0 0 15px rgba(255,255,255,0.5)";
+					endButtonShadow = "inset 0 0 15px rgba(0,0,0,0.3)";
+
+				} else if (bgPageContent.classList.contains('dark-content')) {
+
+					startBackgroundColor = "#ebebeb";
+					endBackgroundColor = "#000";
+
+					startHeaderGradient = "rgba(235,235,235,1)";
+					endHeaderGradient = "rgba(0,0,0,1)";
+
+					startLinkColor = "#000";
+					endLinkColor = "#fff";
+
+					startButtonColor = "#000";
+					endButtonColor = "#fff";
+					startButtonShadow = "inset 0 0 15px rgba(0,0,0,0.3)";
+					endButtonShadow = "inset 0 0 15px rgba(255,255,255,0.5)";
+				}
+
+				const blackLogoOpacity = gsap.getProperty('#pooja-kanala-logo img.black-logo', 'opacity');
+				const whiteLogoOpacity = gsap.getProperty('#pooja-kanala-logo img.white-logo', 'opacity');
+
+				const scrollTriggerEnter = {
+					trigger: changeHeaderColor,
+					start: 'top 25%',
+					end: '+=25%',
+					scrub: true,
+					onEnter: function () {
+						bgPageContent.classList.add('no-css-animation');
+					},
+					onEnterBack: function () {
+						bgPageContent.classList.add('no-css-animation');
+					},
+					onLeave: function () {
+						bgPageContent.classList.remove('no-css-animation');
+					},
+					onLeaveBack: function () {
+						bgPageContent.classList.remove('no-css-animation');
+						gsap.set('#pooja-kanala-logo img.black-logo, #pooja-kanala-logo img.white-logo', { opacity: "" });
 					}
-					
-					const blackLogoOpacity = gsap.getProperty('#clapat-logo img.black-logo', 'opacity');
-					const whiteLogoOpacity = gsap.getProperty('#clapat-logo img.white-logo', 'opacity');
-					
-					
-								
-					
-					const buttonColor = gsap.getProperty('.button-icon-link', 'color');
-					const buttonShadowColor = gsap.getProperty('.button-icon-link', 'boxShadow');
-				
-					const scrollTriggerEnter = {
-						trigger: changeHeaderColor,
-						start: 'top 25%',
-						end: '+=25%',
-						scrub: true,
-						onEnter: function() {
-							bgPageContent.classList.add('no-css-animation');
-						},
-						onEnterBack: function() {
-							bgPageContent.classList.add('no-css-animation');
-						},
-						onLeave: function() {
-							bgPageContent.classList.remove('no-css-animation');
-						},
-						onLeaveBack: function() {
-							bgPageContent.classList.remove('no-css-animation');
-							gsap.set('#clapat-logo img.black-logo, #clapat-logo img.white-logo', {opacity: "" });
+				};
+
+				ScrollTrigger.create({
+					trigger: changeHeaderColor,
+					start: 'top 25%',
+					end: '+=25%',
+					onEnter: function (st) {
+
+						gsap.fromTo('.header-gradient', {
+							backgroundColor: startHeaderGradient
+						}, {
+							duration: 1,
+							backgroundColor: endHeaderGradient,
+							opacity: 0,
+							ease: Linear.easeNone,
+							scrollTrigger: scrollTriggerEnter
+						});
+
+						gsap.fromTo('#pooja-kanala-logo img.black-logo', {
+							opacity: blackLogoOpacity
+						}, {
+							duration: 1,
+							opacity: whiteLogoOpacity,
+							ease: Linear.easeNone,
+							scrollTrigger: scrollTriggerEnter
+						});
+
+						gsap.fromTo('#pooja-kanala-logo img.white-logo', {
+							opacity: whiteLogoOpacity
+						}, {
+							duration: 1,
+							opacity: blackLogoOpacity,
+							ease: Linear.easeNone,
+							scrollTrigger: scrollTriggerEnter
+						});
+
+						if (!isMobile()) {
+
+							gsap.fromTo('.classic-menu .flexnav li a', {
+								color: startLinkColor
+							}, {
+								duration: 1,
+								color: endLinkColor,
+								ease: Linear.easeNone,
+								scrollTrigger: scrollTriggerEnter
+							});
+
 						}
-					};
-					
-					
-					ScrollTrigger.create({
-						trigger: changeHeaderColor,
-						start: 'top 25%',
-						end: '+=25%',
-						onEnter: function( st ) {
-							
-							gsap.fromTo('.header-gradient', {
-								backgroundColor: startHeaderGradient
-							}, {
-								duration: 1, 
-								backgroundColor: endHeaderGradient,
-								opacity:0,
-								ease: Linear.easeNone,
-								scrollTrigger: scrollTriggerEnter								
-							});
-							
-							gsap.fromTo('#clapat-logo img.black-logo', {
-								opacity: blackLogoOpacity
-							}, {
-								duration: 1, 
-								opacity: whiteLogoOpacity, 
-								ease: Linear.easeNone,
-								scrollTrigger: scrollTriggerEnter
-							});
-							
-							gsap.fromTo('#clapat-logo img.white-logo', {
-								opacity: whiteLogoOpacity
-							}, {
-								duration: 1, 
-								opacity: blackLogoOpacity,
-								ease: Linear.easeNone,
-								scrollTrigger: scrollTriggerEnter
-							});
-							
-							if (!isMobile()) {
-							
-								gsap.fromTo('.classic-menu .flexnav li a', {
-									color: startLinkColor
-								}, {
-									duration: 1, 
-									color: endLinkColor,
-									ease: Linear.easeNone,
-									scrollTrigger: scrollTriggerEnter
-								});
-							
-							}
-							
-							gsap.fromTo('.button-wrap.menu', {
-								color: startButtonColor
-							}, {
-								duration: 1, 
-								color: endButtonColor,
-								ease: Linear.easeNone,
-								scrollTrigger: scrollTriggerEnter
-							});
-							
-							gsap.fromTo('.button-icon-link', {
-								color: startButtonColor,
-								boxShadow: startButtonShadow
-							}, {
-								duration: 1, 
-								color: endButtonColor,
-								boxShadow: endButtonShadow,
-								ease: Linear.easeNone,
-								scrollTrigger: scrollTriggerEnter
-							});
-							
-						},
-						scrub: true,
-					});
-					
-					
-					
-					const scrollTriggerLeave = {
-						trigger: changeHeaderColor,
-						start: 'bottom 100%',
-						end: '+=50%',
-						scrub: true,
-						onEnter: function( st ) { 
-							bgPageContent.classList.add('no-css-animation');
-						},
-						onEnterBack: function() {
-							bgPageContent.classList.add('no-css-animation');
-						},
-						onLeave: function() {
-							bgPageContent.classList.remove('no-css-animation');
-							document.body.classList.remove('bg-animation');							
-						},
-						onLeaveBack: function() {
-							bgPageContent.classList.remove('no-css-animation');
-						}
-					};
-					
-					
-					ScrollTrigger.create({
-						trigger: changeHeaderColor,
-						start: 'bottom 100%',
-						end: '+=50%',
-						onEnter: function( st ) {
-							
-							gsap.fromTo('.header-gradient', {
-								backgroundColor: endHeaderGradient
-							}, {
-								duration: 1, 
-								backgroundColor:  startHeaderGradient,
-								opacity:1,
-								ease: Linear.easeNone,
-								scrollTrigger: scrollTriggerLeave
-							});
-							
-							gsap.fromTo('#clapat-logo img.black-logo', {
-								opacity: whiteLogoOpacity
-							}, {
-								duration: 1, 
-								opacity: blackLogoOpacity, 
-								ease: Linear.easeNone,
-								scrollTrigger: scrollTriggerLeave
-							});
-							
-							gsap.fromTo('#clapat-logo img.white-logo', {
-								opacity: blackLogoOpacity
-							}, {
-								duration: 1, 
-								opacity: whiteLogoOpacity, 
-								ease: Linear.easeNone,
-								scrollTrigger: scrollTriggerLeave
-							});
-							
-							if (!isMobile()) {
-							
-								gsap.fromTo('.classic-menu .flexnav li a', {
-									color: endLinkColor
-								}, {
-									duration: 1, 
-									color: startLinkColor,
-									ease: Linear.easeNone,
-									scrollTrigger: scrollTriggerLeave
-								});
-							
-							}
-							
-							gsap.fromTo('.button-wrap.menu', {
-								color: endButtonColor
-							}, {
-								duration: 1, 
-								color: startButtonColor,
-								ease: Linear.easeNone,
-								scrollTrigger: scrollTriggerLeave
-							});
-							
-							gsap.fromTo('.button-icon-link', {
-								color: endButtonColor,
-								boxShadow: endButtonShadow,								
-							}, {
-								duration: 1, 
-								color: startButtonColor,
-								boxShadow: startButtonShadow,
-								ease: Linear.easeNone,
-								scrollTrigger: scrollTriggerLeave
-							});
-							
-						},
-						scrub: true,
-					});
-					
-					$('.trigger-item').on('click', function() {
-						gsap.to('.header-gradient', { duration: 0.3, delay:0, opacity: 0, ease: Linear.easeNone, });
-						gsap.to('#clapat-logo img.white-logo, #clapat-logo img.black-logo', { duration: 0.5, delay:1, opacity: "",  ease: Linear.easeNone, });
-						gsap.to('.classic-menu .flexnav li a', { duration: 0.5, delay:1, color: "", ease: Linear.easeNone, });			
-						gsap.to('.button-icon-link', { duration: 0.5, delay:1.1, color: "", boxShadow: "", ease: Linear.easeNone, });
-					});
-				
+
+						gsap.fromTo('.button-wrap.menu', {
+							color: startButtonColor
+						}, {
+							duration: 1,
+							color: endButtonColor,
+							ease: Linear.easeNone,
+							scrollTrigger: scrollTriggerEnter
+						});
+
+						gsap.fromTo('.button-icon-link', {
+							color: startButtonColor,
+							boxShadow: startButtonShadow
+						}, {
+							duration: 1,
+							color: endButtonColor,
+							boxShadow: endButtonShadow,
+							ease: Linear.easeNone,
+							scrollTrigger: scrollTriggerEnter
+						});
+
+					},
+					scrub: true,
 				});
-			
-			});	
-			
-		}
-			
-	}//End Showcase Lists	
-	
-	
-	
 
-	window.LoadViaAjax = function() {			
-		CleanupBeforeAjax();	
-		FirstLoad();
-		ScrollEffects();
-		Sliders();
-		PageLoadActions();
-		ShowcasePortfolio();
-		ShowcaseCarousel();
-		ShowcaseGallery();
-		ShowcaseLists();
-		FitThumbScreenWEBGL();		
-		LazyLoad();	
-		Shortcodes();		
-		JustifiedGrid();
-		Lightbox();
-		PlayVideo();
-		ContactForm();
-		ContactMap();
-		CustomFunction();
-		ShuffleElementsFunction();
-		InitShuffleElements();
-		
-	}//End Load Via Ajax
-	
-});	
+				const scrollTriggerLeave = {
+					trigger: changeHeaderColor,
+					start: 'bottom 100%',
+					end: '+=50%',
+					scrub: true,
+					onEnter: function (st) {
+						bgPageContent.classList.add('no-css-animation');
+					},
+					onEnterBack: function () {
+						bgPageContent.classList.add('no-css-animation');
+					},
+					onLeave: function () {
+						bgPageContent.classList.remove('no-css-animation');
+						document.body.classList.remove('bg-animation');
+					},
+					onLeaveBack: function () {
+						bgPageContent.classList.remove('no-css-animation');
+					}
+				};
 
+				ScrollTrigger.create({
+					trigger: changeHeaderColor,
+					start: 'bottom 100%',
+					end: '+=50%',
+					onEnter: function (st) {
 
-var LoadViaAjax = window.LoadViaAjax;	
-	
-	
+						gsap.fromTo('.header-gradient', {
+							backgroundColor: endHeaderGradient
+						}, {
+							duration: 1,
+							backgroundColor: startHeaderGradient,
+							opacity: 1,
+							ease: Linear.easeNone,
+							scrollTrigger: scrollTriggerLeave
+						});
+
+						gsap.fromTo('#pooja-kanala-logo img.black-logo', {
+							opacity: whiteLogoOpacity
+						}, {
+							duration: 1,
+							opacity: blackLogoOpacity,
+							ease: Linear.easeNone,
+							scrollTrigger: scrollTriggerLeave
+						});
+
+						gsap.fromTo('#pooja-kanala-logo img.white-logo', {
+							opacity: blackLogoOpacity
+						}, {
+							duration: 1,
+							opacity: whiteLogoOpacity,
+							ease: Linear.easeNone,
+							scrollTrigger: scrollTriggerLeave
+						});
+
+						if (!isMobile()) {
+
+							gsap.fromTo('.classic-menu .flexnav li a', {
+								color: endLinkColor
+							}, {
+								duration: 1,
+								color: startLinkColor,
+								ease: Linear.easeNone,
+								scrollTrigger: scrollTriggerLeave
+							});
+
+						}
+
+						gsap.fromTo('.button-wrap.menu', {
+							color: endButtonColor
+						}, {
+							duration: 1,
+							color: startButtonColor,
+							ease: Linear.easeNone,
+							scrollTrigger: scrollTriggerLeave
+						});
+
+						gsap.fromTo('.button-icon-link', {
+							color: endButtonColor,
+							boxShadow: endButtonShadow,
+						}, {
+							duration: 1,
+							color: startButtonColor,
+							boxShadow: startButtonShadow,
+							ease: Linear.easeNone,
+							scrollTrigger: scrollTriggerLeave
+						});
+
+					},
+					scrub: true,
+				});
+
+				$('.trigger-item').on('click', function () {
+					gsap.to('.header-gradient', { duration: 0.3, delay: 0, opacity: 0, ease: Linear.easeNone, });
+					gsap.to('#pooja-kanala-logo img.white-logo, #pooja-kanala-logo img.black-logo', { duration: 0.5, delay: 1, opacity: "", ease: Linear.easeNone, });
+					gsap.to('.classic-menu .flexnav li a', { duration: 0.5, delay: 1, color: "", ease: Linear.easeNone, });
+					gsap.to('.button-icon-link', { duration: 0.5, delay: 1.1, color: "", boxShadow: "", ease: Linear.easeNone, });
+				});
+
+			});
+
+		});
+
+	}
+
+}//End Showcase Lists
+
+window.LoadViaAjax = function () {
+	onPoojaKanalaCleanupBeforeAjax();
+	onPoojaKanalaFirstLoad();
+	onPoojaKanalaScrollEffects();
+	onPoojaKanalaSliders();
+	onPoojaKanalaPageLoadActions();
+	onPoojaKanalaShowcasePortfolio();
+	onPoojaKanalaShowcaseCarousel();
+	onPoojaKanalaShowcaseGallery();
+	onPoojaKanalaShowcaseLists();
+	onPoojaKanalaFitThumbScreenWEBGL();
+	onPoojaKanalaLazyLoad();
+	onPoojaKanalaShortcodes();
+	onPoojaKanalaJustifiedGrid();
+	onPoojaKanalaLightbox();
+	onPoojaKanalaPlayVideo();
+	onPoojaKanalaContactForm();
+	onPoojaKanalaContactMap();
+	onPoojaKanalaCustomFunction();
+	onPoojaKanalaShuffleElementsFunction();
+	onPoojaKanalaInitShuffleElements();
+
+}//End Load Via Ajax
+
+var LoadViaAjax = window.LoadViaAjax;
+
+});

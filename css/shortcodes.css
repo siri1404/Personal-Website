@@ -86,7 +86,7 @@
 		display: block;
 		overflow: hidden;
 		mask-image: linear-gradient(#0003, black 7%, black 93%, #0003 100%);
-  		-webkit-mask-image: linear-gradient(#0003, black 7%, black 93%, #0003 100%);
+		-webkit-mask-image: linear-gradient(#0003, black 7%, black 93%, #0003 100%);
 	}
 	
 	.overlapping-title div span {
@@ -107,7 +107,6 @@
 	
 	
 	
-
 /*--------------------------------------------------
 	Pinned Section
 ---------------------------------------------------*/
@@ -189,7 +188,7 @@
 	}
 	
 	.marquee-text-wrapper {
-  		white-space: nowrap;
+		white-space: nowrap;
 		margin-left: calc(50% - 50vw)!important;
 		margin-right: calc(50% - 50vw)!important;
 		max-width: 1000%!important;
@@ -261,41 +260,41 @@
 	Carousel
 ---------------------------------------------------*/
 	
-	.clapat-slider-wrapper.content-slider  {
+	.pooja-slider-wrapper.content-slider  {
 		width:100%;
 		height: auto;
 		position:relative;	
 	}
 	
-	.content-slider .clapat-slider-viewport {
+	.content-slider .pooja-slider-viewport {
 		display: flex;
 		position: relative;
 		margin: 0 auto;
 	}
 	
-	.content-slider.looped-carousel .clapat-slider-viewport {
+	.content-slider.looped-carousel .pooja-slider-viewport {
 		max-width:1280px;
 	}
 	
-	.content-slider.small-looped-carousel .clapat-slider-viewport {
+	.content-slider.small-looped-carousel .pooja-slider-viewport {
 		max-width:600px;
 	}
 	
-	.content-slider .clapat-slider {
+	.content-slider .pooja-slider {
 		padding: 0 0 0 0;
 		height: auto;
 		position:relative;	
 	}
 	
-	.content-slider .clapat-slide {
+	.content-slider .pooja-slide {
 		width: 100%;
 	}
 	
-	.content-slider.looped-carousel .clapat-slide {
+	.content-slider.looped-carousel .pooja-slide {
 		padding:0 60px;
 	}
 	
-	.content-slider.small-looped-carousel .clapat-slide {
+	.content-slider.small-looped-carousel .pooja-slide {
 		padding:0 20px;
 	}
 	
@@ -308,23 +307,23 @@
 		border-radius:8px;
 	}
 	
-	.content-slider.looped-carousel .clapat-button-prev, .content-slider.looped-carousel .clapat-button-next {
+	.content-slider.looped-carousel .pooja-button-prev, .content-slider.looped-carousel .pooja-button-next {
 		display:none;
 	}
 	
-	.disable-cursor .content-slider.looped-carousel .clapat-button-prev, .disable-cursor .content-slider.looped-carousel .clapat-button-next {
+	.disable-cursor .content-slider.looped-carousel .pooja-button-prev, .disable-cursor .content-slider.looped-carousel .pooja-button-next {
 		display:block;
 	}
 	
-	.content-slider.small-looped-carousel .clapat-button-prev, .content-slider.small-looped-carousel .clapat-button-next {
+	.content-slider.small-looped-carousel .pooja-button-prev, .content-slider.small-looped-carousel .pooja-button-next {
 		display:none;
 	}
 	
-	.disable-cursor .content-slider.small-looped-carousel .clapat-button-prev, .disable-cursor .content-slider.small-looped-carousel .clapat-button-next {
+	.disable-cursor .content-slider.small-looped-carousel .pooja-button-prev, .disable-cursor .content-slider.small-looped-carousel .pooja-button-next {
 		display:block;
 	}
 	
-	.content-slider .clapat-pagination {
+	.content-slider .pooja-pagination {
 		bottom:20px;
 	}
 	
@@ -350,11 +349,11 @@
 		cursor:pointer;		
 	}
 	
-	.content-slider .clapat-pagination {
+	.content-slider .pooja-pagination {
 		opacity:1;
 	}
 	
-	.content-slider .clapat-pagination-bullet .parallax-wrap {
+	.content-slider .pooja-pagination-bullet .parallax-wrap {
 		width: 40px;
 		height: 40px;
 		display: inline-flex;
@@ -364,14 +363,14 @@
 		pointer-events: initial;
 	}
 	
-	.content-slider .clapat-pagination-bullet .parallax-element {
+	.content-slider .pooja-pagination-bullet .parallax-element {
 		height: 40px;
 		width: 40px;
 		text-align: center;
 		line-height: 50px;
 	}
 	
-	.clapat-pagination-bullet-active .path {
+	.pooja-pagination-bullet-active .path {
 		display: inline-block !important;
 		stroke-dasharray: 1000;
 		stroke-dashoffset: 0;
@@ -379,51 +378,51 @@
 		animation-iteration-count: unset;
 	}
 	
-	.dark-cursor .clapat-pagination {
+	.dark-cursor .pooja-pagination {
 		color:#000;
 	}
 	
-	.light-cursor .clapat-pagination {
+	.light-cursor .pooja-pagination {
 		color:#fff;
 	}
 	
-	.clapat-pagination-bullet .path, .light-content.light-content-slider .clapat-pagination-bullet .path {
+	.pooja-pagination-bullet .path, .light-content.light-content-slider .pooja-pagination-bullet .path {
 		stroke:currentColor;
 	}
 	
-	.light-content .clapat-pagination-bullet .path, .dark-section .clapat-pagination-bullet .path, .light-content-slider .clapat-pagination-bullet .path {
+	.light-content .pooja-pagination-bullet .path, .dark-section .pooja-pagination-bullet .path, .light-content-slider .pooja-pagination-bullet .path {
 		stroke:currentColor;
 	}
 	
-	.light-content .light-section .clapat-pagination-bullet .path {
+	.light-content .light-section .pooja-pagination-bullet .path {
 		stroke:currentColor;
 	}
 	
-	.clapat-pagination-bullet .solid-fill, .light-content.light-content-slider .clapat-pagination-bullet .solid-fill {
+	.pooja-pagination-bullet .solid-fill, .light-content.light-content-slider .pooja-pagination-bullet .solid-fill {
 		fill:currentColor;
 	}
 	
-	.light-content .clapat-pagination-bullet .solid-fill, .dark-section .clapat-pagination-bullet .solid-fill, .light-content-slider .clapat-pagination-bullet .solid-fill {
+	.light-content .pooja-pagination-bullet .solid-fill, .dark-section .pooja-pagination-bullet .solid-fill, .light-content-slider .pooja-pagination-bullet .solid-fill {
 		 fill:currentColor;
 	}
 	 
-	 .light-content .light-section .clapat-pagination-bullet .solid-fill, .light-content .dark-section .dark-cursor .clapat-pagination-bullet .solid-fill {
+	 .light-content .light-section .pooja-pagination-bullet .solid-fill, .light-content .dark-section .dark-cursor .pooja-pagination-bullet .solid-fill {
 		 fill:currentColor;
 	}
 	 
-	.light-cursor .clapat-pagination-bullet .path {
+	.light-cursor .pooja-pagination-bullet .path {
 		stroke:currentColor;
 	}
 	
-	.dark-cursor .clapat-pagination-bullet .path {
+	.dark-cursor .pooja-pagination-bullet .path {
 		stroke:currentColor;
 	}
 	
-	.light-cursor .clapat-pagination-bullet .solid-fill {
+	.light-cursor .pooja-pagination-bullet .solid-fill {
 		fill:currentColor;
 	}
 	
-	.dark-cursor .clapat-pagination-bullet .solid-fill {
+	.dark-cursor .pooja-pagination-bullet .solid-fill {
 		fill:currentColor;
 	}
 	
@@ -441,7 +440,7 @@
 	  }
 	}
 	
-	.disable-cursor .full .looped-carousel .clapat-controls, .disable-cursor .full_elementor .looped-carousel .clapat-controls {
+	.disable-cursor .full .looped-carousel .pooja-controls, .disable-cursor .full_elementor .looped-carousel .pooja-controls {
 		position: absolute;
 		width: calc(100% - 60px);
 		height: 100%;
@@ -451,7 +450,7 @@
 		margin: 0 auto;
 	}
 	
-	.disable-cursor .full .small-looped-carousel .clapat-controls, .disable-cursor .full_elementor .small-looped-carousel .clapat-controls {
+	.disable-cursor .full .small-looped-carousel .pooja-controls, .disable-cursor .full_elementor .small-looped-carousel .pooja-controls {
 		position: absolute;
 		width: calc(100% - 60px);
 		max-width:540px;
@@ -599,7 +598,7 @@
 	
 	.hero-video-wrapper {
 		position: absolute;
-    	box-sizing: border-box;
+		box-sizing: border-box;
 		width: 100%;
 		height: 100%;
 		padding:0;
@@ -607,7 +606,7 @@
 		opacity:1;		
 	}
 	
-	.item .hero-video-wrapper, .clapat-item .hero-video-wrapper, .hover-reveal__img .hero-video-wrapper, .clapat-slider .hero-video-wrapper, .open-thumbnail .hero-video-wrapper, .slider-zoom-wrapper .hero-video-wrapper, .overlapping-image .hero-video-wrapper, .section-image .hero-video-wrapper {
+	.item .hero-video-wrapper, .pooja-item .hero-video-wrapper, .hover-reveal__img .hero-video-wrapper, .pooja-slider .hero-video-wrapper, .open-thumbnail .hero-video-wrapper, .slider-zoom-wrapper .hero-video-wrapper, .overlapping-image .hero-video-wrapper, .section-image .hero-video-wrapper {
 		position: absolute;
 		box-sizing: border-box;
 		min-width: 100%;
@@ -625,7 +624,7 @@
 	
 	.content-video-wrapper {
 		position: absolute;
-    	box-sizing: border-box;
+		box-sizing: border-box;
 		width: 100%;
 		height: 100%;
 		left:0;
@@ -649,7 +648,7 @@
 	
 	.video-wrapper {
 		position: relative;
-    	box-sizing: border-box;
+		box-sizing: border-box;
 		min-width: 100%;
 		max-height: 100vh;
 		width: 100%;
@@ -866,7 +865,7 @@
 	Buttons
 ---------------------------------------------------*/	
 
-	.button-box {
+	.pooja-button-box {
 		line-height:16px;
 		cursor:pointer;
 		border:none;
@@ -876,28 +875,28 @@
 		position:relative;
 	}
 	
-	.button-box.has-animation {
+	.pooja-button-box.has-animation {
 		opacity: 0;
 		-webkit-transition: translateY(0px);
 		transform: translateY(0px);
 	}
 	
-	.text-align-center .button-box, .text-align-center.button-box {
+	.text-align-center .pooja-button-box, .text-align-center.pooja-button-box {
 		margin-left:10px;
 		margin-right:10px;
 		text-align:center;
 	}
 	
-	.text-align-center.button-box {
+	.text-align-center.pooja-button-box {
 		display: flex;
 		margin:auto
 	}
 	
-	.button-content .submit-box {
+	.pooja-button-content .submit-box {
 		color:#fff;
 	}
 	
-	.clapat-button-wrap {
+	.pooja-pooja-button-wrap {
 		display: flex;
 		position: relative;
 		justify-content: center;
@@ -909,28 +908,28 @@
 		color:#000;		
 	}
 	
-	.light-content .clapat-button-wrap, .dark-section .clapat-button-wrap {
+	.light-content .pooja-pooja-button-wrap, .dark-section .pooja-pooja-button-wrap {
 		color:#fff;	
 	}
 	
-	.light-content .light-section .clapat-button-wrap {
+	.light-content .light-section .pooja-pooja-button-wrap {
 		color:#000;	
 	}
 	
-	.clapat-button-wrap.circle {
+	.pooja-pooja-button-wrap.circle {
 		min-width:104px;
 		height:104px;	
 	}
 	
-	.text-align-center .clapat-button-wrap {
+	.text-align-center .pooja-pooja-button-wrap {
 		margin:0 auto;
 	}
 	
-	.clapat-button {		
+	.pooja-pooja-button {		
 		opacity:1;		
 	}
 	
-	.button-border {
+	.pooja-button-border {
 		height: 50px;
 		width: auto;
 		border: solid 2px currentColor;
@@ -947,106 +946,106 @@
 		box-sizing:initial;
 	}
 	
-	.button-box.has-animation .button-border {
+	.pooja-button-box.has-animation .pooja-button-border {
 		width: 50px;
 	}
 	
-	.disable-cursor .button-border {
+	.disable-cursor .pooja-button-border {
 		-webkit-transition : border 0.2s ease-out;
 		transition : border 0.2s ease-out;
 	}
 	
-	.light-content .button-border, .dark-section .button-border {
+	.light-content .pooja-button-border, .dark-section .pooja-button-border {
 		border: solid 2px currentColor;
 		background-color:currentColor;
 	}
 	
-	.light-content .light-section .button-border {
+	.light-content .light-section .pooja-button-border {
 		border: solid 2px currentColor;
 		background-color:currentColor;
 	}
 	
-	.light-content .button-border a, .dark-section .button-border a {
+	.light-content .pooja-button-border a, .dark-section .pooja-button-border a {
 		color:#000;
 	}
 	
-	.light-content .light-section .button-border a {
+	.light-content .light-section .pooja-button-border a {
 		color:#fff;
 	}
 	
-	.button-border:not(.outline) a {
+	.pooja-button-border:not(.outline) a {
 		color:#fff!important;
 	}
 	
-	.light-content .button-border:not(.outline) a, .dark-section .button-border:not(.outline) a {
+	.light-content .pooja-button-border:not(.outline) a, .dark-section .pooja-button-border:not(.outline) a {
 		color:#000!important;
 	}
 	
-	.light-content .light-section .button-border:not(.outline) a {
+	.light-content .light-section .pooja-button-border:not(.outline) a {
 		color:#fff!important;
 	}
 	
-	.button-border.rounded {
+	.pooja-button-border.rounded {
 		border-radius: 30px;
 	}
 	
-	.button-border.outline {
+	.pooja-button-border.outline {
 		border: solid 2px currentColor;
 		color:currentColor;
 		background-color:transparent;
 	}
 	
-	.light-content .button-border.outline, .dark-section .button-border.outline {
+	.light-content .pooja-button-border.outline, .dark-section .pooja-button-border.outline {
 		border: solid 2px currentColor;
 		color:currentColor;		
 		background-color:transparent;
 	}
 	
-	.light-content .light-section .button-border.outline {
+	.light-content .light-section .pooja-button-border.outline {
 		border: solid 2px currentColor;		
 		background-color:transparent;
 	}
 	
-	.clapat-button a {
+	.pooja-pooja-button a {
 		position: relative;
 		display: block;
 		height: 100%;
 	}
 	
-	.button-box.has-animation .clapat-button a {
+	.pooja-button-box.has-animation .pooja-pooja-button a {
 		opacity:0;
 		white-space: nowrap;	
 		transition: opacity 0.5s ease 0.5s;
 		-webkit-transition: opacity 0.5s ease 0.5s;
 	}
 	
-	.button-box.has-animation .clapat-button .animated a {
+	.pooja-button-box.has-animation .pooja-pooja-button .animated a {
 		opacity:1;
 	}
 	
-	.light-content .button-border.outline a, .dark-section .button-border.outline a {
+	.light-content .pooja-button-border.outline a, .dark-section .pooja-button-border.outline a {
 		color:#fff;
 	}
 	
-	.light-content .light-section .button-border.outline a {
+	.light-content .light-section .pooja-button-border.outline a {
 		color:#000;
 	}
 	
-	.dark-content .light-section .button-border a {
+	.dark-content .light-section .pooja-button-border a {
 		color:#fff;
 	}
 	
-	.dark-content .light-section .button-border.outline a {
+	.dark-content .light-section .pooja-button-border.outline a {
 		color:#000;
 	}
 	
-	.circle .button-border {
+	.circle .pooja-button-border {
 		border-radius: 100px;
 		height: 100px;
 		width: 100px;
 	}
 	
-	.button-border span {
+	.pooja-button-border span {
 		position: relative;
 		display: inline-block;
 		-webkit-transition: -webkit-transform 0.2s;
@@ -1057,7 +1056,7 @@
 		padding: 0 40px;
 	}
 	
-	.button-border span::before {
+	.pooja-button-border span::before {
 		position: absolute;
 		width: 100%;
 		top: 100%;
@@ -1066,17 +1065,17 @@
 		text-align: center;
 	}
 	
-	.clapat-button:hover .button-border span {
+	.pooja-pooja-button:hover .pooja-button-border span {
 		-webkit-transform: translateY(-100%);
 		transform: translateY(-100%);
 		transform-origin: 0% 0%;
 	}
 	
-	.clapat-button-wrap.circle:hover .button-border {
+	.pooja-pooja-button-wrap.circle:hover .pooja-button-border {
 		border: solid 2px transparent;	
 	}
 	
-	.clapat-button-wrap.circle .button-border input, .clapat-button-wrap.circle .button-border a {
+	.pooja-pooja-button-wrap.circle .pooja-button-border input, .pooja-pooja-button-wrap.circle .pooja-button-border a {
 		height: 100px;
 		width: 100px;
 		line-height: 100px;
@@ -1222,7 +1221,7 @@
 		-webkit-background-clip: text;
 		background-repeat: no-repeat;
 		background-image: linear-gradient(#000, #000);
-  		background-size: 0% 100%;
+		background-size: 0% 100%;
 	}
 	
 	.has-mask-fill.block-title > span {
@@ -1285,7 +1284,7 @@
 		background: rgba(0,0,0,1);
 	}
   
-    span.has-hover-image:hover::before {
+	span.has-hover-image:hover::before {
 		transform: scaleX(0);
 		transform-origin: right;
 	}
@@ -1389,7 +1388,7 @@
 		height: 3px;
 	}
   
-    a.link:hover::before {
+	a.link:hover::before {
 		transform: scaleX(1);
 		transform-origin: left;
 	}
@@ -1399,7 +1398,7 @@
 	Icon Boxes
 ---------------------------------------------------*/
 
-	.box-icon-wrapper {
+	.pooja-box-icon-wrapper {
 		display: table;
 		position: relative;
 		box-sizing: border-box;
@@ -1407,7 +1406,7 @@
 		width:100%;
 	}
 	
-	.box-icon {
+	.pooja-box-icon {
 		color: #000;
 		position: relative;
 		margin-top: 0px;
@@ -1417,45 +1416,45 @@
 		line-height: 35px;
 	}
 	
-	.text-align-center .box-icon {
+	.text-align-center .pooja-box-icon {
 		margin:auto;
 	}
 	
-	.inline-boxes .box-icon {
+	.inline-boxes .pooja-box-icon {
 		position:absolute;
 	}
 	
-	.box-icon i {
+	.pooja-box-icon i {
 		position:relative;
 		margin-bottom:0px;
 		font-size:24px;
 	}
 	
-	.light-content .box-icon {
+	.light-content .pooja-box-icon {
 		color:#fff;
 	}
 	
-	.light-content .light-section .box-icon {
+	.light-content .light-section .pooja-box-icon {
 		color:#000;
 	}
 	
-	.box-icon:after {
+	.pooja-box-icon:after {
 	  content: "";
 	  clear: both;
 	  display: table;
 	}
 	
-	.box-icon-content {
+	.pooja-box-icon-content {
 		position:relative;
 		width:100%;
 		box-sizing:border-box;
 	}
 	
-	.inline-boxes .box-icon-content {
+	.inline-boxes .pooja-box-icon-content {
 		padding-left:45px;
 	}
 	
-	.box-icon h5 {
+	.pooja-box-icon h5 {
 		margin-bottom:5px;
 	}
 	
@@ -1464,7 +1463,7 @@
 	Parallax Image
 ---------------------------------------------------*/	
 	
-	.parallax-image-content {
+	.pooja-parallax-image-content {
 		position: relative;
 		margin:0 auto;
 		z-index: 10;
@@ -1473,7 +1472,7 @@
 		box-sizing: border-box;
 	}
 	
-	.parallax-image-content .outer {
+	.pooja-parallax-image-content .outer {
 		width: 100%;
 		margin: 0 auto;
 		padding-top:20px;
@@ -1481,22 +1480,22 @@
 		box-sizing: border-box;
 	}
 	
-	.parallax-image-content img {
+	.pooja-parallax-image-content img {
 		width:100%;
 		max-width:100%;
 		height:auto;
 		display:block;
 	}
 	
-	.rounded-borders .parallax-image-content img {
-  		border-radius: 8px;
+	.rounded-borders .pooja-parallax-image-content img {
+		border-radius: 8px;
 	}
 	
 /*--------------------------------------------------
 	Clients Table
 ---------------------------------------------------*/	
 	
-	.clients-table {
+	.pooja-clients-table {
 		position:relative;
 		margin:0;
 		display:flex;
@@ -1508,16 +1507,16 @@
 		background-size: contain;
 	}
 	
-	.light-content .clients-table, .dark-section .clients-table {
+	.light-content .pooja-clients-table, .dark-section .pooja-clients-table {
 		background-image:url("../images/clients-middle-white.png");
 	}
 	
-	.light-content .light-section .clients-table {
+	.light-content .light-section .pooja-clients-table {
 		background-image:url("../images/clients-middle.png");
 	}
 	
-	.clients-table::before {
-	  	content: "";
+	.pooja-clients-table::before {
+		content: "";
 		position: absolute;
 		width: 100%;
 		height: 20px;
@@ -1529,16 +1528,16 @@
 		background-size: contain;
 	}
 	
-	.light-content .clients-table::before, .dark-section .clients-table::before {
+	.light-content .pooja-clients-table::before, .dark-section .pooja-clients-table::before {
 		background-image:url("../images/clients-top-white.png");
 	}
 	
-	.light-content .light-section .clients-table::before {
+	.light-content .light-section .pooja-clients-table::before {
 		background-image:url("../images/clients-top.png");
 	}
 
-	.clients-table::after {
-	  	content: "";
+	.pooja-clients-table::after {
+		content: "";
 		position: absolute;
 		width: 100%;
 		height: 20px;
@@ -1550,15 +1549,15 @@
 		background-size: contain;
 	}
 	
-	.light-content .clients-table::after, .dark-section .clients-table::after {
+	.light-content .pooja-clients-table::after, .dark-section .pooja-clients-table::after {
 		background-image:url("../images/clients-bottom-white.png");
 	}
 	
-	.light-content .light-section .clients-table::after {
+	.light-content .light-section .pooja-clients-table::after {
 		background-image:url("../images/clients-bottom.png");
 	}
 	
-	.clients-table li {
+	.pooja-clients-table li {
 		position:relative;
 		display: block;
 		width:calc(100% / 4 - 40px);
@@ -1571,7 +1570,7 @@
 		padding:30px;
 	}
 	
-	.clients-table li img {
+	.pooja-clients-table li img {
 		width:100%;
 		height: 100%;
 		margin:0 auto;
@@ -1584,15 +1583,15 @@
 		-webkit-transition: all 0.2s ease 0s;
 	}
 	
-	.clients-table li:hover img {
+	.pooja-clients-table li:hover img {
 		opacity:1;
 	}
 	
-	.clients-table.no-borders li {
+	.pooja-clients-table.no-borders li {
 		border:none;
 	}
 	
-	.overlay {
+	.pooja-overlay {
 		display: block;
 		position: absolute;
 		width: 100%;
@@ -1610,15 +1609,15 @@
 		pointer-events:none;
 	}
 	
-	.light-content .clients-table .overlay, .dark-section .clients-table .overlay {
+	.light-content .pooja-clients-table .pooja-overlay, .dark-section .pooja-clients-table .pooja-overlay {
 		background-color: rgba(255,255,255,0.05);
 	}
 	
-	.light-content .light-section .clients-table .overlay {
+	.light-content .light-section .pooja-clients-table .pooja-overlay {
 		background-color: rgba(0,0,0,0.1);
 	}
 	
-	.clients-table li:hover .overlay {
+	.pooja-clients-table li:hover .pooja-overlay {
 		transform:scale(0.95);
 		-webkit-transform:scale(0.95);
 		opacity:1;
@@ -1626,24 +1625,23 @@
 	
 	
 	
-	
 /*--------------------------------------------------
 	Accordion
 ---------------------------------------------------*/
 	
-	.accordion {
+	.pooja-accordion {
 		padding:20px 0;
 		padding-top:0;
 		margin:0;
 	}
 	
-	.accordion.bigger-acc, .light-content .accordion.bigger-acc, .dark-section .accordion.bigger-acc, .light-content .light-section .accordion.bigger-acc {
+	.pooja-accordion.pooja-bigger-acc, .light-content .pooja-accordion.pooja-bigger-acc, .dark-section .pooja-accordion.pooja-bigger-acc, .light-content .light-section .pooja-accordion.pooja-bigger-acc {
 		border-top: none;
 		border-bottom: none;
 		padding:0px 0;
 	}
 	
-	.accordion dt {
+	.pooja-accordion dt {
 		position:relative;
 		display:flex;
 		align-items: center;
@@ -1654,36 +1652,36 @@
 		padding-top: 20px;
 		line-height:30px;
 		-webkit-transition:all 0.2s ease 0s;
-    	transition:all 0.2s ease 0s;
+		transition:all 0.2s ease 0s;
 		z-index:10;
 		border-top: 1px solid rgba(0,0,0,0.1);
 	}
 	
-	.accordion.bigger-acc dt {
+	.pooja-accordion.pooja-bigger-acc dt {
 		font-size: calc(1rem + 1vw);
 		line-height: calc(1rem + 1.5vw);
 		margin-top: 40px;
 		padding-top: 40px;
 	}
 	
-	.uppercase-titles .accordion.bigger-acc dt {
+	.uppercase-titles .pooja-accordion.pooja-bigger-acc dt {
 		text-transform:uppercase;
 	}
 	
-	.light-content .accordion dt, .dark-section .accordion dt {
+	.light-content .pooja-accordion dt, .dark-section .pooja-accordion dt {
 		border-top: 1px solid rgba(255,255,255,0.2);
 	}
 	
-	.light-content .light-section .accordion dt {
+	.light-content .light-section .pooja-accordion dt {
 		border-top: 1px solid rgba(0,0,0,0.1);
 	}
 	
-	.accordion dt:first-child {
+	.pooja-accordion dt:first-child {
 		margin-top: 0px;
 		border-top: none;
 	}
 	
-	.accordion dt span {
+	.pooja-accordion dt span {
 		width: calc(100% - 30px);
 		position: relative;
 		overflow: hidden;
@@ -1693,15 +1691,15 @@
 		font-family:inherit;
 	}
 	
-	.accordion:not(.bigger-acc) dt span em {
+	.pooja-accordion:not(.pooja-bigger-acc) dt span em {
 		font-family:inherit;
 	}
 	
-	.accordion.bigger-acc dt span {
+	.pooja-accordion.pooja-bigger-acc dt span {
 		font-family:inherit;
 	}
 	
-	.accordion.bigger-acc dt span > div {
+	.pooja-accordion.pooja-bigger-acc dt span > div {
 		position: relative;
 		display:table;
 		float:left;
@@ -1710,44 +1708,44 @@
 		-webkit-background-clip: text;
 		background-repeat: no-repeat;
 		background-image: linear-gradient(#000, #000);
-  		background-size: 100% 100%;
-		transition: all 0.3s ease 0s;
-		-webkit-transition: all 0.3s ease 0s;
-	}
-	
-	.accordion.bigger-acc:hover dt span > div {
-		transition: all 0.15s ease 0s;
-		-webkit-transition: all 0.15s ease 0s;
-		background-size: 0% 100%;
-	}
-	
-	.accordion.bigger-acc:hover dt:hover span > div, .accordion.bigger-acc:hover dt.accordion-active span > div {
 		background-size: 100% 100%;
 		transition: all 0.3s ease 0s;
 		-webkit-transition: all 0.3s ease 0s;
 	}
 	
-	.light-content .accordion.bigger-acc dt span > div, .dark-section .accordion.bigger-acc dt span > div {
+	.pooja-accordion.pooja-bigger-acc:hover dt span > div {
+		transition: all 0.15s ease 0s;
+		-webkit-transition: all 0.15s ease 0s;
+		background-size: 0% 100%;
+	}
+	
+	.pooja-accordion.pooja-bigger-acc:hover dt:hover span > div, .pooja-accordion.pooja-bigger-acc:hover dt.pooja-accordion-active span > div {
+		background-size: 100% 100%;
+		transition: all 0.3s ease 0s;
+		-webkit-transition: all 0.3s ease 0s;
+	}
+	
+	.light-content .pooja-accordion.pooja-bigger-acc dt span > div, .dark-section .pooja-accordion.pooja-bigger-acc dt span > div {
 		-webkit-text-fill-color: rgba(255,255,255,0.1);
 		background-image: linear-gradient(#fff, #fff);;
 	}
 	
-	.light-content .light-section .accordion.bigger-acc dt span > div {
+	.light-content .light-section .pooja-accordion.pooja-bigger-acc dt span > div {
 		-webkit-text-fill-color: rgba(0,0,0,0.1);
 		-webkit-background-clip: text;
 		background-repeat: no-repeat;
 		background-image: linear-gradient(#000, #000);
 	}
 	
-	.light-content .accordion dt span, .dark-section .accordion dt span {
+	.light-content .pooja-accordion dt span, .dark-section .pooja-accordion dt span {
 		color:#fff;
 	}
 	
-	.light-content .light-section .accordion dt span {
+	.light-content .light-section .pooja-accordion dt span {
 		color:#000;
 	}
 	
-	.accordion .accordion-content {
+	.pooja-accordion .pooja-accordion-content {
 		margin-bottom: 0;
 		font-size:16px;
 		color:#777;
@@ -1760,28 +1758,28 @@
 		position: relative;
 	}
 	
-	.light-content .accordion .accordion-content, .dark-section .accordion .accordion-content {
+	.light-content .pooja-accordion .pooja-accordion-content, .dark-section .pooja-accordion .pooja-accordion-content {
 		color:#999;
 	}
 	
-	.light-content .light-section .accordion .accordion-content {
+	.light-content .light-section .pooja-accordion .pooja-accordion-content {
 		color:#777;
 	}
 	
-	.accordion.bigger-acc .accordion-content {
+	.pooja-accordion.pooja-bigger-acc .pooja-accordion-content {
 		font-size:18px;
 		line-height: 30px;
 	}
 	
-	.light-content .accordion .accordion-content, .dark-section .accordion .accordion-content {
+	.light-content .pooja-accordion .pooja-accordion-content, .dark-section .pooja-accordion .pooja-accordion-content {
 		color:#ccc;
 	}
 	
-	.light-content .light-section .accordion .accordion-content {
+	.light-content .light-section .pooja-accordion .pooja-accordion-content {
 		color:#444;
 	}
 	
-	.acc-icon-wrap {
+	.pooja-acc-icon-wrap {
 		width: 30px;
 		height: 30px;
 		display: flex;
@@ -1791,20 +1789,20 @@
 		float: none;
 		opacity:1;
 		-webkit-transition:opacity 0.2s ease 0s;
-    	transition:opacity 0.2s ease 0s;
+		transition:opacity 0.2s ease 0s;
 	}
 	
-	.accordion.bigger-acc .acc-icon-wrap {
+	.pooja-accordion.pooja-bigger-acc .pooja-acc-icon-wrap {
 		height: 50px;
 		width: 50px;
 	}
 	
 	
-	.accordion dt:hover .acc-icon-wrap, .accordion dt.accordion-active .acc-icon-wrap {
+	.pooja-accordion dt:hover .pooja-acc-icon-wrap, .pooja-accordion dt.pooja-accordion-active .pooja-acc-icon-wrap {
 		opacity:1;
 	}
 	
-	.acc-button-icon {
+	.pooja-acc-button-icon {
 		height: 30px;
 		width: 30px;
 		color: #000;
@@ -1814,10 +1812,10 @@
 		background: rgba(0,0,0,0.1);
 		border-radius: 50px;
 		-webkit-transition:background 0.2s ease 0s, color 0.2s ease 0s;
-    	transition:background 0.2s ease 0s, color 0.2s ease 0s;
+		transition:background 0.2s ease 0s, color 0.2s ease 0s;
 	}
 	
-	.accordion.bigger-acc .acc-button-icon {
+	.pooja-accordion.pooja-bigger-acc .pooja-acc-button-icon {
 		height: 50px;
 		width: 50px;
 		line-height: 50px;
@@ -1827,47 +1825,47 @@
 		
 	}
 	
-	.accordion dt:hover .acc-button-icon, .accordion dt.accordion-active .acc-button-icon {
+	.pooja-accordion dt:hover .pooja-acc-button-icon, .pooja-accordion dt.pooja-accordion-active .pooja-acc-button-icon {
 		background: rgba(0,0,0,1);
 		color: #fff;
 	}
 	
-	.light-content accordion .acc-button-icon, .dark-section .accordion .acc-button-icon {
+	.light-content pooja-accordion .pooja-acc-button-icon, .dark-section .pooja-accordion .pooja-acc-button-icon {
 		background: rgba(255,255,255,0.1);
 	}
 	
-	.light-content .accordion dt:hover .acc-button-icon, .dark-section .accordion dt.accordion-active .acc-button-icon {
+	.light-content .pooja-accordion dt:hover .pooja-acc-button-icon, .dark-section .pooja-accordion dt.pooja-accordion-active .pooja-acc-button-icon {
 		background: rgba(255,255,255,1);
 		color: #000;
 	}
 	
-	.light-content .light-section accordion .acc-button-icon {
+	.light-content .light-section pooja-accordion .pooja-acc-button-icon {
 		background: rgba(0,0,0,0.1);
 	}
 	
-	.light-content .light-section dt:hover .acc-button-icon, .light-content .light-section .accordion dt.accordion-active .acc-button-icon {
+	.light-content .light-section dt:hover .pooja-acc-button-icon, .light-content .light-section .pooja-accordion dt.pooja-accordion-active .pooja-acc-button-icon {
 		background: rgba(0,0,0,1);
 		color: #fff;
 	}
 	
-	.light-content .accordion .acc-button-icon, .dark-section .accordion .acc-button-icon {
+	.light-content .pooja-accordion .pooja-acc-button-icon, .dark-section .pooja-accordion .pooja-acc-button-icon {
 		color: #fff;
 	}
 	
-	.light-content .light-section .accordion .acc-button-icon {
+	.light-content .light-section .pooja-accordion .pooja-acc-button-icon {
 		color:#000;
 	}
 	
-	.acc-button-icon i {
+	.pooja-acc-button-icon i {
 		height: 30px;
 		line-height: 30px;
 		width: 30px;
 		text-align: center;
 		-webkit-transition:transform 0.2s ease 0s;
-    	transition:transform 0.2s ease 0s;
+		transition:transform 0.2s ease 0s;
 	}
 	
-	dt.accordion-active .acc-button-icon i {
+	dt.pooja-accordion-active .pooja-acc-button-icon i {
 		-webkit-transform: rotate(90deg);
 		transform: rotate(90deg);
 	}
@@ -1878,25 +1876,25 @@
 	Justified Gallery
 ---------------------------------------------------*/	
 	
-	.justified-gallery {
+	.pooja-justified-gallery {
 		box-sizing: border-box;
 		padding: 0 0px;
 		 width: calc(100% + 20px) !important;
-  		margin-left: -10px;
+		margin-left: -10px;
 	}
 	
-	.collage-thumb {
+	.pooja-collage-thumb {
 		position:relative;
 		overflow:hidden;
 		cursor:pointer;
 	}
 	
-	.collage-thumb:hover .thumb-info {
+	.pooja-collage-thumb:hover .pooja-thumb-info {
 		opacity:1;
 		bottom:-5px;
 	}
 	
-	.thumb-info {
+	.pooja-thumb-info {
 		position:absolute;
 		bottom:-10px;
 		left:0;
@@ -1908,7 +1906,7 @@
 		font-size:12px;
 		font-weight: 500;
 		transition:all 0.2s ease-in-out 0s;
-    	-webkit-transition:all 0.2s ease-in-out 0s;
+		-webkit-transition:all 0.2s ease-in-out 0s;
 		background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 100%); /* FF3.6+ */
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.55))); /* Chrome,Safari4+ */
 		background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.55) 100%); /* Chrome10+,Safari5.1+ */
@@ -1923,7 +1921,7 @@
 ---------------------------------------------------*/	
 	
 	
-	.team-members-list  {
+	.pooja-team-members-list  {
 		position: relative;
 		top: 0;
 		left: 0;
@@ -1935,7 +1933,7 @@
 		pointer-events: none;
 	}
 	
-	.team-members-list li {
+	.pooja-team-members-list li {
 		list-style:none;
 		position: relative;
 		margin:0;
@@ -1948,23 +1946,23 @@
 		border-color:rgba(0,0,0,0.1);
 	}
 	
-	.team-members-list li:last-child {
+	.pooja-team-members-list li:last-child {
 		border-bottom:0px solid;
 	}
 	
-	.light-content .team-members-list li, .dark-section .team-members-list li {
+	.light-content .pooja-team-members-list li, .dark-section .pooja-team-members-list li {
 		border-color:rgba(255,255,255,0.15);
 	}
 	
-	.light-content .light-section .team-members-list li {
+	.light-content .light-section .pooja-team-members-list li {
 		border-color:rgba(0,0,0,0.1);
 	}
 	
-	.full > .team-members-list li, .full_elementor .team-members-list li {
+	.full > .pooja-team-members-list li, .full_elementor .pooja-team-members-list li {
 		padding:40px 80px 40px 80px;
 	}
 	
-	.team-member {
+	.pooja-team-member {
 		position: relative;
 		display:table;
 		margin-bottom:0px;
@@ -1974,10 +1972,10 @@
 		line-height: calc(1rem + 3.5vw);
 	}
 	
-	.team-member > div {
+	.pooja-team-member > div {
 		font-size: calc(1rem + 3vw);
 		font-weight: 500;
-  		letter-spacing: -0.1vw;
+		letter-spacing: -0.1vw;
 		position: relative;
 		display:table;
 		margin:0 auto;		
@@ -1986,56 +1984,56 @@
 		-webkit-background-clip: text;
 		background-repeat: no-repeat;
 		background-image: linear-gradient(#000, #000);
-  		background-size: 100% 100%;
-		transition: all 0.3s ease 0s;
-		-webkit-transition: all 0.3s ease 0s;
-	}
-	
-	.uppercase-titles .team-member > div {
-		text-transform:uppercase;
-	}
-	
-	.team-members-list:hover li .team-member > div {
-		transition: all 0.15s ease 0s;
-		-webkit-transition: all 0.15s ease 0s;
-		background-size: 0% 100%;
-	}
-	
-	.team-members-list:hover li:hover .team-member > div {
 		background-size: 100% 100%;
 		transition: all 0.3s ease 0s;
 		-webkit-transition: all 0.3s ease 0s;
 	}
 	
-	.light-content .team-member > div, .dark-section .team-member > div {
+	.uppercase-titles .pooja-team-member > div {
+		text-transform:uppercase;
+	}
+	
+	.pooja-team-members-list:hover li .pooja-team-member > div {
+		transition: all 0.15s ease 0s;
+		-webkit-transition: all 0.15s ease 0s;
+		background-size: 0% 100%;
+	}
+	
+	.pooja-team-members-list:hover li:hover .pooja-team-member > div {
+		background-size: 100% 100%;
+		transition: all 0.3s ease 0s;
+		-webkit-transition: all 0.3s ease 0s;
+	}
+	
+	.light-content .pooja-team-member > div, .dark-section .pooja-team-member > div {
 		-webkit-text-fill-color: rgba(255,255,255,0.1);
 		background-image: linear-gradient(#fff, #fff);;
 	}
 	
-	.light-content .light-section .team-member > div {
+	.light-content .light-section .pooja-team-member > div {
 		-webkit-text-fill-color: rgba(0,0,0,0.1);
 		-webkit-background-clip: text;
 		background-repeat: no-repeat;
 		background-image: linear-gradient(#000, #000);
 	}
 	
-	.light-section .team-member {
+	.light-section .pooja-team-member {
 		color:#000;
 	}
 	
-	.dark-section .team-member {
+	.dark-section .pooja-team-member {
 		color:#fff;
 	}
 	
-	.team-members-list:hover li .team-member {
+	.pooja-team-members-list:hover li .pooja-team-member {
 		opacity:0.3;
 	}
 	
-	.team-members-list li:hover .team-member {
+	.pooja-team-members-list li:hover .pooja-team-member {
 		opacity:1;
 	}
 	
-	.team-member span {
+	.pooja-team-member span {
 		line-height: inherit;
 		position: absolute;
 		left:0;
@@ -2046,28 +2044,28 @@
 		-webkit-transition: all 0.3s ease 0s;
 	}
 	
-	.team-member span:last-child {
+	.pooja-team-member span:last-child {
 		left:auto;
 		right:0;
 	}
 	
-	.team-members-list:hover li .team-member > span {
+	.pooja-team-members-list:hover li .pooja-team-member > span {
 		opacity:0.3;
 	}
 	
-	.team-members-list:hover li:hover .team-member > span {
+	.pooja-team-members-list:hover li:hover .pooja-team-member > span {
 		opacity:1;
 	}
 	
-	.light-section .team-member span {
+	.light-section .pooja-team-member span {
 		color:#000;
 	}
 	
-	.dark-section .team-member span {
+	.dark-section .pooja-team-member span {
 		color:#fff;
 	}
 	
-	.team-members-list .hover-reveal {
+	.pooja-team-members-list .pooja-hover-reveal {
 		position: fixed;
 		width: 300px;
 		height: 400px;
@@ -2075,19 +2073,19 @@
 		opacity: 0;
 	}
 	
-	.swiper-container.team-looped-carousel {		
+	.pooja-swiper-container.pooja-team-looped-carousel {		
 		cursor:grab;
-    }
+	}
 	
-	.drag-cursor .swiper-container.team-looped-carousel {
+	.pooja-drag-cursor .pooja-swiper-container.pooja-team-looped-carousel {
 		cursor:grabbing;
-    }
+	}
 	
-	.team-looped-carousel .swiper-slide {        
+	.pooja-team-looped-carousel .pooja-swiper-slide {        
 		text-align:left;
-    }
+	}
 	
-	.team-caption {
+	.pooja-team-caption {
 		position:absolute;
 		bottom:0;
 		left:0;
@@ -2097,7 +2095,7 @@
 		padding:10px 30px 30px 30px;
 	}
 	
-	.team-caption h5, .team-caption p {
+	.pooja-team-caption h5, .pooja-team-caption p {
 		margin-bottom:0;
 	}
 	
@@ -2105,15 +2103,15 @@
 	Team Members Grid
 ---------------------------------------------------*/
 	
-	.team-wrapper-grid {
+	.pooja-team-wrapper-grid {
 		display:block;
 		position:relative;
 	}
 	
-	.team-intro-grid {
+	.pooja-team-intro-grid {
 		display: flex;
-  		justify-content: center;
-  		align-items: center;
+		justify-content: center;
+		align-items: center;
 		width:100%;
 		height:auto;
 		box-sizing:border-box;
@@ -2122,7 +2120,7 @@
 		top:0;
 	}
 	
-	.team-members-grid  {
+	.pooja-team-members-grid  {
 		position: relative;
 		width: 100%;
 		height:auto;
@@ -2132,7 +2130,7 @@
 		overflow:hidden;
 	}
 	
-	.team-members-grid li {
+	.pooja-team-members-grid li {
 		list-style:none;
 		position: relative;
 		margin:0;
@@ -2142,7 +2140,7 @@
 		flex-direction: column;
 	}
 	
-	.team-member-inner {
+	.pooja-team-member-inner {
 		display: block;
 		width: 20%;
 		height: 100%;
@@ -2150,27 +2148,27 @@
 		cursor:pointer;
 	}
 	
-	.team-members-grid li:nth-child(4n+1) .team-member-inner {
+	.pooja-team-members-grid li:nth-child(4n+1) .pooja-team-member-inner {
 		transform: translateX(0%);
 		-webkit-transform: translateX(0%);
 	}
 	
-	.team-members-grid li:nth-child(4n+2)  .team-member-inner {
+	.pooja-team-members-grid li:nth-child(4n+2)  .pooja-team-member-inner {
 		transform: translateX(400%);
 		-webkit-transform: translateX(400%);
 	}
 	
-	.team-members-grid li:nth-child(4n+3) .team-member-inner {
+	.pooja-team-members-grid li:nth-child(4n+3) .pooja-team-member-inner {
 		transform: translateX(100%);
 		-webkit-transform: translateX(100%);
 	}
 	
-	.team-members-grid li:nth-child(4n+4) .team-member-inner {
+	.pooja-team-members-grid li:nth-child(4n+4) .pooja-team-member-inner {
 		transform: translateX(300%);
 		-webkit-transform: translateX(300%);
 	}
 	
-	.team-member-image {
+	.pooja-team-member-image {
 		width: 100%;
 		height: auto;
 		display: block;
@@ -2178,11 +2176,11 @@
 		overflow:hidden;
 	}
 	
-	.rounded-borders .team-member-image {
+	.rounded-borders .pooja-team-member-image {
 		border-radius:8px;
 	}
 	
-	.team-member-image::before {
+	.pooja-team-member-image::before {
 		content: "";
 		padding-top: 100%;
 		position: relative;
@@ -2190,7 +2188,7 @@
 		box-sizing: border-box;
 	}
 	
-	.team-member-image img {
+	.pooja-team-member-image img {
 		width:100%;
 		height: 100%;
 		position:absolute;
@@ -2205,12 +2203,12 @@
 		transition: transform 0.3s ease-out 0s;
 	}
 	
-	.team-member-inner:hover .team-member-image img {	
+	.pooja-team-member-inner:hover .pooja-team-member-image img {	
 		-webkit-transform:scale(1);
 		transform: scale(1);			
 	}
 	
-	.team-member-caption {
+	.pooja-team-member-caption {
 		position: relative;
 		display: flex;
 		justify-content: space-between;
@@ -2218,15 +2216,15 @@
 		padding: 10px 0;
 	}
 	
-	.team-member-caption span {
+	.pooja-team-member-caption span {
 		color:#000;
 	}
 	
-	.light-section .team-member-caption span {
+	.light-section .pooja-team-member-caption span {
 		color:#000;
 	}
 	
-	.dark-section .team-member-caption span {
+	.dark-section .pooja-team-member-caption span {
 		color:#fff;
 	}
 	
@@ -2234,36 +2232,36 @@
 	Contact Formular
 ---------------------------------------------------*/	
 	
-	.text-align-center #contact-formular {
+	.text-align-center #pooja-contact-formular {
 		margin:0 auto;
 		max-width:800px;
 	}
 	
-	#contact-formular::after {
+	#pooja-contact-formular::after {
 		clear: both;
 		content: " ";
 		display: table;
 	}
 	
-	#contactform {
+	#poojacontactform {
 		position:relative;
 	}
 	
-	.name-box, .email-box, .message-box {
+	pooja-name-box, .pooja-email-box, .pooja-message-box {
 		position:relative;
 		display:block;
 		color:#000;
 	}
 	
-	.light-content .name-box, .dark-section .name-box, light-content .email-box, .dark-section .email-box, light-content .message-box, .dark-section .message-box {
+	.light-content .pooja-name-box, .dark-section .pooja-name-box, light-content .pooja-email-box, .dark-section .pooja-email-box, light-content .pooja-message-box, .dark-section .pooja-message-box {
 		color:#fff;
 	}
 	
-	.light-content .light-section .name-box, .light-content .light-section .email-box, .light-content .light-section .message-box {
+	.light-content .light-section .pooja-name-box, .light-content .light-section .pooja-email-box, .light-content .light-section .pooja-message-box {
 		color:#000;
 	}
 	
-	.name-box, .email-box  {
+	pooja-name-box, .pooja-email-box  {
 		width: 47%;
 		float: left;
 		margin-bottom: 20px;
@@ -2271,29 +2269,29 @@
 		position: relative;
 	}
 	
-	.name-box::after, .email-box::after {
+	pooja-name-box::after, .pooja-email-box::after {
 		clear: both;
 		content: " ";
 		display: table;
 	}
 
-	.email-box {
+	.pooja-email-box {
 		margin-right:0px;
 	}
 	
-	.message-box {
+	.pooja-message-box {
 		float:left;
 		width:100%;		
 		margin-top:60px;
 	}
 	
-	.verify-box {
+	pooja-verify-box {
 		float:left;
 		width:100%;		
 		margin-bottom:60px;
 	}
 	
-	.text-align-center .verify-box {
+	.text-align-center .pooja-verify-box {
 		float: none;
 		width: auto;
 		text-align: center;
@@ -2302,13 +2300,13 @@
 		margin-bottom: 60px;
 	}
 	
-	.verify-sum {
+	pooja-verify-sum {
 		margin:0;
 		padding:0;
 		float:left;
 	}
 	
-	.verify-sum li {
+	pooja-verify-sum li {
 		list-style:none;
 		display:block;
 		float:left;
@@ -2322,33 +2320,33 @@
 		margin-bottom:0;
 	}
 	
-	.light-content .verify-sum li, .dark-section .verify-sum li {
+	.light-content .pooja-verify-sum li, .dark-section .pooja-verify-sum li {
 		color:#000;
 		background-color:#fff;
 	}
 	
-	.light-content .light-section .verify-sum li {
+	.light-content .light-section .pooja-verify-sum li {
 		color:#fff;
 		background-color:#000;
 	}
 	
-	.verify-sum li:nth-child(2), .verify-sum li:nth-child(4) {
+	pooja-verify-sum li:nth-child(2), .pooja-verify-sum li:nth-child(4) {
 		width:30px;
 		color:#444;
 		background-color:transparent!important;
 	}
 	
-	.light-content .verify-sum li:nth-child(2), .light-content .verify-sum li:nth-child(4), .dark-section .verify-sum li:nth-child(2), .dark-section .verify-sum li:nth-child(4) {
+	.light-content .pooja-verify-sum li:nth-child(2), .light-content .pooja-verify-sum li:nth-child(4), .dark-section .pooja-verify-sum li:nth-child(2), .dark-section .pooja-verify-sum li:nth-child(4) {
 		color:#fff;
 		background-color:transparent!important;
 	}
 	
-	.light-content .light-section .verify-sum li:nth-child(2), .light-content .light-section .verify-sum li:nth-child(4) {
+	.light-content .light-section .pooja-verify-sum li:nth-child(2), .light-content .light-section .pooja-verify-sum li:nth-child(4) {
 		color:#444;
 		background-color:transparent!important;
 	}
 	
-	input#verify {
+	input#pooja-verify {
 		float: left;
 		width: 34px;
 		padding: 0;
@@ -2361,17 +2359,17 @@
 		color:#fff;
 	}
 	
-	.light-content input#verify, .dark-section  input#verify {
+	.light-content input#pooja-verify, .dark-section  input#pooja-verify {
 		background-color:#fff;
 		color:#000;
 	}
 	
-	.light-content .light-section  input#verify {
+	.light-content .light-section  input#pooja-verify {
 		background-color:#000;
 		color:#fff;
 	}
 	
-	#contact-formular .required {
+	#pooja-contact-formular .required {
 		float:left;
 		width:auto;
 		font-size: 14px;
@@ -2380,7 +2378,7 @@
 		margin-bottom:0;
 	}
 	
-	#contact-formular .text-align-center .required {
+	#pooja-contact-formular .text-align-center .required {
 		float: left;
 		margin-left: 0;
 		display: block;
@@ -2410,7 +2408,7 @@
 		border-bottom:1px solid rgba(0,0,0,0.3);
 	}
 	
-	.bigger-form input, .bigger-form textarea {
+	pooja-bigger-form input, .pooja-bigger-form textarea {
 		font-size: 48px;
 		font-weight: 500;
 		height: 100px;
@@ -2458,7 +2456,7 @@
 	  color: currentColor;
 	}
 	
-	.input_label {
+	pooja-input_label {
 		background-color: currentColor;
 		height: 2px;
 		left: 0;
@@ -2469,24 +2467,24 @@
 		transition: all 0.2s ease-in-out;
 	}
 	
-	.bigger-form .input_label {
+	pooja-bigger-form .pooja-input_label {
 		top: 99px;
 	}
 	
-	.light-content .input_label, .dark-section .input_label {
+	.light-content .pooja-input_label, .dark-section .pooja-input_label {
 		background-color: currentColor;
 	}
 	
-	.light-content .light-section .input_label {
+	.light-content .light-section .pooja-input_label {
 		background-color: currentColor;
 	}
 	
-	.input_label.slow {
+	pooja-input_label.slow {
 		-webkit-transition: all 0.4s ease-in-out;
 		transition: all 0.4s ease-in-out;
 	}
 	
-	input:focus + .input_label, textarea:focus + .input_label {
+	input:focus + .pooja-input_label, textarea:focus + .pooja-input_label {
 		width:100%;		
 	}
 	
@@ -2557,18 +2555,18 @@
 		color:#000;
 	}
 	
-	.error_message {				
+	pooja-error_message {				
 		margin-bottom:30px;
 		font-size:16px;		
 		color:#e93735;	
 	}
 	
-	#success_page p, #success_page p strong {		
+	#pooja-success_page p, #pooja-success_page p strong {		
 		color:#fff;		
 		margin-top:20px;		
 	}
 	
-	#message fieldset {		
+	#pooja-message fieldset {		
 		border:none;		
 	}
 	
@@ -2606,12 +2604,12 @@
 	}
 	
 	
-	.services-icon i {
+	services-icon i {
 		font-size:24px;
 		margin-bottom:20px;
 	}
 	
-	.service-info-text {
+	pooja-service-info-text {
 		margin-bottom:40px;
 	}
 	
@@ -2619,7 +2617,7 @@
 	Flex Lists
 ---------------------------------------------------*/		
 	
-	.flex-lists-wrapper {
+	pooja-flex-lists-wrapper {
 		position:relative;
 		display:block;
 		margin-left: calc(50% - 50vw)!important;
@@ -2629,7 +2627,7 @@
 		color:#000;
 	}
 	
-	.flex-lists-wrapper::before {
+	pooja-flex-lists-wrapper::before {
 		content:"";
 		position: absolute;
 		width: 100%;
@@ -2641,15 +2639,15 @@
 		opacity:0.2;
 	}
 	
-	.light-content .flex-lists-wrapper , .dark-section .flex-lists-wrapper {
+	.light-content pooja-flex-lists-wrapper , .dark-section pooja-flex-lists-wrapper {
 		color:#fff;
 	}
 	
-	.light-content .light-section .flex-lists-wrapper {
+	.light-content .light-section pooja-flex-lists-wrapper {
 		color:#000;
 	}
 	
-	.flex-list {
+	pooja-flex-list {
 		position: relative;
 		padding: 35px 80px;
 		margin: 0;
@@ -2657,7 +2655,7 @@
 		justify-content: space-between;		
 	}
 	
-	.flex-list::before {
+	pooja-flex-list::before {
 		content:"";
 		position: absolute;
 		width: 100%;
@@ -2669,7 +2667,7 @@
 		opacity:0.2;
 	}
 	
-	.flex-list::after {
+	pooja-flex-list::after {
 		content:"";
 		position: absolute;
 		width: 100%;
@@ -2682,38 +2680,38 @@
 		transition: all 0.2s ease-out 0s;
 	}
 	
-	.flex-list:hover::after {
+	pooja-flex-list:hover::after {
 		height: 100%;
 	}
 	
-	.flex-list {
+	pooja-flex-list {
 		color: currentColor;
 		background: transparent;
 	}
 	
-	.flex-list > span {
+	pooja-flex-list > span {
 		z-index: 10;		
 		color: currentColor;
 		-webkit-transition: all 0.2s ease-out 0s;	
 		transition: all 0.2s ease-out 0s;
 	}
 	
-	.flex-list:hover > span {
+	pooja-flex-list:hover > span {
 		color: #fff;
 	}
 	
-	.flex-list-left {
+	pooja-flex-list-left {
 		width:15%;
 		text-align:left;
 	}
 	
-	.flex-list-center {
+	pooja-flex-list-center {
 		width:70%;
 		font-size:20px;
 		text-align:center;
 	}
 	
-	.flex-list-right {
+	pooja-flex-list-right {
 		width:15%;
 		text-align:right;
 	}
@@ -2725,7 +2723,7 @@
 	
 	
 	
-	.fw-gallery .wrapper-gallery {
+	pooja-fw-gallery .pooja-wrapper-gallery {
 		display: inline-flex;
 		align-items: flex-end;
 		margin:0;
@@ -2733,14 +2731,14 @@
 		clear:both;
 	}
 	
-	.bw-gallery .wrapper-gallery {
+	pooja-bw-gallery .pooja-wrapper-gallery {
 		display: inline-flex;
 		align-items: flex-start;
 		margin:0;
 		padding:0;
 	}
 	
-	.moving-gallery li {
+	pooja-moving-gallery li {
 		position:relative;
 		width: 25vw;
 		padding-left: 10px;
@@ -2750,60 +2748,60 @@
 		list-style:none;
 	}
 	
-	.fw-gallery.random-sizes li:first-child, .bw-gallery.random-sizes li:first-child {
+	pooja-fw-gallery.pooja-random-sizes li:first-child, .pooja-bw-gallery.pooja-random-sizes li:first-child {
 		padding-left: 0px;
 	}
 	
-	.fw-gallery.random-sizes li:last-child, .bw-gallery.random-sizes li:last-child {
+	pooja-fw-gallery.pooja-random-sizes li:last-child, .pooja-bw-gallery.pooja-random-sizes li:last-child {
 		padding-right: 0px;
 	}
 	
-	.fw-gallery.random-sizes li:nth-child(1) {
+	pooja-fw-gallery.pooja-random-sizes li:nth-child(1) {
 		width: 25vw;
 	}
 	
-	.fw-gallery.random-sizes li:nth-child(2) {
+	pooja-fw-gallery.pooja-random-sizes li:nth-child(2) {
 		width: 30vw;
 	}
 	
-	.fw-gallery.random-sizes li:nth-child(3) {
+	pooja-fw-gallery.pooja-random-sizes li:nth-child(3) {
 		width: 45vw;
 	}
 	
-	.fw-gallery.random-sizes li:nth-child(4) {
+	pooja-fw-gallery.pooja-random-sizes li:nth-child(4) {
 		width: 25vw;
 	}
 	
-	.bw-gallery.random-sizes li:nth-child(1) {
+	pooja-bw-gallery.pooja-random-sizes li:nth-child(1) {
 		width: 25vw;
 	}
 	
-	.bw-gallery.random-sizes li:nth-child(2) {
+	pooja-bw-gallery.pooja-random-sizes li:nth-child(2) {
 		width: 45vw;
 	}
 	
-	.bw-gallery.random-sizes li:nth-child(3) {
+	pooja-bw-gallery.pooja-random-sizes li:nth-child(3) {
 		width:30vw;
 	}
 	
-	.bw-gallery.random-sizes li:nth-child(4) {
+	pooja-bw-gallery.pooja-random-sizes li:nth-child(4) {
 		width: 25vw;
 	}
 	
-	.moving-gallery li img {
+	pooja-moving-gallery li img {
 		height:auto;
 		margin:0px;
 	}
 	
-	.moving-gallery li img {
-  		border: 1px solid rgba(255,255,255,0.15);
+	pooja-moving-gallery li img {
+		border: 1px solid rgba(255,255,255,0.15);
 	}
 	
-	.rounded-borders .moving-gallery li img {
+	.rounded-borders .pooja-moving-gallery li img {
 		border-radius:12px;
 	}
 	
-	.moving-gallery-caption {
+	pooja-moving-gallery-caption {
 		position: absolute;
 		height: auto;
 		padding: 30px;
@@ -2817,7 +2815,7 @@
 		transition: all 0.2s ease-in-out 0s;
 	}
 	
-	.moving-gallery li:hover .moving-gallery-caption {
+	pooja-moving-gallery li:hover .pooja-moving-gallery-caption {
 		opacity:0.4;
 	}
 	
@@ -2828,7 +2826,7 @@
 ---------------------------------------------------*/		
 	
 	
-	.zoom-gallery {
+	pooja-zoom-gallery {
 		position:relative;
 		margin:0;
 		padding:0;
@@ -2841,7 +2839,7 @@
 		pointer-events:none;
 	}
 	
-	.zoom-wrapper-gallery {
+	pooja-zoom-wrapper-gallery {
 		position:relative;
 		border-right: 0px solid #f00;
 		box-sizing:border-box;
@@ -2854,7 +2852,7 @@
 		justify-content: center;
 	}
 	
-	.zoom-wrapper-gallery li {
+	pooja-zoom-wrapper-gallery li {
 		position:relative;
 		display: block;
 		box-sizing:border-box;
@@ -2871,11 +2869,11 @@
 		
 	}
 	
-	.zoom-wrapper-gallery li.zoom-center {
+	pooja-zoom-wrapper-gallery li.pooja-zoom-center {
 		z-index:1;
 	}
 	
-	.zoom-wrapper-gallery li .zoom-img-wrapper {
+	pooja-zoom-wrapper-gallery li .pooja-zoom-img-wrapper {
 		box-sizing: border-box;
 		width: 100%;
 		height: 100%;
@@ -2885,15 +2883,15 @@
 		background-color:rgb(102, 102, 102);
 	}
 	
-	.rounded-borders .zoom-wrapper-gallery li .zoom-img-wrapper {
+	.rounded-borders .pooja-zoom-wrapper-gallery li .pooja-zoom-img-wrapper {
 		border-radius: 8px;
 	}
 	
-	.zoom-wrapper-gallery.end-state  li.zoom-center .zoom-img-wrapper {
+	pooja-zoom-wrapper-gallery.end-state  li.pooja-zoom-center .pooja-zoom-img-wrapper {
 		
 	}
 	
-	.zoom-wrapper-gallery li .zoom-img-wrapper img {
+	pooja-zoom-wrapper-gallery li .pooja-zoom-img-wrapper img {
 		width:100%;
 		height: 100%;
 		position:relative;
@@ -2903,7 +2901,7 @@
 		object-fit: cover;
 	}
 	
-	.zoom-wrapper-thumb {
+	pooja-zoom-wrapper-thumb {
 		width:100%;
 		height: 100vh;
 		position:absolute;
@@ -2911,18 +2909,18 @@
 		display:block;
 	}
 	
-	.zoom-wrapper-thumb .zoom-img-wrapper {
+	pooja-zoom-wrapper-thumb .pooja-zoom-img-wrapper {
 		width:100%;
 		height: 100%;
 		position:absolute;
 		overflow:hidden;
 	}
 	
-	.rounded-borders .zoom-wrapper-thumb .zoom-img-wrapper {
+	.rounded-borders .pooja-zoom-wrapper-thumb .pooja-zoom-img-wrapper {
 		border-radius: 8px;
 	}
 	
-	.zoom-wrapper-thumb .zoom-img-wrapper img {
+	pooja-zoom-wrapper-thumb .pooja-zoom-img-wrapper img {
 		width:100%;
 		height: 100%;
 		position:relative;
@@ -2937,16 +2935,16 @@
 	Slowed Pin
 ---------------------------------------------------*/	
 	
-	.slowed-pin {
+	pooja-slowed-pin {
 		position:relative;
 		overflow: hidden;
 	}
 	
-	.slowed-pin > .pin-spacer {
+	pooja-slowed-pin > .pin-spacer {
 		pointer-events:none;
 	}
 	
-	.slowed-text {
+	pooja-slowed-text {
 		position:absolute;
 		height:auto;
 		min-height:100vh;
@@ -2965,12 +2963,12 @@
 		right:0;
 	}
 	
-	.slowed-text-wrapper {
+	pooja-slowed-text-wrapper {
 		position:relative;
 		display:block;
 	}
 	
-	.slowed-images {
+	pooja-slowed-images {
 		position: relative;
 		top: 0;
 		width: 100%;
@@ -2981,7 +2979,7 @@
 		margin:auto;
 	}
 	
-	.slowed-image {
+	pooja-slowed-image {
 		position: relative;
 		width: 100%;
 		height: auto;
@@ -2993,11 +2991,11 @@
 		flex-direction: column;
 	}
 	
-	.slowed-image:nth-of-type(2n+2) {
-  		align-items: flex-end;
+	pooja-slowed-image:nth-of-type(2n+2) {
+		align-items: flex-end;
 	}
 	
-	.slowed-image img {
+	pooja-slowed-image img {
 		width: auto;
 		max-width: 40%!important;
 		height: auto!important;
@@ -3008,7 +3006,7 @@
 		transform: scale(0.95) translateY(30%);
 	}
 	
-	.rounded-borders .slowed-image img {
+	.rounded-borders .pooja-slowed-image img {
 		border-radius: 8px;
 	}
 	
@@ -3016,7 +3014,7 @@
 	Horizontal Panels
 ---------------------------------------------------*/		
 	
-	.panels {
+	.pooja-panels {
 		position:relative;
 		margin-left: calc(50% - 50vw)!important;
 		margin-right: calc(50% - 50vw)!important;
@@ -3024,7 +3022,7 @@
 		width: calc(100vw)!important;		
 	}
 	
-	.panels-container {
+	.pooja-panels-container {
 		position:relative;
 		height: 100vh;
 		display: -webkit-box;
@@ -3038,7 +3036,7 @@
 		box-sizing:border-box;
 	}
 	
-	.panels-container > .panel {
+	.pooja-panels-container > .pooja-panel {
 		position: relative;
 		width: auto;
 		height: 100%;
@@ -3051,15 +3049,15 @@
 		flex-direction: column;
 	}
 	
-	.panels-container > .panel:first-child {
+	.pooja-panels-container > .pooja-panel:first-child {
 		margin-left:80px;
 	}
 	
-	.panels-container > .panel:last-child {
+	.pooja-panels-container > .pooja-panel:last-child {
 		margin-right:80px;
 	}
 	
-	.panels-container .panel img {
+	.pooja-panels-container .pooja-panel img {
 		width:100%;
 		height: 100%;
 		position:relative;
@@ -3068,15 +3066,15 @@
 		object-fit: cover;		
 	}
 	
-	.rounded-borders .panels-container .panel img {
+	.rounded-borders .pooja-panels-container .pooja-panel img {
 		border-radius:8px;
 	}
 	
-	.panels-container .panel:first-child img {
+	.pooja-panels-container .pooja-panel:first-child img {
 		margin-left:0px;
 	}
 	
-	.panels-container .panel:last-child img {
+	.pooja-panels-container .pooja-panel:last-child img {
 		margin-right:0px;
 	}
 	
@@ -3084,7 +3082,7 @@
 	Team Panels
 ---------------------------------------------------*/
 	
-	#team-panels .panel-content-wrapper {
+	#pooja-team-panels .pooja-panel-content-wrapper {
 		position: relative;
 		width: auto;
 		height: 60%;
@@ -3097,15 +3095,15 @@
 		padding-right:30px;
 	}
 	
-	#team-panels .panels-container .panel:first-child .panel-content-wrapper {
+	#pooja-team-panels .pooja-panels-container .pooja-panel:first-child .pooja-panel-content-wrapper {
 		padding-left:80px;
 	}
 	
-	#team-panels .panels-container .panel:last-child .panel-content-wrapper {
+	#pooja-team-panels .pooja-panels-container .pooja-panel:last-child .pooja-panel-content-wrapper {
 		padding-right:80px;
 	}
 	
-	#team-panels .panel-content {
+	#pooja-team-panels .pooja-panel-content {
 		position: absolute;
 		width: 100%;
 		height: auto;
@@ -3117,15 +3115,15 @@
 		pointer-events: none;
 	}
 	
-	#team-panels .panels-container .panel:first-child .panel-content-wrapper .panel-content {
+	#pooja-team-panels .pooja-panels-container .pooja-panel:first-child .pooja-panel-content-wrapper .pooja-panel-content {
 		padding-left:80px;
 	}
 	
-	#team-panels .panels-container .panel:last-child .panel-content-wrapper .panel-content {
+	#pooja-team-panels .pooja-panels-container .pooja-panel:last-child .pooja-panel-content-wrapper .pooja-panel-content {
 		padding-right:80px;
 	}
 	
-	.team-name-panel, .team-cat-panel {
+	pooja-team-name-panel, .pooja-team-cat-panel {
 		font-size:18px;
 		line-height: 24px;
 		display:table;
@@ -3133,25 +3131,25 @@
 		float:left;
 	}
 	
-	.team-cat-panel {
+	.pooja-team-cat-panel {
 		font-size:14px;
 		opacity:0.6;
 		float:right;
 	}
 	
-	#team-panels .panels-container .panel .panel-image {
+	#pooja-team-panels .pooja-panels-container .pooja-panel .pooja-panel-image {
 		width: auto;
 		height: 100%;
 		position:relative;
 		overflow:hidden;
 	}
 	
-	#team-panels .panels-container .panel img {
+	#pooja-team-panels .pooja-panels-container .pooja-panel img {
 		height: 100%;
 		margin:0;
 	}
 	
-	.rounded-borders #team-panels .panels-container .panel img {
+	.rounded-borders #pooja-team-panels .pooja-panels-container .pooja-panel img {
 		border-radius:8px;
 	}
 	
@@ -3161,22 +3159,22 @@
 ---------------------------------------------------*/	
 	
 	
-	.pinned-image {
+	.pooja-pinned-image {
 		box-sizing:border-box;
 		padding-bottom:300px;		
 		position:relative;
 	}
 	
-	.pinned-image:first-child {
+	.pooja-pinned-image:first-child {
 		padding-top:0;
 	}
 	
-	.pinned-image:last-child {
+	.pooja-pinned-image:last-child {
 		z-index:10;
 		padding-bottom:0px;		
 	}
 	
-	.rounded-borders .pinned-image img {
+	.rounded-borders .pooja-pinned-image img {
 		border-radius:8px;
 	}
 	
@@ -3184,7 +3182,7 @@
 	Reveal Gallery
 ---------------------------------------------------*/		
 	
-	.reveal-gallery {
+	.pooja-reveal-gallery {
 		position:relative;
 		width:100%;
 		height:auto;
@@ -3192,7 +3190,7 @@
 		margin:0 auto;
 	}
 	
-	.reveal-img {
+	.pooja-reveal-img {
 		width:auto;
 		height:auto;
 		position:absolute;
@@ -3205,7 +3203,7 @@
 		opacity: 0.95;
 	}
 	
-	.reveal-img-fixed {
+	.pooja-reveal-img-fixed {
 		width:50%;
 		max-width:600px;		
 		position:relative;
@@ -3213,17 +3211,17 @@
 		z-index:10;
 	}
 	
-	.reveal-img:first-child {
+	.pooja-reveal-img:first-child {
 		left:0;
 		transform:rotate(-4deg)
 	}
 	
-	.reveal-img:last-child {
+	.pooja-reveal-img:last-child {
 		right:0;
 		transform:rotate(4deg)
 	}
 	
-	.reveal-gallery img {
+	.pooja-reveal-gallery img {
 		width:auto;
 		height: auto;
 		max-width: 100%;
@@ -3235,7 +3233,7 @@
 		margin: auto;
 	}
 	
-	.rounded-borders .reveal-gallery img {
+	.rounded-borders .pooja-reveal-gallery img {
 		border-radius:8px;
 	}
 	
@@ -3244,7 +3242,7 @@
 	Clipped Immaged
 ---------------------------------------------------*/			
 	
-	.clipped-image-wrapper {
+	.pooja-clipped-image-wrapper {
 		position:relative;
 		margin-left: calc(50% - 50vw)!important;
 		margin-right: calc(50% - 50vw)!important;
@@ -3253,19 +3251,19 @@
 		overflow:hidden;
 	}
 	
-	.clipped-image-pin {
+	.pooja-clipped-image-pin {
 		position:relative;
 		display:block;
 	}
 	
-	.clipped-image-size {
+	.pooja-clipped-image-size {
 		width:100%;
 		height:100%;
 		position:relative;
 		display:block;
 	}
 	
-	.clipped-image {
+	.pooja-clipped-image {
 		position:relative;
 		z-index:0;
 		width:calc(100vw - 160px);
@@ -3280,7 +3278,7 @@
 		filter:grayscale(1);	
 	}
 	
-	.clipped-image img {
+	.pooja-clipped-image img {
 		width:100%;
 		height: 100%!important;
 		position:relative;
@@ -3290,7 +3288,7 @@
 		object-fit: cover;		
 	}
 	
-	.clipped-image-gradient {
+	.pooja-clipped-image-gradient {
 		position:absolute;
 		height:30%;
 		width:100%;
@@ -3305,7 +3303,7 @@
 		display:none;
 	}
 	
-	.clipped-image-content {
+	.pooja-clipped-image-content {
 		position:relative;
 		width:100%;
 		margin:0 auto;
@@ -3316,7 +3314,7 @@
 	Carousel Shortcode
 ---------------------------------------------------*/		
 	
-	.carousel-shortcode-wrapper {
+	.pooja-carousel-shortcode-wrapper {
 		position:relative;
 		display:inline-block;
 		margin-left: calc(50% - 50vw)!important;
@@ -3327,7 +3325,7 @@
 		
 	}
 	
-	.carousel-shortcode-pin {
+	.pooja-carousel-shortcode-pin {
 		position:relative;
 		height:100%;
 		width:100%;
@@ -3337,7 +3335,7 @@
 		
 	}
 	
-	.carousel-shortcode-thumbs {
+	.pooja-carousel-shortcode-thumbs {
 		position:relative;
 		height:100vh;
 		width:100%;
@@ -3350,20 +3348,20 @@
 		box-sizing:border-box;
 		z-index:10;
 		mask-image: linear-gradient(#0000, black 15%, black 85%, #0000 100%);
-  		-webkit-mask-image: linear-gradient(#0000, black 15%, black 85%, #0000 100%);
+		-webkit-mask-image: linear-gradient(#0000, black 15%, black 85%, #0000 100%);
 		pointer-events:none;
 	}
 	
-	.carousel-shortcode-thumbs .clapat-item {
+	.pooja-carousel-shortcode-thumbs .pooja-item {
 		width: calc(20% - 80px);
 		margin:60px 40px;
 	}
 	
-	.carousel-shortcode-thumbs.is_active .clapat-item {
+	.pooja-carousel-shortcode-thumbs.is_active .pooja-item {
 		pointer-events:initial;
 	}
 	
-	.carousel-shortcode-thumbs .clapat-item .slide-inner {
+	.pooja-carousel-shortcode-thumbs .pooja-item .slide-inner {
 		padding-top: 0;
 		width: 100%;
 		height: auto;
@@ -3372,7 +3370,7 @@
 		aspect-ratio: 10/14;
 	}
 	
-	.carousel-shortcode-caption {
+	.pooja-carousel-shortcode-caption {
 		position:absolute;
 		height:100%;
 		width:100%;
@@ -3386,7 +3384,7 @@
 		z-index:0;
 	}
 	
-	.carousel-shortcode-title-hide, .carousel-shortcode-title-show {
+	.pooja-carousel-shortcode-title-hide, .pooja-carousel-shortcode-title-show {
 		position:absolute;		
 		font-size: calc(1rem + 4.15vw);
 		line-height: calc(1rem + 4.5vw);
@@ -3395,30 +3393,30 @@
 		width:auto;		
 	}
 	
-	.uppercase-titles .carousel-shortcode-title-hide, .uppercase-titles .carousel-shortcode-title-show {
+	.uppercase-titles .pooja-carousel-shortcode-title-hide, .uppercase-titles .pooja-carousel-shortcode-title-show {
 		text-transform:uppercase;
 	}
 	
-	.carousel-shortcode-title-show {
+	.pooja-carousel-shortcode-title-show {
 		position:relative;
 		font-size: calc(1rem + 1.15vw);
 		line-height: calc(1rem + 1.5vw);
 	}
 	
-	.light-content .carousel-shortcode-title-hide, .dark-section .carousel-shortcode-title-hide, .light-content .carousel-shortcode-title-show, .dark-section .carousel-shortcode-title-show {
+	.light-content .pooja-carousel-shortcode-title-hide, .dark-section .pooja-carousel-shortcode-title-hide, .light-content .pooja-carousel-shortcode-title-show, .dark-section .pooja-carousel-shortcode-title-show {
 		color:#fff;
 	}
 	
-	.light-content .light-section .carousel-shortcode-title-hide, .light-content .light-section .carousel-shortcode-title-show {
+	.light-content .light-section .pooja-carousel-shortcode-title-hide, .light-content .light-section .pooja-carousel-shortcode-title-show {
 		color:#000;
 	}
 	
-	.carousel-shortcode-title-hide div, .carousel-shortcode-title-show div {
+	.pooja-carousel-shortcode-title-hide div, .pooja-carousel-shortcode-title-show div {
 		position:relative;
 		display:block;overflow:hidden;
 	}
 	
-	.carousel-shortcode-title-hide span {
+	.pooja-carousel-shortcode-title-hide span {
 		position:relative;
 		display:block;
 		opacity:1;
@@ -3426,7 +3424,7 @@
 		-webkit-transform: translateY(0px);
 	}
 	
-	.carousel-shortcode-title-show span {
+	.pooja-carousel-shortcode-title-show span {
 		position:relative;
 		display:block;
 		opacity:0;
@@ -3434,7 +3432,7 @@
 		-webkit-transform: translateY(200px);
 	}
 	
-	.carousel-shortcode-cta {
+	.pooja-carousel-shortcode-cta {
 		position:relative;
 		display:block;
 		opacity:0;
@@ -3447,7 +3445,7 @@
 	List Rotator
 ---------------------------------------------------*/
 
-	.list-rotator-wrapper {
+	.pooja-list-rotator-wrapper {
 		position:relative;
 		display:block;
 		margin-left: calc(50% - 50vw)!important;
@@ -3457,7 +3455,7 @@
 		overflow:hidden;
 	}
 	
-	.list-rotator-title {
+	.pooja-list-rotator-title {
 		position:absolute;
 		margin:0 auto;
 		display:table;
@@ -3476,23 +3474,23 @@
 		opacity:0;
 	}
 	
-	.list-rotator-height {
+	.pooja-list-rotator-height {
 		display: flex;
 		justify-content: center;
 		pointer-events: none;
 		position:relative;
 	}
 	
-	.list-rotator-pin {
+	.pooja-list-rotator-pin {
 		position: relative;
 		height: 100vh;
 		width: 100%;
 		mask-image: linear-gradient(#0000 0%, #0000 5%, #0000 5%, black 20%, black 85%, #0000 99%, #0000 99%, #0000 100%);
-  		-webkit-mask-image: linear-gradient(#0000 0%, #0000 5%, #0000 5%, black 20%, black 85%, #0000 99%, #0000 99%, #0000 100%);
+		-webkit-mask-image: linear-gradient(#0000 0%, #0000 5%, #0000 5%, black 20%, black 85%, #0000 99%, #0000 99%, #0000 100%);
 	}
 
 	
-	.list-rotator {
+	.pooja-list-rotator {
 		position: relative;
 		display:block;
 		width: 100%;
@@ -3503,27 +3501,27 @@
 		margin: 0;
 	}
 
-	.list-rotator li {
+	.pooja-list-rotator li {
 		color: #000;
 		list-style: none;
 		position: relative;
 		width: 100%;
 		text-align: center;
 		font-size: calc(1rem + 8vw);
-  		line-height: calc(1rem + 7.5vw);
+		line-height: calc(1rem + 7.5vw);
 		margin: 0;
 		opacity:1;
 	}
 	
-	.list-rotator li.in-view {
+	.pooja-list-rotator li.in-view {
 		opacity:1;
 	}
 	
-	.light-content .list-rotator li , .dark-section .list-rotator li {
+	.light-content .pooja-list-rotator li , .dark-section .pooja-list-rotator li {
 		color: #fff;
 	}
 	
-	.light-content .light-section .list-rotator li {
+	.light-content .light-section .pooja-list-rotator li {
 		color: #000;
 	}
 	
@@ -3531,24 +3529,24 @@
 	Move Thumbs Gallery
 ---------------------------------------------------*/
 	
-	.move-thumbs-wrapper {
+	.pooja-move-thumbs-wrapper {
 		margin-left: calc(50% - 50vw)!important;
 		margin-right: calc(50% - 50vw)!important;
 		max-width: 1000%!important;
 		width: 100vw!important;
 	}
 	
-	.start-thumbs-caption {
+	.pooja-start-thumbs-caption {
 		position:relative;
 		width: 100%;
- 		height:50vh;
+		height:50vh;
 		display:flex;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
 	}
 	
-	.start-thumbs-wrapper {
+	.pooja-start-thumbs-wrapper {
 		position:relative;
 		display:flex;
 		justify-content: space-between;
@@ -3557,47 +3555,47 @@
 		padding:0 40px;
 	}
 	
-	.start-move-thumb {
+	.pooja-start-move-thumb {
 		box-sizing:border-box;
 		position:relative;
 		width: calc(25% - 80px);
- 		height:calc(25vw - 40px);
+		height:calc(25vw - 40px);
 		margin:0 40px;
 		margin-bottom:40px;
 	}
 	
-	.start-move-thumb:nth-of-type(3n + 2) {		
+	.pooja-start-move-thumb:nth-of-type(3n + 2) {		
 		width: calc(15% - 80px);
 		height:calc(15vw - 40px);
 		margin-top: 50vh;
 	}
 	
-	.start-move-thumb:nth-of-type(3n + 3) {		
+	.pooja-start-move-thumb:nth-of-type(3n + 3) {		
 		width: calc(35% - 80px);
 		height:calc(35vw - 40px);
 		margin-top: 25vh;
 	}
 	
-	.start-move-thumb .overlapping-image-inner {
+	.pooja-start-move-thumb .overlapping-image-inner {
 		width: 100%;
 		height: 100%;
 		position: absolute;
 		top:0;
 	}
 	
-	 .end-move-thumb .move-thumb-inner {
+	 .pooja-end-move-thumb .move-thumb-inner {
 		width: 100%;
 		height: 100%;
 		position: absolute;
 		top:0;
 	}
 	
-	.rounded-borders .start-move-thumb .move-thumb-inner, .rounded-borders .end-move-thumb .move-thumb-inner {
+	.rounded-borders .pooja-start-move-thumb .move-thumb-inner, .rounded-borders .pooja-end-move-thumb .move-thumb-inner {
 		border-radius:12px;
 		overflow:hidden;
 	}
 	
-	.end-thumbs-wrapper {
+	.pooja-end-thumbs-wrapper {
 		display:flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
@@ -3607,7 +3605,7 @@
 		box-sizing:border-box;
 	}
 
-	.end-move-thumb {
+	.pooja-end-move-thumb {
 		box-sizing:border-box;	
 		position:relative;
 		width: calc(33.33% - 80px); 
@@ -3622,28 +3620,28 @@
 	Pinned Lists
 ---------------------------------------------------*/		
 	
-	.pinned-lists-wrapper {
+	.pooja-pinned-lists-wrapper {
 		position:relative;		
 		width:100%;
 		height:auto;
 		/*display:flex;
 		justify-content: center;
-  		align-items: center;
+		align-items: center;
 		flex-direction: column;*/
 		height:auto;
 		max-height:100vh;
 	}
 	
-	.pinned-lists {
+	.pooja-pinned-lists {
 		margin:0;
 		display:block;
 		width:100%;
 	}
 	
-	.pinned-lists li {
+	.pooja-pinned-lists li {
 		list-style:none;
 		width: auto;
-  		display: table;
+		display: table;
 		font-size: calc(1rem + 4vw);
 		line-height: calc(1rem + 4vw);
 		letter-spacing: -0.15vw;
@@ -3652,15 +3650,15 @@
 		margin:0;
 	}
 	
-	.text-align-center .pinned-lists li {
+	.text-align-center .pooja-pinned-lists li {
 		margin:0 auto;
 	}
 	
-	.light-content .pinned-lists li , .dark-section .pinned-lists li {
+	.light-content .pooja-pinned-lists li , .dark-section .pooja-pinned-lists li {
 		color: #fff;
 	}
 	
-	.light-content .light-section .pinned-lists li {
+	.light-content .light-section .pooja-pinned-lists li {
 		color: #000;
 	}
 	
@@ -3670,23 +3668,23 @@
 	
 	
 	
-	.snap-slider-container {
+	.pooja-snap-slider-container {
 		position: relative;
 		width: 100%;
 		margin: 0 auto;
 	}
 	
-	.snap-slide {
+	.pooja-snap-slide {
 		width:100%;
 		height:70vh;
 		position:relative;
 		overflow:hidden;
 		display: flex;
 		justify-content: center;
-  		align-items: center;
+		align-items: center;
 	}
 	
-	.snap-slide .img-mask {
+	.pooja-snap-slide .img-mask {
 		width: 100%;		
 		height: 100%;
 		display: block;
@@ -3695,7 +3693,7 @@
 		left: auto;
 	}
 	
-	.snap-slide img {
+	.pooja-snap-slide img {
 		width:100%;
 		height: 100%;
 		position:relative;
@@ -3706,7 +3704,7 @@
 		object-fit: contain;
 	}
 	
-	.snap-slider-captions {
+	.pooja-snap-slider-captions {
 		position: absolute;
 		top: 0;
 		z-index: 10;
@@ -3716,10 +3714,10 @@
 		overflow:hidden;
 		display: flex;
 		justify-content: flex-start;
-  		align-items: center;
+		align-items: center;
 	}
 	
-	.snap-slider-captions-wrapper {
+	.pooja-snap-slider-captions-wrapper {
 		width: 100%;
 		height: 40px;
 		display: block;
@@ -3727,7 +3725,7 @@
 		overflow: hidden;
 	}
 	
-	.snap-slide-caption {
+	.pooja-snap-slide-caption {
 		position: relative;
 		display: table;
 		margin: 0;
@@ -3741,9 +3739,9 @@
 		transition: opacity 0.2s ease-in-out;
 	}
 	
-	.snap-slider-captions .snap-title {
+	.pooja-snap-slider-captions .pooja-snap-title {
 		font-size: 30px;
-  		line-height: 40px;
+		line-height: 40px;
 		font-weight: 500;
 		color:red;
 		overflow:hidden;
@@ -3759,7 +3757,7 @@
 	Copy Email
 ---------------------------------------------------*/	
 	
-	#copy-email {
+	#pooja-copy-email {
 		cursor:pointer;
 		font-size: clamp(36px, 8.5vw, 130px); 
 		line-height: clamp(48px, 9.5vw, 150px);
@@ -3771,11 +3769,11 @@
 		letter-spacing: -0.2vw;
 	}
 	
-	.light-content #copy-email, .dark-section #copy-email {
+	.light-content #pooja-copy-email, .dark-section #pooja-copy-email {
 		color:#fff;
 	}
 	
-	.light-content .light-section #copy-email {
+	.light-content .light-section #pooja-copy-email {
 		color:#000;
 	}
 	
@@ -3789,30 +3787,30 @@
 @media only screen and (max-width: 1466px) {
 	
 	
-	.button-border span {
+	.pooja-button-border span {
 		padding: 0 26px;
 	}
 	
-	.clients-table li {
+	.pooja-clients-table li {
 		width: calc(100% / 4 - 40px);
 		margin: 20px;
 		padding: 0;
 	}
 	
-	.accordion.bigger-acc dt {
+	.pooja-accordion.pooja-bigger-acc dt {
 		margin-top: 30px;
 		padding-top: 30px;
 	}
 	
-	.accordion.bigger-acc dt:first-child {
+	.pooja-accordion.pooja-bigger-acc dt:first-child {
 		padding-top: 30px;
 	}
 	
-	.full > .team-members-list li, .full_elementor .team-members-list li {
+	.full > .pooja-team-members-list li, .full_elementor .pooja-team-members-list li {
 		padding:40px 60px;
 	}
 	
-	.team-members-list .hover-reveal {
+	.pooja-team-members-list .hover-reveal {
 		width: 250px;
 		height: 333px;
 	}
@@ -3827,80 +3825,80 @@
 		height: 333px;
 	}
 	
-	.flex-list {
+	.pooja-flex-list {
 		padding: 35px 60px;
 	}
 	
-	.panels-container > .panel:first-child {
+	.pooja-panels-container > .pooja-panel:first-child {
 		margin-left:60px;
 	}
 	
-	.panels-container > .panel:last-child {
+	.pooja-panels-container > .pooja-panel:last-child {
 		margin-right:60px;
 	}
 	
-	.zoom-wrapper-gallery {
+	.pooja-zoom-wrapper-gallery {
 		padding: 0 50px;
 	}
 	
-	.start-thumbs-wrapper {
+	.pooja-start-thumbs-wrapper {
 		padding: 0 30px;
 	}
 	
-	.start-move-thumb {
+	.pooja-start-move-thumb {
 		width: calc(25% - 60px);
- 		height:calc(25vw - 30px);
+		height:calc(25vw - 30px);
 		margin:0 30px;
 		margin-bottom:30px;
 	}
 	
-	.start-move-thumb:nth-of-type(3n + 2) {		
+	.pooja-start-move-thumb:nth-of-type(3n + 2) {		
 		width: calc(15% - 60px);
 		height:calc(15vw - 30px);
 		margin-top: 50vh;
 	}
 	
-	.start-move-thumb:nth-of-type(3n + 3) {		
+	.pooja-start-move-thumb:nth-of-type(3n + 3) {		
 		width: calc(35% - 60px);
 		height:calc(35vw - 30px);
 		margin-top: 25vh;
 	}
 	
-	.end-thumbs-wrapper {
+	.pooja-end-thumbs-wrapper {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
 	
-	.end-move-thumb {
+	.pooja-end-move-thumb {
 		width: calc(33.33% - 60px);
 		height: calc(33.33vw - 60px);
 		margin: 30px;
 	}
 	
-	.clipped-image {
-  		width: calc(100vw - 120px);
+	.pooja-clipped-image {
+		width: calc(100vw - 120px);
 	}
 	
-	.team-member-inner {
+	.pooja-team-member-inner {
 		width: 25%;
 	}
 	
-	.team-members-grid li:nth-child(4n+1) .team-member-inner {
+	.pooja-team-members-grid li:nth-child(4n+1) .pooja-team-member-inner {
 		transform: translateX(0%);
 		-webkit-transform: translateX(0%);
 	}
 	
-	.team-members-grid li:nth-child(4n+2)  .team-member-inner {
+	.pooja-team-members-grid li:nth-child(4n+2)  .pooja-team-member-inner {
 		transform: translateX(300%);
 		-webkit-transform: translateX(300%);
 	}
 	
-	.team-members-grid li:nth-child(4n+3) .team-member-inner {
+	.pooja-team-members-grid li:nth-child(4n+3) .pooja-team-member-inner {
 		transform: translateX(75%);
 		-webkit-transform: translateX(75%);
 	}
 	
-	.team-members-grid li:nth-child(4n+4) .team-member-inner {
+	.pooja-team-members-grid li:nth-child(4n+4) .pooja-team-member-inner {
 		transform: translateX(225%);
 		-webkit-transform: translateX(225%);
 	}
@@ -3910,19 +3908,19 @@
 
 @media only screen and (max-width: 1024px) {
 	
-	.content-slider.looped-carousel .clapat-slide {
+	.content-slider.looped-carousel .pooja-slide {
 		padding:0 40px;
 	}
 	
-	.content-slider.small-looped-carousel .clapat-slide {
+	.content-slider.small-looped-carousel .pooja-slide {
 		padding:0 40px;
 	}
 	
-	.disable-cursor .full .looped-carousel .clapat-controls, .disable-cursor .full_elementor .looped-carousel .clapat-controls {
+	.disable-cursor .full .looped-carousel .pooja-controls, .disable-cursor .full_elementor .looped-carousel .pooja-controls {
 		width: calc(100% - 80px);
 	}
 	
-	.disable-cursor .full .small-looped-carousel .clapat-controls, .disable-cursor .full_elementor .small-looped-carousel .clapat-controls {
+	.disable-cursor .full .small-looped-carousel .pooja-controls, .disable-cursor .full_elementor .small-looped-carousel .pooja-controls {
 		width: calc(100% - 80px);
 		max-width:520px;
 	}		
@@ -3943,40 +3941,40 @@
 		width: calc(100% - 100px);
 	}
 	
-	.clients-table li {
+	.pooja-clients-table li {
 		width: calc(100% / 4);
 		margin: 0px;
 		padding: 0;
 	}
 	
-	.clients-table li:hover .overlay {
+	.pooja-clients-table li:hover .pooja-overlay {
 		transform:scale(0.85);
 		-webkit-transform:scale(0.85);
 		opacity:1;
 	}
 	
-	.accordion dt span {
+	.pooja-accordion dt span {
 		max-width: none;
 	}
 	
-	.accordion .accordion-content {
+	.pooja-accordion .pooja-accordion-content {
 		padding-right: 0;
 	}
 	
-	.accordion.bigger-acc dt {
+	.pooja-accordion.pooja-bigger-acc dt {
 		margin-top: 30px;
 		padding-top: 30px;
 	}
 	
-	.accordion.bigger-acc dt:first-child {
+	.pooja-accordion.pooja-bigger-acc dt:first-child {
 		padding-top: 30px;
 	}
 	
-	.full > .team-members-list li, .full_elementor .team-members-list li {
+	.full > .pooja-team-members-list li, .full_elementor .pooja-team-members-list li {
 		padding:40px 40px;
 	}
 	
-	.team-members-list .hover-reveal {
+	.pooja-team-members-list .hover-reveal {
 		width: 200px;
 		height: 266px;
 	}
@@ -3996,69 +3994,69 @@
 		transform:scale(1);
 	}
 	
-	.flex-list {
+	.pooja-flex-list {
 		padding: 30px 40px;
 	}
 	
-	.panels-container > .panel:first-child {
+	.pooja-panels-container > .pooja-panel:first-child {
 		margin-left:40px;
 	}
 	
-	.panels-container > .panel:last-child {
+	.pooja-panels-container > .pooja-panel:last-child {
 		margin-right:40px;
 	}
 	
-	.zoom-wrapper-gallery {
+	.pooja-zoom-wrapper-gallery {
 		padding: 0 30px;
 	}
 	
-	.list-rotator-pin {
-  		height: auto;
+	.pooja-list-rotator-pin {
+		height: auto;
 	}
 	
-	.start-thumbs-wrapper {
-    	padding: 0 20px;
-  	}
+	.pooja-start-thumbs-wrapper {
+		padding: 0 20px;
+	}
 	
-	.start-move-thumb, .start-move-thumb:nth-of-type(3n+2), .start-move-thumb:nth-of-type(3n+3) {
+	.pooja-start-move-thumb, .pooja-start-move-thumb:nth-of-type(3n+2), .pooja-start-move-thumb:nth-of-type(3n+3) {
 		width: calc(33.33% - 40px);
 		height: calc(33.33vw - 40px);
 		margin: 25px 20px;
-  	}
-	
-	.end-thumbs-wrapper {
-    	display: none;
-  	}
-	
-	.clipped-image {
-  		width: calc(100vw - 80px);
 	}
 	
-	.team-member-inner {
+	.pooja-end-thumbs-wrapper {
+		display: none;
+	}
+	
+	.pooja-clipped-image {
+		width: calc(100vw - 80px);
+	}
+	
+	.pooja-team-member-inner {
 		width: 33.333%;
 	}
 	
-	.team-members-grid li:nth-child(4n+1) .team-member-inner {
+	.pooja-team-members-grid li:nth-child(4n+1) .pooja-team-member-inner {
 		transform: translateX(0%);
 		-webkit-transform: translateX(0%);
 	}
 	
-	.team-members-grid li:nth-child(4n+2)  .team-member-inner {
+	.pooja-team-members-grid li:nth-child(4n+2)  .pooja-team-member-inner {
 		transform: translateX(200%);
 		-webkit-transform: translateX(200%);
 	}
 	
-	.team-members-grid li:nth-child(4n+3) .team-member-inner {
+	.pooja-team-members-grid li:nth-child(4n+3) .pooja-team-member-inner {
 		transform: translateX(50%);
 		-webkit-transform: translateX(50%);
 	}
 	
-	.team-members-grid li:nth-child(4n+4) .team-member-inner {
+	.pooja-team-members-grid li:nth-child(4n+4) .pooja-team-member-inner {
 		transform: translateX(150%);
 		-webkit-transform: translateX(150%);
 	}
 	
-	#copy-email {
+	#pooja-copy-email {
 		margin-bottom: 1vw;
 	}
 	
@@ -4067,52 +4065,52 @@
 
 @media only screen and (max-width: 767px) {
 	
-	.content-slider.looped-carousel .clapat-slide {
+	.content-slider.looped-carousel .pooja-slide {
 		padding:0 30px;
 	}
 	
-	.content-slider.small-looped-carousel .clapat-slide {
+	.content-slider.small-looped-carousel .pooja-slide {
 		padding:0 30px;
 	}
 	
-	.disable-cursor .full .looped-carousel .clapat-controls, .disable-cursor .full_elementor .looped-carousel .clapat-controls {
+	.disable-cursor .full .looped-carousel .pooja-controls, .disable-cursor .full_elementor .looped-carousel .pooja-controls {
 		width: calc(100% - 60px);
 	}
 	
-	.disable-cursor .full .small-looped-carousel .clapat-controls, .disable-cursor .full_elementor .small-looped-carousel .clapat-controls {
+	.disable-cursor .full .small-looped-carousel .pooja-controls, .disable-cursor .full_elementor .small-looped-carousel .pooja-controls {
 		width: calc(100% - 60px);
 		max-width:540px;
 	}
 	
-	.content-slider .clapat-pagination-bullet .parallax-wrap {
+	.content-slider .pooja-pagination-bullet .parallax-wrap {
 		width: 20px;
 		height: 20px;
 	}
 	
-	.content-slider .clapat-pagination-bullet .parallax-wrap {
+	.content-slider .pooja-pagination-bullet .parallax-wrap {
 		width: 20px;
 		height: 20px;
 	}
 		
 	.video-wrapper {
-    	max-height: 50vh;
+		max-height: 50vh;
 	}
 	
 	.control {
 		display:none;
 	}
 	
-	.name-box, .email-box {
+	.pooja-name-box, .pooja-email-box {
 		width: 100%;
 		margin-right: 0;
 	}
 	
-	.clients-table li {
-    	width: 50%;
+	.pooja-clients-table li {
+		width: 50%;
 	}
 	
-	.clients-table::before, .clients-table::after {
-  		height: 10px;
+	.pooja-clients-table::before, .pooja-clients-table::after {
+		height: 10px;
 	}
 	
 	.empty-space, .empty-space.tx { 
@@ -4120,23 +4118,23 @@
 	}
 	
 	input[type="text"], textarea {
-    	font-size: 14px;
+		font-size: 14px;
 	}
 	
-	.accordion dt {
-    	font-size: 18px;
+	.pooja-accordion dt {
+		font-size: 18px;
 	}
 	
-	.accordion.bigger-acc dt {
+	.pooja-accordion.pooja-bigger-acc dt {
 		margin-top: 25px;
 		padding-top: 25px;
 	}
 	
-	.accordion.bigger-acc dt:first-child {
+	.pooja-accordion.pooja-bigger-acc dt:first-child {
 		padding-top: 25px;
 	}
 	
-	.accordion.bigger-acc .acc-button-icon {
+	.pooja-accordion.pooja-bigger-acc .pooja-acc-button-icon {
 		height: 30px;
 		width: 30px;
 		line-height: 30px;
@@ -4144,35 +4142,35 @@
 		border-radius: 30px;
 	}
 	
-	.acc-button-icon i {
+	.pooja-acc-button-icon i {
 		height: 30px;
 		line-height: 30px;
 		width: 30px;
 	}
 	
-	.full > .team-members-list li, .full_elementor .team-members-list li {
+	.full > .pooja-team-members-list li, .full_elementor .pooja-team-members-list li {
 		padding:30px 30px;
 	}
 	
-	.team-member > div {
+	.pooja-team-member > div {
 		float: none;
 		margin: 0px;
 		margin-top: 10px;
 		margin-bottom: 4px;
 	}
 	
-	.team-member span {
+	.pooja-team-member span {
 		position:relative;
 		float: none;
 		line-height: 24px;
 	}
 	
-	.team-member > div {
+	.pooja-team-member > div {
 		font-size: calc(1rem + 5vw);
 		line-height: calc(1rem + 5vw);
 	}
 	
-	.team-members-list .hover-reveal {
+	.pooja-team-members-list .hover-reveal {
 		width: 150px;
 		height: 200px;
 	}
@@ -4187,95 +4185,95 @@
 		height: 200px;
 	}
 	
-	.flex-list {
+	.pooja-flex-list {
 		padding: 30px 30px;
 		flex-direction: column;
 	}
 	
-	.flex-list-left, .flex-list-center, .flex-list-right {
+	.pooja-flex-list-left, .pooja-flex-list-center, .pooja-flex-list-right {
 		width: 100%;
 		text-align: center;
 		line-height:30px;
 	}
 	
-	.slowed-image {
-  		margin: 100px 0;
+	.pooja-slowed-image {
+		margin: 100px 0;
 	}
 	
-	.slowed-image img {
+	.pooja-slowed-image img {
 		max-width: 50%!important;
 	}
 	
-	.moving-gallery li {
+	.pooja-moving-gallery li {
 		width: 50vw;
 	}
 	
-	.panels-container > .panel:first-child {
+	.pooja-panels-container > .pooja-panel:first-child {
 		margin-left:30px;
 	}
 	
-	.panels-container > .panel:last-child {
+	.pooja-panels-container > .pooja-panel:last-child {
 		margin-right:30px;
 	}
 	
-	.zoom-wrapper-gallery {
+	.pooja-zoom-wrapper-gallery {
 		padding: 0 20px;
 	}
 	
-	.start-thumbs-wrapper {
-    	padding: 0 15px;
-  	}
+	.pooja-start-thumbs-wrapper {
+		padding: 0 15px;
+	}
 	
-	 .start-move-thumb, .start-move-thumb:nth-of-type(3n+2), .start-move-thumb:nth-of-type(3n+3) {
+	 .pooja-start-move-thumb, .pooja-start-move-thumb:nth-of-type(3n+2), .pooja-start-move-thumb:nth-of-type(3n+3) {
 		width: calc(50% - 30px);
 		height: calc(50vw - 30px);
 		margin: 10px 15px;
-  	}
+	}
 	
-	.pinned-lists li {
+	.pooja-pinned-lists li {
 		font-size: calc(1rem + 5vw);
 		line-height: calc(1rem + 5vw);
 	}
 
-	.snap-slider-captions-wrapper {
+	.pooja-snap-slider-captions-wrapper {
 		height: 30px;
 	}
 
-	.snap-slider-captions .snap-title {
+	.pooja-snap-slider-captions .pooja-snap-title {
 		font-size: 22px;
-  		line-height: 30px;
+		line-height: 30px;
 	}
 	
-	.clipped-image {
-  		width: calc(100vw - 60px);
+	.pooja-clipped-image {
+		width: calc(100vw - 60px);
 	}
 	
-	.team-member-inner {
+	.pooja-team-member-inner {
 		width: 50%;
 		margin-bottom: 30px;
 	}
 	
-	.team-members-grid li:nth-child(4n+1) .team-member-inner {
+	.pooja-team-members-grid li:nth-child(4n+1) .pooja-team-member-inner {
 		transform: translateX(0%);
 		-webkit-transform: translateX(0%);
 	}
 	
-	.team-members-grid li:nth-child(4n+2)  .team-member-inner {
+	.pooja-team-members-grid li:nth-child(4n+2)  .pooja-team-member-inner {
 		transform: translateX(100%);
 		-webkit-transform: translateX(100%);
 	}
 	
-	.team-members-grid li:nth-child(4n+3) .team-member-inner {
+	.pooja-team-members-grid li:nth-child(4n+3) .pooja-team-member-inner {
 		transform: translateX(0%);
 		-webkit-transform: translateX(0%);
 	}
 	
-	.team-members-grid li:nth-child(4n+4) .team-member-inner {
+	.pooja-team-members-grid li:nth-child(4n+4) .pooja-team-member-inner {
 		transform: translateX(100%);
 		-webkit-transform: translateX(100%);
 	}
 	
-	#copy-email {
+	#pooja-copy-email {
 		margin-bottom: 3vw;
 	}
 	
@@ -4319,42 +4317,42 @@
 		padding-left:0px;
 	}
 	
-	.content-slider.looped-carousel .clapat-slide {
+	.content-slider.looped-carousel .pooja-slide {
 		padding:0 20px;
 	}
 	
-	.content-slider.small-looped-carousel .clapat-slide {
+	.content-slider.small-looped-carousel .pooja-slide {
 		padding:0 20px;
 	}
 	
-	.disable-cursor .full .looped-carousel .clapat-controls, .disable-cursor .full_elementor .looped-carousel .clapat-controls {
+	.disable-cursor .full .looped-carousel .pooja-controls, .disable-cursor .full_elementor .looped-carousel .pooja-controls {
 		width: calc(100% - 40px);
 	}
 	
-	.disable-cursor .full .small-looped-carousel .clapat-controls, .disable-cursor .full_elementor .small-looped-carousel .clapat-controls {
+	.disable-cursor .full .small-looped-carousel .pooja-controls, .disable-cursor .full_elementor .small-looped-carousel .pooja-controls {
 		width: calc(100% - 40px);
 		max-width:560px;
 	}		
 			
-	.clapat-button {
-    	margin-bottom: 20px;
+	.pooja-button-box {
+		margin-bottom: 20px;
 	}
 	
-	.full > .team-members-list li, .full_elementor .team-members-list li {
+	.full > .pooja-team-members-list li, .full_elementor .pooja-team-members-list li {
 		padding:30px 20px;
 	}
 	
-	.team-members-list .hover-reveal {
+	.pooja-team-members-list .hover-reveal {
 		width: 100px;
 		height: 133px;
 	}
 	
-	.accordion.bigger-acc dt {
+	.pooja-accordion.pooja-bigger-acc dt {
 		margin-top: 20px;
 		padding-top: 20px;
 	}
 	
-	.accordion.bigger-acc dt:first-child {
+	.pooja-accordion.pooja-bigger-acc dt:first-child {
 		padding-top: 20px;
 	}
 	
@@ -4368,86 +4366,86 @@
 		height: 133px;
 	}
 	
-	.flex-list {
+	.pooja-flex-list {
 		padding: 20px;
 	}
 	
-	.moving-gallery li {
+	.pooja-moving-gallery li {
 		width: 60vw;
 	}
 	
-	.panels-container > .panel:first-child {
+	.pooja-panels-container > .pooja-panel:first-child {
 		margin-left:20px;
 	}
 	
-	.panels-container > .panel:last-child {
+	.pooja-panels-container > .pooja-panel:last-child {
 		margin-right:20px;
 	}
 	
-	.zoom-wrapper-gallery {
+	.pooja-zoom-wrapper-gallery {
 		padding: 0 10px;
 	}
 	
-	.start-thumbs-wrapper {
-    	padding: 0 10px;
-  	}
+	.pooja-start-thumbs-wrapper {
+		padding: 0 10px;
+	}
 	
-	 .start-move-thumb, .start-move-thumb:nth-of-type(3n+2), .start-move-thumb:nth-of-type(3n+3) {
+	 .pooja-start-move-thumb, .pooja-start-move-thumb:nth-of-type(3n+2), .pooja-start-move-thumb:nth-of-type(3n+3) {
 		width: calc(50% - 20px);
 		height: calc(50vw - 20px);
 		margin: 5px 10px;
-  	}
+	}
 	
-	.snap-slider-captions {
+	.pooja-snap-slider-captions {
 		padding:0 20px;
 		box-sizing: border-box;
 	}
 
-	.snap-slider-captions-wrapper {
+	.pooja-snap-slider-captions-wrapper {
 		height: 30px;
 	}
 
-	.snap-slider-captions .snap-title {
+	.pooja-snap-slider-captions .pooja-snap-title {
 		font-size: 18px;
-  		line-height: 30px;
+		line-height: 30px;
 	}
 	
-	.clipped-image {
-  		width: calc(100vw - 40px);
+	.pooja-clipped-image {
+		width: calc(100vw - 40px);
 	}
 	
-	.team-intro-grid {
+	.pooja-team-intro-grid {
 		position: relative;
-  		padding: 0;
+		padding: 0;
 		margin-top:30px;
 	}
 	
-	.team-member-inner {
+	.pooja-team-member-inner {
 		width: 100%;
 		margin-bottom: 50px;
 	}
 	
-	.team-members-grid li:nth-child(4n+1) .team-member-inner {
+	.pooja-team-members-grid li:nth-child(4n+1) .pooja-team-member-inner {
 		transform: translateX(0%);
 		-webkit-transform: translateX(0%);
 	}
 	
-	.team-members-grid li:nth-child(4n+2)  .team-member-inner {
+	.pooja-team-members-grid li:nth-child(4n+2)  .pooja-team-member-inner {
 		transform: translateX(0%);
 		-webkit-transform: translateX(0%);
 	}
 	
-	.team-members-grid li:nth-child(4n+3) .team-member-inner {
+	.pooja-team-members-grid li:nth-child(4n+3) .pooja-team-member-inner {
 		transform: translateX(0%);
 		-webkit-transform: translateX(0%);
 	}
 	
-	.team-members-grid li:nth-child(4n+4) .team-member-inner {
+	.pooja-team-members-grid li:nth-child(4n+4) .pooja-team-member-inner {
 		transform: translateX(0%);
 		-webkit-transform: translateX(0%);
 	}
 	
-	#copy-email {
+	#pooja-copy-email {
 		margin-bottom: 5vw;
 	}
 		

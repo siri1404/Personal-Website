@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------
 	Showcase Portfolio
 ---------------------------------------------------*/
@@ -59,11 +58,11 @@
 		bottom: -20px;
 	}
 	
-	.showcase-portfolio.filp-grid .clapat-item {
+	.showcase-portfolio.filp-grid .pooja-item {
 		pointer-events:none;
 	}
 	
-	.showcase-portfolio.filp-grid.flip-completed .clapat-item {
+	.showcase-portfolio.filp-grid.flip-completed .pooja-item {
 		pointer-events:initial;
 	}
 	
@@ -71,11 +70,11 @@
 		overflow:visible;
 	}
 	
-	.showcase-portfolio.filp-grid.expand-grid:not(.items-filtered) .clapat-item.expanded .slide-caption {
+	.showcase-portfolio.filp-grid.expand-grid:not(.items-filtered) .pooja-item.expanded .slide-caption {
 		opacity:0;
 	}
 	
-	.showcase-portfolio.filp-grid.flip-completed.expand-grid:not(.items-filtered) .clapat-item.expanded .slide-caption {
+	.showcase-portfolio.filp-grid.flip-completed.expand-grid:not(.items-filtered) .pooja-item.expanded .slide-caption {
 		opacity:1;
 	}
 	
@@ -114,7 +113,7 @@
 		width: 100%;
 		z-index: 2;
 		display: flex;
-  		flex-wrap: wrap;		
+		flex-wrap: wrap;		
 	}
 	
 	.load-project-thumb .pixels-wrapper {
@@ -151,7 +150,7 @@
 		left:0;
 		right:0;
 		top:0;		
-  		z-index: 100;
+		z-index: 100;
 		pointer-events:none;		
 	}
 	
@@ -164,10 +163,10 @@
 		padding:12px 40px;
 		color: #fff;
 		font-size: 18px;
-  		line-height: 30px;
+		line-height: 30px;
 		cursor:pointer;
 		opacity: 0;
-  		transform: scale(0, 0.5);
+		transform: scale(0, 0.5);
 		pointer-events:initial;	
 	}	
 	
@@ -177,7 +176,7 @@
 	
 	.filters-text span {
 		opacity: 0;
-  		transform: scale(0.7);
+		transform: scale(0.7);
 	}
 	
 	
@@ -367,13 +366,13 @@
 	.showcase-portfolio  {
 		position: relative;
 		display: flex;  		
-  		flex-wrap: wrap;
+		flex-wrap: wrap;
 		width:calc(100% - 80px);
 		margin:0 auto;
 		padding-top:20px;
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item {
+	.showcase-portfolio.expand-grid .pooja-item {
 		position:relative;
 		width: calc(33.3333% - 80px);
 		max-width: calc(33.3333% - 80px);
@@ -387,42 +386,42 @@
 		
 	}
 	
-	.showcase-portfolio.expand-grid:not(.ease-transform) .clapat-item {
+	.showcase-portfolio.expand-grid:not(.ease-transform) .pooja-item {
 		transition: all 0.7s cubic-bezier(.19,1,.22,1);
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item.expanded {
+	.showcase-portfolio.expand-grid .pooja-item.expanded {
 		flex: 0 0 56%;
 		max-width: calc(56% - 80px);
 	}
-	.showcase-portfolio.expand-grid .clapat-item.not-expanded {
+	.showcase-portfolio.expand-grid .pooja-item.not-expanded {
 		flex: 0 0 22%;
 		max-width: calc(22% - 80px);
 	}
-	.showcase-portfolio.expand-grid .clapat-item.default {
+	.showcase-portfolio.expand-grid .pooja-item.default {
 		flex: 1 1 33.33%;
 		max-width: calc(33.3333% - 80px);
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item.filtered, .showcase-portfolio.expand-grid .clapat-item.not-filtered {		
+	.showcase-portfolio.expand-grid .pooja-item.filtered, .showcase-portfolio.expand-grid .pooja-item.not-filtered {		
 		height: 20vw;
 		flex: 1 1 33.33%;
 		max-width: calc(33.3333% - 80px);
 	}
 	
-	.showcase-portfolio.expand-grid.items-filtered .clapat-item .slide-caption {
+	.showcase-portfolio.expand-grid.items-filtered .pooja-item .slide-caption {
 		opacity:0;					
 	}
 	
-	.showcase-portfolio.expand-grid.items-filtered .clapat-item:hover .slide-caption {
+	.showcase-portfolio.expand-grid.items-filtered .pooja-item:hover .slide-caption {
 		opacity:1;					
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item .slide-caption {
+	.showcase-portfolio.expand-grid .pooja-item .slide-caption {
 		opacity:0;
 	}
 	
-	.showcase-portfolio.expand-grid:not(.items-filtered) .clapat-item.expanded .slide-caption {
+	.showcase-portfolio.expand-grid:not(.items-filtered) .pooja-item.expanded .slide-caption {
 		opacity:1;
 		
 	}
@@ -498,7 +497,7 @@
 		color: #fff;
 	}
 	
-	.showcase-portfolio .clapat-item:hover .slide-caption .slide-title {
+	.showcase-portfolio .pooja-item:hover .slide-caption .slide-title {
 		text-decoration: underline;
 		text-decoration-thickness: 2px;
 		text-underline-offset: 4px;
@@ -526,7 +525,7 @@
 		display: block;
 	}
 	
-	.showcase-portfolio .clapat-item .slide-date {
+	.showcase-portfolio .pooja-item .slide-date {
 		display: block;
 		color: #fff;
 		position: absolute;
@@ -555,29 +554,29 @@
 	
 	
 	.showcase-portfolio {
-  		width: calc(100% - 60px);
+		width: calc(100% - 60px);
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item {
+	.showcase-portfolio.expand-grid .pooja-item {
 		width: calc(33.3333% - 60px);
 		max-width: calc(33.3333% - 60px);
 		margin: 60px 30px 100px 30px;
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item.default {
-  		max-width: calc(33.3333% - 60px);
+	.showcase-portfolio.expand-grid .pooja-item.default {
+		max-width: calc(33.3333% - 60px);
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item.expanded {
-  		max-width: calc(56% - 60px);
+	.showcase-portfolio.expand-grid .pooja-item.expanded {
+		max-width: calc(56% - 60px);
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item.not-expanded {
-  		max-width: calc(22% - 60px);
+	.showcase-portfolio.expand-grid .pooja-item.not-expanded {
+		max-width: calc(22% - 60px);
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item.filtered, .showcase-portfolio.expand-grid .clapat-item.not-filtered {
-  		max-width: calc(33.3333% - 60px);
+	.showcase-portfolio.expand-grid .pooja-item.filtered, .showcase-portfolio.expand-grid .pooja-item.not-filtered {
+		max-width: calc(33.3333% - 60px);
 	}
 
 }
@@ -695,41 +694,41 @@
 	}	
 	
 	.showcase-portfolio {
-  		width: calc(100% - 40px);
+		width: calc(100% - 40px);
 	}
 	
-	.showcase-portfolio.filp-grid .clapat-item {
+	.showcase-portfolio.filp-grid .pooja-item {
 		pointer-events:initial;
 	}
 	
-	.showcase-portfolio.filp-grid.expand-grid:not(.items-filtered) .clapat-item.expanded .slide-caption {
-  		opacity: 1;
+	.showcase-portfolio.filp-grid.expand-grid:not(.items-filtered) .pooja-item.expanded .slide-caption {
+		opacity: 1;
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item {
+	.showcase-portfolio.expand-grid .pooja-item {
 		width: calc(33.3333% - 40px);
 		max-width: calc(33.3333% - 40px);
 		margin: 60px 20px 100px 20px;
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item.default {
-  		max-width: calc(33.3333% - 40px);
+	.showcase-portfolio.expand-grid .pooja-item.default {
+		max-width: calc(33.3333% - 40px);
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item.expanded {
-  		max-width: calc(56% - 40px);
+	.showcase-portfolio.expand-grid .pooja-item.expanded {
+		max-width: calc(56% - 40px);
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item.not-expanded {
-  		max-width: calc(22% - 40px);
+	.showcase-portfolio.expand-grid .pooja-item.not-expanded {
+		max-width: calc(22% - 40px);
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item.filtered, .showcase-portfolio.expand-grid .clapat-item.not-filtered {
-  		max-width: calc(33.3333% - 40px);
+	.showcase-portfolio.expand-grid .pooja-item.filtered, .showcase-portfolio.expand-grid .pooja-item.not-filtered {
+		max-width: calc(33.3333% - 40px);
 	}
 	
 	.showcase-portfolio.filp-grid .img-mask {
-  		overflow: hidden;
+		overflow: hidden;
 	}
 	
 	.showcase-portfolio .section-image {
@@ -738,7 +737,7 @@
 	}
 	
 	.showcase-portfolio .slide-caption {
-  		height: calc(100% + 40px);
+		height: calc(100% + 40px);
 	}
 	
 	.showcase-portfolio .slide-caption .slide-title {
@@ -751,7 +750,7 @@
 		line-height: 28px;
 	}
 	
-	.showcase-portfolio .clapat-item .slide-date {
+	.showcase-portfolio .pooja-item .slide-date {
 		top: 20px;
 		left: 20px;
 	}
@@ -764,39 +763,39 @@
 @media only screen and (max-width: 767px) {
 	
 	.showcase-portfolio {
-  		width: calc(100% - 30px);
+		width: calc(100% - 30px);
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item {
+	.showcase-portfolio.expand-grid .pooja-item {
 		width: calc(100% - 30px);
 		max-width: calc(100% - 30px);
 		height: 52vw;
 		margin: 40px 15px 60px 15px;
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item.default {
-  		max-width: calc(100% - 30px);
+	.showcase-portfolio.expand-grid .pooja-item.default {
+		max-width: calc(100% - 30px);
 		flex: 0 0 100%;
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item.expanded {
-  		max-width: calc(100% - 30px);
+	.showcase-portfolio.expand-grid .pooja-item.expanded {
+		max-width: calc(100% - 30px);
 		flex: 0 0 100%;
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item.not-expanded {
-  		max-width: calc(100% - 30px);
+	.showcase-portfolio.expand-grid .pooja-item.not-expanded {
+		max-width: calc(100% - 30px);
 		flex: 0 0 100%;
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item.filtered, .showcase-portfolio.expand-grid .clapat-item.not-filtered {
-  		max-width: calc(100% - 30px);
+	.showcase-portfolio.expand-grid .pooja-item.filtered, .showcase-portfolio.expand-grid .pooja-item.not-filtered {
+		max-width: calc(100% - 30px);
 		height: 52vw;
 		flex: 0 0 100%;
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item .slide-caption {
-  		opacity: 1;
+	.showcase-portfolio.expand-grid .pooja-item .slide-caption {
+		opacity: 1;
 	}	
 	
 }
@@ -805,33 +804,33 @@
 @media only screen and (max-width: 479px) {
 	
 	.showcase-portfolio {
-  		width: calc(100% - 20px);
+		width: calc(100% - 20px);
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item {
+	.showcase-portfolio.expand-grid .pooja-item {
 		width: calc(100% - 20px);
 		max-width: calc(100% - 30px);
 		height: 58vw;
 		margin: 40px 10px 60px 10px;
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item.default {
-  		max-width: calc(100% - 20px);
+	.showcase-portfolio.expand-grid .pooja-item.default {
+		max-width: calc(100% - 20px);
 		flex: 0 0 100%;
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item.expanded {
-  		max-width: calc(100% - 20px);
+	.showcase-portfolio.expand-grid .pooja-item.expanded {
+		max-width: calc(100% - 20px);
 		flex: 0 0 100%;
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item.not-expanded {
-  		max-width: calc(100% - 20px);
+	.showcase-portfolio.expand-grid .pooja-item.not-expanded {
+		max-width: calc(100% - 20px);
 		flex: 0 0 100%;
 	}
 	
-	.showcase-portfolio.expand-grid .clapat-item.filtered, .showcase-portfolio.expand-grid .clapat-item.not-filtered {
-  		max-width: calc(100% - 20px);
+	.showcase-portfolio.expand-grid .pooja-item.filtered, .showcase-portfolio.expand-grid .pooja-item.not-filtered {
+		max-width: calc(100% - 20px);
 		height: 58vw;
 		flex: 0 0 100%;
 	}
