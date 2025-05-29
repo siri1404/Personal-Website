@@ -824,9 +824,17 @@ body.hidden {
 		left: -6px;
 		background: currentColor;
 		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
 	}
-
-	/* Arrow Down */
+	
+	.light-content i.arrow-icon:after, .light-content .change-header i.arrow-icon::after, .dark-content .item i.arrow-icon::after {
+		background-color:currentColor;
+	}
+	
+	.light-content .change-header i.arrow-icon::after, .dark-content .change-header i.arrow-icon::after {
+		background-colorcurrentColor;
+	}
+	
 	i.arrow-icon-down {
 		border: solid currentColor;
 		border-width: 0 2px 2px 0;
